@@ -1,0 +1,1777 @@
+/h/200/zhiychen/defi_attack_synthesis
+EminenceBuy number of points: 
+200
+EminenceSell number of points: 
+200
+eAAVEBuy number of points: 
+200
+eAAVESell number of points: 
+200
+Check Contract: 	EminenceBuy, EminenceSell  time: 0.0604395866394043
+The optimizer takes 2.6750922203063965 seconds
+best para: [1.0000e+00 6.8125e+08] best profit: 5537550.0
+Optimization terminated successfully.    Next only show the first 5/16 profitable solutions
+[1, 1] 	  estimated profit is, 276307.0   	   
+[1, 2] 	  estimated profit is, 276306.8354150485   	   
+[1, 364226] 	  estimated profit is, 276307.0   	   
+[1, 206250000] 	  estimated profit is, 883770.0   	   
+[1, 250000000] 	  estimated profit is, 2174701.0   	   
+
+Check Contract: 	EminenceBuy, EminenceSell, EminenceBuy, EminenceSell  time: 2.7838780879974365
+The optimizer takes 4.286877632141113 seconds
+best para: [1.00000000e+00 5.73167733e+08 1.00000000e+00 3.48167734e+08] best profit: 5813857.0
+Optimization terminated successfully.    Next only show the first 5/5 profitable solutions
+[1, 1, 1, 1] 	  estimated profit is, 552614.0   	   
+[1, 36577791, 54939, 211572384] 	  estimated profit is, 1105138.1327083427   	   
+[1, 181945451, 1, 193819572] 	  estimated profit is, 1160077.0   	   
+[1, 573167733, 1, 348167733] 	  estimated profit is, 5813857.0   	   
+[6824547, 629995142, 3168304, 206250000] 	  estimated profit is, -680868.8228558898   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, eAAVESell, EminenceSell  time: 7.117902040481567
+The optimizer takes 4.437063217163086 seconds
+best para: [1.00000000e+00 6.53128749e+04 1.08531403e+04 5.33840134e+08] best profit: 5537550.0
+Optimization terminated successfully.    Next only show the first 4/4 profitable solutions
+[1, 1, 1, 1] 	  estimated profit is, 276307.0   	   
+[1, 1, 10839, 1] 	  estimated profit is, 276306.9999032449   	   
+[1, 65312, 10853, 533840133] 	  estimated profit is, 5537550.0   	   
+[10571886, 559123960, 360937, 759123918] 	  estimated profit is, -1995535.7675287444   	   
+[1, 1, 10817, 1] 	  estimated profit is, 276307.0   	   
+
+Check Contract: 	EminenceBuy, EminenceSell, eAAVEBuy, eAAVESell, EminenceSell  time: 11.608183145523071
+The optimizer takes 4.744595289230347 seconds
+best para: [1. 1. 1. 1. 1.] best profit: 552615.0
+Optimization terminated successfully.    Next only show the first 2/2 profitable solutions
+[1, 1, 1, 1, 1] 	  estimated profit is, 552615.0   	   
+[10837517, 367985704, 367985704, 300000, 367985704] 	  estimated profit is, -2771675.5000038184   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, EminenceBuy, eAAVESell, EminenceSell  time: 16.398680210113525
+result.x[i] <= 1 for all i !
+Check Contract: 	EminenceBuy, eAAVEBuy, EminenceSell, eAAVESell, EminenceSell  time: 16.714736461639404
+The optimizer takes 3.861755609512329 seconds
+best para: [1.00000000e+00 3.93750001e+08 3.12500010e+07 3.70312883e+05
+ 4.43750000e+08] best profit: 1160078.0
+Optimization terminated successfully.    Next only show the first 3/3 profitable solutions
+[1, 1, 1, 1, 1] 	  estimated profit is, 552615.0   	   
+[1, 393750000, 31250000, 370312, 443750000] 	  estimated profit is, 1160078.0   	   
+[8746178, 356125047, 356125047, 300000, 356125047] 	  estimated profit is, 536958.6903504021   	   
+[1, 392962500, 31187500, 369571, 442862500] 	  estimated profit is, 1160078.0   	   
+[8728685, 355412796, 355412796, 299400, 355412796] 	  estimated profit is, -84353.0   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, eAAVESell, EminenceBuy, EminenceSell  time: 20.646756887435913
+result.x[i] <= 1 for all i !
+forge test --match-contract attackTester --fork-url https://nd-193-046-905.p2pify.com/f38bbbfe5955755aaa0ba48accc03f3d --fork-block-number 10954410
+b'Compiling 2 files with 0.7.6\nSolc 0.7.6 finished in 995.95ms\nCompiler run successful\n\nRunning 49 tests for src/test/attack.t.sol:attackTester\n\
+Running attacks on foundry costs time:  25.848626375198364  seconds
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell
+	 [1, 1]
+	Estimated Profit 276307.0  	 Actual Profit -1
+	 [1, 2]
+	Estimated Profit 276306.8354150485  	 Actual Profit -1
+	 [1, 364226]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 206250000]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 250000000]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 258995110]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 300000000]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 443750000]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 481250000]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 506250000]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 587500000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 634416479]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 662500000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 681250000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1078230, 107174549]
+	Estimated Profit -194459.26910500228  	 Actual Profit 0
+	 [3455266, 205484586]
+	Estimated Profit -572413.2223781496  	 Actual Profit -1228178
+	 [1, 363497]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 205837500]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 249500000]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 258477119]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 299400000]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 442862500]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 480287500]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 505237500]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 586325000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 633147646]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 661175000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 679887500]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+ ===== Best Profit:  2.6  Best Paras:  [] ,   time:  46.821232318878174
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell, EminenceBuy, EminenceSell
+	 [1, 1, 1, 1]
+	Estimated Profit 552614.0  	 Actual Profit -2
+	 [1, 36577791, 54939, 211572384]
+	Estimated Profit 1105138.1327083427  	 Actual Profit 0
+	 [1, 181945451, 1, 193819572]
+	Estimated Profit 1160077.0  	 Actual Profit 0
+	 [1, 573167733, 1, 348167733]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [6824547, 629995142, 3168304, 206250000]
+	Estimated Profit -680868.8228558898  	 Actual Profit 0
+	 [1, 36504635, 54829, 211149239]
+	Estimated Profit 1105249.0  	 Actual Profit 0
+	 [1, 181581560, 1, 193431932]
+	Estimated Profit 1160077.0  	 Actual Profit 0
+	 [1, 572021397, 1, 347471397]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+ ===== Best Profit:  0.7000000000000001  Best Paras:  [] ,   time:  46.82139825820923
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, eAAVESell, EminenceSell
+	 [1, 1, 1, 1]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 10839, 1]
+	Estimated Profit 276306.9999032449  	 Actual Profit 0
+	 [1, 65312, 10853, 533840133]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [10571886, 559123960, 360937, 759123918]
+	Estimated Profit -1995535.7675287444  	 Actual Profit -1964161
+	 [1, 1, 10817, 1]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 65181, 10831, 532772452]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+ ===== Best Profit:  0.5  Best Paras:  [] ,   time:  46.82150340080261
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell, eAAVEBuy, eAAVESell, EminenceSell
+	 [1, 1, 1, 1, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [10837517, 367985704, 367985704, 300000, 367985704]
+	Estimated Profit -2771675.5000038184  	 Actual Profit -2762782
+ ===== Best Profit:  0.1  Best Paras:  [] ,   time:  46.82157921791077
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, EminenceBuy, eAAVESell, EminenceSell
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  46.821622133255005
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, EminenceSell, eAAVESell, EminenceSell
+	 [1, 1, 1, 1, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 393750000, 31250000, 370312, 443750000]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [8746178, 356125047, 356125047, 300000, 356125047]
+	Estimated Profit 536958.6903504021  	 Actual Profit -332082
+	 [1, 392962500, 31187500, 369571, 442862500]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [8728685, 355412796, 355412796, 299400, 355412796]
+	Estimated Profit -84353.0  	 Actual Profit -331941
+ ===== Best Profit:  0.4  Best Paras:  [] ,   time:  46.821715116500854
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, eAAVESell, EminenceBuy, EminenceSell
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  46.8217453956604
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  2.6
+===== in total  49  concrete attack vectors are checked ======
+==== in total  6  executions succeed
+===== Next round we have  7  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== Strength 0 - round 0 of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 2.6 ================================= 
+ ================================================================================= 
+EminenceBuy number of points: 
+200
+EminenceSell number of points: 
+200
+eAAVEBuy number of points: 
+200
+eAAVESell number of points: 
+200
+Check Contract: 	EminenceBuy, EminenceSell    Profit of Previous Interation: 	2.6  time: 46.90780997276306
+The optimizer takes 6.182491064071655 seconds
+best para: [1.0000e+00 6.8125e+08] best profit: 5537550.0
+Optimization terminated successfully.    Next only show the first 5/16 profitable solutions
+[1, 1] 	  estimated profit is, 276307.0   	   
+[1, 2] 	  estimated profit is, 276306.8354150485   	   
+[1, 364226] 	  estimated profit is, 276307.0   	   
+[1, 206250000] 	  estimated profit is, 883770.0   	   
+[1, 250000000] 	  estimated profit is, 2174701.0   	   
+
+Check Contract: 	EminenceBuy, EminenceSell, EminenceBuy, EminenceSell    Profit of Previous Interation: 	0.7000000000000001  time: 53.16139197349548
+The optimizer takes 6.657137870788574 seconds
+best para: [1.00000000e+00 5.73167733e+08 1.00000000e+00 3.48167734e+08] best profit: 5813857.0
+Optimization terminated successfully.    Next only show the first 5/5 profitable solutions
+[1, 1, 1, 1] 	  estimated profit is, 552614.0   	   
+[1, 36577791, 54939, 211572384] 	  estimated profit is, 1105138.1327083427   	   
+[1, 181945451, 1, 193819572] 	  estimated profit is, 1160077.0   	   
+[1, 573167733, 1, 348167733] 	  estimated profit is, 5813857.0   	   
+[6824547, 629995142, 3168304, 206250000] 	  estimated profit is, -680868.8228558898   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	0.5  time: 59.87148404121399
+The optimizer takes 4.321342706680298 seconds
+best para: [1.00000000e+00 6.53128749e+04 1.08531403e+04 5.33840134e+08] best profit: 5537550.0
+Optimization terminated successfully.    Next only show the first 4/4 profitable solutions
+[1, 1, 1, 1] 	  estimated profit is, 276307.0   	   
+[1, 1, 10839, 1] 	  estimated profit is, 276306.9999032449   	   
+[1, 65312, 10853, 533840133] 	  estimated profit is, 5537550.0   	   
+[10571886, 559123960, 360937, 759123918] 	  estimated profit is, -1995535.7675287444   	   
+[1, 1, 10817, 1] 	  estimated profit is, 276307.0   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, EminenceSell, eAAVESell, EminenceSell    Profit of Previous Interation: 	0.4  time: 64.23919725418091
+The optimizer takes 3.6854355335235596 seconds
+best para: [1.00000000e+00 3.93750001e+08 3.12500010e+07 3.70312883e+05
+ 4.43750000e+08] best profit: 1160078.0
+Optimization terminated successfully.    Next only show the first 3/3 profitable solutions
+[1, 1, 1, 1, 1] 	  estimated profit is, 552615.0   	   
+[1, 393750000, 31250000, 370312, 443750000] 	  estimated profit is, 1160078.0   	   
+[8746178, 356125047, 356125047, 300000, 356125047] 	  estimated profit is, 536958.6903504021   	   
+[1, 392962500, 31187500, 369571, 442862500] 	  estimated profit is, 1160078.0   	   
+[8728685, 355412796, 355412796, 299400, 355412796] 	  estimated profit is, -84353.0   	   
+
+Check Contract: 	EminenceBuy, EminenceSell, eAAVEBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	0.1  time: 67.9705262184143
+The optimizer takes 3.981966018676758 seconds
+best para: [1. 1. 1. 1. 1.] best profit: 552615.0
+Optimization terminated successfully.    Next only show the first 2/2 profitable solutions
+[1, 1, 1, 1, 1] 	  estimated profit is, 552615.0   	   
+[10837517, 367985704, 367985704, 300000, 367985704] 	  estimated profit is, -2771675.5000038184   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, eAAVESell, EminenceBuy, EminenceSell    Profit of Previous Interation: 	0.0  time: 71.99774217605591
+The optimizer takes 42.18662476539612 seconds
+best para: [1.00000000e+00 1.00786225e+08 7.32430654e+04 1.00000000e+00
+ 2.92663665e+08] best profit: 883769.0
+Optimization terminated successfully.    Next only show the first 5/13 profitable solutions
+[1, 1, 1, 1, 1] 	  estimated profit is, 276306.0   	   
+[1, 1, 1, 1, 9178707] 	  estimated profit is, 276306.0   	   
+[1, 363280, 5, 1, 1] 	  estimated profit is, 276306.0   	   
+[1, 100786225, 73243, 1, 292663665] 	  estimated profit is, 883769.0   	   
+[1, 171483959, 188086, 1, 245733956] 	  estimated profit is, 883769.0   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, EminenceBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	0.0  time: 114.23601293563843
+The optimizer takes 46.88623285293579 seconds
+best para: [1.00000000e+00 3.63896607e+05 1.00000000e+00 1.00000000e+00
+ 6.82064794e+08] best profit: 5537549.0
+Optimization terminated successfully.    Next only show the first 5/13 profitable solutions
+[1, 1, 1, 9319, 18344] 	  estimated profit is, 276305.9999985676   	   
+[1, 1, 1, 10855, 9178706] 	  estimated profit is, 276306.0   	   
+[1, 1, 1, 10856, 5014076] 	  estimated profit is, 276306.0   	   
+[1, 1, 1, 277734, 414062500] 	  estimated profit is, 2493517.0   	   
+[1, 1, 3988831, 1, 133599424] 	  estimated profit is, -2519183.404964544   	   
+
+forge test --match-contract attackTester --fork-url https://nd-193-046-905.p2pify.com/f38bbbfe5955755aaa0ba48accc03f3d --fork-block-number 10954410
+b'Compiling 2 files with 0.7.6\nSolc 0.7.6 finished in 1.07s\nCompiler run successful\n\nRunning 85 tests for src/test/attack.t.sol:attackTester\n\x1b
+Running attacks on foundry costs time:  22.185192584991455  seconds
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell
+	 [1, 1]
+	Estimated Profit 276307.0  	 Actual Profit -1
+	 [1, 2]
+	Estimated Profit 276306.8354150485  	 Actual Profit -1
+	 [1, 364226]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 206250000]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 250000000]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 258995110]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 300000000]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 443750000]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 481250000]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 506250000]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 587500000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 634416479]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 662500000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 681250000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1078230, 107174549]
+	Estimated Profit -194459.26910500228  	 Actual Profit 0
+	 [3455266, 205484586]
+	Estimated Profit -572413.2223781496  	 Actual Profit -1228178
+	 [1, 363497]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 205837500]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 249500000]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 258477119]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 299400000]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 442862500]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 480287500]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 505237500]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 586325000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 633147646]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 661175000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 679887500]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+ ===== Best Profit:  2.6  Best Paras:  [] ,   time:  183.50079917907715
+ ===== Strength:  0  Last Profit:  2.6   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell, EminenceBuy, EminenceSell
+	 [1, 1, 1, 1]
+	Estimated Profit 552614.0  	 Actual Profit -2
+	 [1, 36577791, 54939, 211572384]
+	Estimated Profit 1105138.1327083427  	 Actual Profit 0
+	 [1, 181945451, 1, 193819572]
+	Estimated Profit 1160077.0  	 Actual Profit 0
+	 [1, 573167733, 1, 348167733]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [6824547, 629995142, 3168304, 206250000]
+	Estimated Profit -680868.8228558898  	 Actual Profit 0
+	 [1, 36504635, 54829, 211149239]
+	Estimated Profit 1105249.0  	 Actual Profit 0
+	 [1, 181581560, 1, 193431932]
+	Estimated Profit 1160077.0  	 Actual Profit 0
+	 [1, 572021397, 1, 347471397]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+ ===== Best Profit:  0.7000000000000001  Best Paras:  [] ,   time:  183.50095200538635
+ ===== Strength:  0  Last Profit:  0.7000000000000001   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, eAAVESell, EminenceSell
+	 [1, 1, 1, 1]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 10839, 1]
+	Estimated Profit 276306.9999032449  	 Actual Profit 0
+	 [1, 65312, 10853, 533840133]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [10571886, 559123960, 360937, 759123918]
+	Estimated Profit -1995535.7675287444  	 Actual Profit -1964161
+	 [1, 1, 10817, 1]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 65181, 10831, 532772452]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+ ===== Best Profit:  0.5  Best Paras:  [] ,   time:  183.5010485649109
+ ===== Strength:  0  Last Profit:  0.5   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, EminenceSell, eAAVESell, EminenceSell
+	 [1, 1, 1, 1, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 393750000, 31250000, 370312, 443750000]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [8746178, 356125047, 356125047, 300000, 356125047]
+	Estimated Profit 536958.6903504021  	 Actual Profit -332082
+	 [1, 392962500, 31187500, 369571, 442862500]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [8728685, 355412796, 355412796, 299400, 355412796]
+	Estimated Profit -84353.0  	 Actual Profit -331941
+ ===== Best Profit:  0.4  Best Paras:  [] ,   time:  183.50113582611084
+ ===== Strength:  0  Last Profit:  0.4   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell, eAAVEBuy, eAAVESell, EminenceSell
+	 [1, 1, 1, 1, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [10837517, 367985704, 367985704, 300000, 367985704]
+	Estimated Profit -2771675.5000038184  	 Actual Profit -2762782
+ ===== Best Profit:  0.1  Best Paras:  [] ,   time:  183.5011944770813
+ ===== Strength:  0  Last Profit:  0.1   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, eAAVESell, EminenceBuy, EminenceSell
+	 [1, 1, 1, 1, 1]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 1, 9178707]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 363280, 5, 1, 1]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 100786225, 73243, 1, 292663665]
+	Estimated Profit 883769.0  	 Actual Profit 0
+	 [1, 171483959, 188086, 1, 245733956]
+	Estimated Profit 883769.0  	 Actual Profit 0
+	 [340877, 1, 1, 243369, 19880783]
+	Estimated Profit -307939.1600709427  	 Actual Profit 0
+	 [1405478, 1, 1715, 1405478, 88430494]
+	Estimated Profit -734686.2978219148  	 Actual Profit 0
+	 [4166503, 209779621, 230859, 3919090, 639269720]
+	Estimated Profit -916649.350693468  	 Actual Profit -1133898
+	 [4279795, 395504431, 376193, 216246, 46093750]
+	Estimated Profit -4174882.6192630325  	 Actual Profit 0
+	 [5222317, 471067216, 419640, 5269235, 414062500]
+	Estimated Profit -5582122.840529326  	 Actual Profit -5972439
+	 [5598311, 290789261, 52149, 5549060, 10156250]
+	Estimated Profit -10470424.724933831  	 Actual Profit -11022030
+	 [5758027, 501403842, 319922, 2959909, 782653841]
+	Estimated Profit 353949.319558518  	 Actual Profit 0
+	 [7521485, 696237152, 559354, 7310569, 141406250]
+	Estimated Profit -13570252.081396133  	 Actual Profit 0
+	 [1, 1, 1, 1, 9160349]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 362553, 4, 1, 1]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 100584652, 73096, 1, 292078337]
+	Estimated Profit 883769.0  	 Actual Profit 0
+	 [1, 171140991, 187709, 1, 245242488]
+	Estimated Profit 883769.0  	 Actual Profit 0
+	 [5746510, 500401034, 319282, 2953989, 781088533]
+	Estimated Profit -1531555.0  	 Actual Profit 0
+ ===== Best Profit:  1.0  Best Paras:  [] ,   time:  183.50137972831726
+ ===== Strength:  1  Last Profit:  0.0   ===== 
+Now global best profit is,  2.6
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, EminenceBuy, eAAVESell, EminenceSell
+	 [1, 1, 1, 9319, 18344]
+	Estimated Profit 276305.9999985676  	 Actual Profit 0
+	 [1, 1, 1, 10855, 9178706]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 10856, 5014076]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 277734, 414062500]
+	Estimated Profit 2493517.0  	 Actual Profit 0
+	 [1, 1, 3988831, 1, 133599424]
+	Estimated Profit -2519183.404964544  	 Actual Profit 0
+	 [1, 363896, 1, 1, 682064793]
+	Estimated Profit 5537549.0  	 Actual Profit 0
+	 [2693782, 142294321, 1, 1, 275208168]
+	Estimated Profit -200264.5824424401  	 Actual Profit 0
+	 [2717013, 252347323, 11998262, 155860, 476562500]
+	Estimated Profit -9449093.010236269  	 Actual Profit 0
+	 [3816166, 332318089, 7613262, 36698, 303906250]
+	Estimated Profit -7707177.35087337  	 Actual Profit -7438716
+	 [4699820, 436618411, 5776368, 336914, 197656250]
+	Estimated Profit -8249650.066442941  	 Actual Profit 0
+	 [6503905, 538281250, 1, 97852, 28906250]
+	Estimated Profit -6290292.360719241  	 Actual Profit -6112511
+	 [7383417, 485117645, 2290980, 6445, 538242645]
+	Estimated Profit -3790142.169191465  	 Actual Profit 0
+	 [8854047, 680468750, 171034, 525586, 464843750]
+	Estimated Profit -2568314.605087219  	 Actual Profit -3910697
+	 [1, 1, 1, 9300, 18307]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 10833, 9160348]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 10834, 5004047]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 277178, 413234375]
+	Estimated Profit 2493517.0  	 Actual Profit 0
+	 [1, 363168, 1, 1, 680700663]
+	Estimated Profit 5537549.0  	 Actual Profit 0
+ ===== Best Profit:  1.0  Best Paras:  [] ,   time:  183.50164008140564
+ ===== Strength:  1  Last Profit:  0.0   ===== 
+Now global best profit is,  2.6
+===== in total  85  concrete attack vectors are checked ======
+==== in total  12  executions succeed
+===== Next round we have  7  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  1  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 2.6 ================================= 
+ ================================================================================= 
+EminenceBuy number of points: 
+200
+EminenceSell number of points: 
+200
+eAAVEBuy number of points: 
+200
+eAAVESell number of points: 
+200
+Check Contract: 	EminenceBuy, EminenceSell    Profit of Previous Interation: 	2.6  time: 183.57338762283325
+The optimizer takes 13.586778163909912 seconds
+best para: [1.00000000e+00 6.46874526e+08] best profit: 5537550.0
+Optimization terminated successfully.    Next only show the first 5/25 profitable solutions
+[1, 1] 	  estimated profit is, 276307.0   	   
+[1, 92924] 	  estimated profit is, 276306.2711470742   	   
+[1, 181996] 	  estimated profit is, 276306.9696662426   	   
+[1, 320507] 	  estimated profit is, 276307.0   	   
+[1, 363981] 	  estimated profit is, 276306.999974465   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, eAAVESell, EminenceBuy, EminenceSell    Profit of Previous Interation: 	1.0  time: 197.21686935424805
+The optimizer takes 39.359007120132446 seconds
+best para: [1.00000000e+00 1.00786225e+08 7.32430654e+04 1.00000000e+00
+ 2.92663665e+08] best profit: 883769.0
+Optimization terminated successfully.    Next only show the first 5/13 profitable solutions
+[1, 1, 1, 1, 1] 	  estimated profit is, 276306.0   	   
+[1, 1, 1, 1, 9178707] 	  estimated profit is, 276306.0   	   
+[1, 363280, 5, 1, 1] 	  estimated profit is, 276306.0   	   
+[1, 100786225, 73243, 1, 292663665] 	  estimated profit is, 883769.0   	   
+[1, 171483959, 188086, 1, 245733956] 	  estimated profit is, 883769.0   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, EminenceBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	1.0  time: 236.63260078430176
+The optimizer takes 49.2864716053009 seconds
+best para: [1.00000000e+00 3.63896607e+05 1.00000000e+00 1.00000000e+00
+ 6.82064794e+08] best profit: 5537549.0
+Optimization terminated successfully.    Next only show the first 5/13 profitable solutions
+[1, 1, 1, 9319, 18344] 	  estimated profit is, 276305.9999985676   	   
+[1, 1, 1, 10855, 9178706] 	  estimated profit is, 276306.0   	   
+[1, 1, 1, 10856, 5014076] 	  estimated profit is, 276306.0   	   
+[1, 1, 1, 277734, 414062500] 	  estimated profit is, 2493517.0   	   
+[1, 1, 3988831, 1, 133599424] 	  estimated profit is, -2519183.404964544   	   
+
+Check Contract: 	EminenceBuy, EminenceSell, EminenceBuy, EminenceSell    Profit of Previous Interation: 	0.7000000000000001  time: 285.9930601119995
+The optimizer takes 58.878032207489014 seconds
+best para: [4.44918957e+05 5.10148378e+08 1.00000001e+00 7.33584996e+08] best profit: 7267333.04324691
+Optimization terminated successfully.    Next only show the first 5/27 profitable solutions
+[1, 1, 1, 1] 	  estimated profit is, 552614.0   	   
+[1, 1, 1, 728445] 	  estimated profit is, 552614.0   	   
+[1, 1, 1297375, 127616741] 	  estimated profit is, 1153633.724277893   	   
+[1, 22, 1, 406493399] 	  estimated profit is, 2769825.0   	   
+[1, 615204, 1, 177385950] 	  estimated profit is, 1160077.0   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	0.5  time: 344.96285915374756
+The optimizer takes 41.812543869018555 seconds
+best para: [3.25125350e+06 8.00000000e+08 5.42259186e+05 8.00000000e+08] best profit: 2286297.4998255894
+Optimization terminated successfully.    Next only show the first 5/27 profitable solutions
+[1, 1, 1, 5434861] 	  estimated profit is, 276307.0   	   
+[1, 1, 10855, 1] 	  estimated profit is, 276307.0   	   
+[1, 1, 10855, 8814480] 	  estimated profit is, 276307.0   	   
+[1, 1, 388476, 107031250] 	  estimated profit is, 883770.0   	   
+[1, 64062500, 42608, 357738290] 	  estimated profit is, 2174701.0   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, EminenceSell, eAAVESell, EminenceSell    Profit of Previous Interation: 	0.4  time: 386.854909658432
+The optimizer takes 36.176687240600586 seconds
+best para: [1.00000000e+00 1.32812501e+08 7.20312498e+08 2.87109896e+05
+ 1.01562501e+08] best profit: 5813858.0
+Optimization terminated successfully.    Next only show the first 5/10 profitable solutions
+[1, 1, 1, 1, 1] 	  estimated profit is, 552615.0   	   
+[1, 1, 1, 10700, 1] 	  estimated profit is, 552615.0   	   
+[1, 1, 4799, 1, 1] 	  estimated profit is, 552615.0   	   
+[1, 1, 150429769, 304102, 167239682] 	  estimated profit is, 1160078.0   	   
+[1, 132812500, 720312498, 287109, 101562500] 	  estimated profit is, 5813858.0   	   
+
+Check Contract: 	EminenceBuy, EminenceSell, eAAVEBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	0.1  time: 423.09207105636597
+The optimizer takes 33.78649544715881 seconds
+best para: [1.00000000e+00 5.32812310e+08 3.20312311e+08 5.87109066e+05
+ 5.01562311e+08] best profit: 2769826.0
+Optimization terminated successfully.    Next only show the first 5/12 profitable solutions
+[1, 1, 1, 1, 1] 	  estimated profit is, 552614.7514235675   	   
+[1, 1, 1, 10856, 8814480] 	  estimated profit is, 552615.0   	   
+[1, 41406250, 373272396, 311133, 622603465] 	  estimated profit is, 2451009.0   	   
+[1, 110015410, 1, 346289, 100872981] 	  estimated profit is, 1160078.0   	   
+[1, 130468750, 486718750, 413086, 114843750] 	  estimated profit is, 1160078.0   	   
+
+forge test --match-contract attackTester --fork-url https://nd-193-046-905.p2pify.com/f38bbbfe5955755aaa0ba48accc03f3d --fork-block-number 10954410
+b'Compiling 2 files with 0.7.6\nSolc 0.7.6 finished in 1.27s\nCompiler run successful (with warnings)\n\nRunning 218 tests for src/test/attack.t.sol:a
+Running attacks on foundry costs time:  22.687230825424194  seconds
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell
+	 [1, 1]
+	Estimated Profit 276307.0  	 Actual Profit -1
+	 [1, 92924]
+	Estimated Profit 276306.2711470742  	 Actual Profit 0
+	 [1, 181996]
+	Estimated Profit 276306.9696662426  	 Actual Profit 0
+	 [1, 320507]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 363981]
+	Estimated Profit 276306.999974465  	 Actual Profit 0
+	 [1, 134375000]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 173437500]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 229687500]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 265624992]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 278125000]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 296874687]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 308961011]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 390624708]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 410937500]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 446875000]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 473437500]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 517084847]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 567187500]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 578125000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 596875000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 646874526]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 704687500]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 721875000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 767187500]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [790721, 52704302]
+	Estimated Profit -356026.6831513811  	 Actual Profit -219565
+	 [1, 92738]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 181632]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 319865]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 363253]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 134106250]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 173090625]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 229228125]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 265093742]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 277568750]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 296280937]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 308343088]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 389843458]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 410115625]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 445981250]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 472490625]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 516050677]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 566053125]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 576968750]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 595681250]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 645580776]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 703278125]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 720431250]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 765653125]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+ ===== Best Profit:  4.7  Best Paras:  [] ,   time:  479.6777346134186
+ ===== Strength:  1  Last Profit:  2.6   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, eAAVESell, EminenceBuy, EminenceSell
+	 [1, 1, 1, 1, 1]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 1, 9178707]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 363280, 5, 1, 1]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 100786225, 73243, 1, 292663665]
+	Estimated Profit 883769.0  	 Actual Profit 0
+	 [1, 171483959, 188086, 1, 245733956]
+	Estimated Profit 883769.0  	 Actual Profit 0
+	 [340877, 1, 1, 243369, 19880783]
+	Estimated Profit -307939.1600709427  	 Actual Profit 0
+	 [1405478, 1, 1715, 1405478, 88430494]
+	Estimated Profit -734686.2978219148  	 Actual Profit 0
+	 [4166503, 209779621, 230859, 3919090, 639269720]
+	Estimated Profit -916649.350693468  	 Actual Profit -1133898
+	 [4279795, 395504431, 376193, 216246, 46093750]
+	Estimated Profit -4174882.6192630325  	 Actual Profit 0
+	 [5222317, 471067216, 419640, 5269235, 414062500]
+	Estimated Profit -5582122.840529326  	 Actual Profit -5972439
+	 [5598311, 290789261, 52149, 5549060, 10156250]
+	Estimated Profit -10470424.724933831  	 Actual Profit -11022030
+	 [5758027, 501403842, 319922, 2959909, 782653841]
+	Estimated Profit 353949.319558518  	 Actual Profit 0
+	 [7521485, 696237152, 559354, 7310569, 141406250]
+	Estimated Profit -13570252.081396133  	 Actual Profit 0
+	 [1, 1, 1, 1, 9160349]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 362553, 4, 1, 1]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 100584652, 73096, 1, 292078337]
+	Estimated Profit 883769.0  	 Actual Profit 0
+	 [1, 171140991, 187709, 1, 245242488]
+	Estimated Profit 883769.0  	 Actual Profit 0
+	 [5746510, 500401034, 319282, 2953989, 781088533]
+	Estimated Profit -1531555.0  	 Actual Profit 0
+ ===== Best Profit:  1.0  Best Paras:  [] ,   time:  479.67800211906433
+ ===== Strength:  1  Last Profit:  1.0   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, EminenceBuy, eAAVESell, EminenceSell
+	 [1, 1, 1, 9319, 18344]
+	Estimated Profit 276305.9999985676  	 Actual Profit 0
+	 [1, 1, 1, 10855, 9178706]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 10856, 5014076]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 277734, 414062500]
+	Estimated Profit 2493517.0  	 Actual Profit 0
+	 [1, 1, 3988831, 1, 133599424]
+	Estimated Profit -2519183.404964544  	 Actual Profit 0
+	 [1, 363896, 1, 1, 682064793]
+	Estimated Profit 5537549.0  	 Actual Profit 0
+	 [2693782, 142294321, 1, 1, 275208168]
+	Estimated Profit -200264.5824424401  	 Actual Profit 0
+	 [2717013, 252347323, 11998262, 155860, 476562500]
+	Estimated Profit -9449093.010236269  	 Actual Profit 0
+	 [3816166, 332318089, 7613262, 36698, 303906250]
+	Estimated Profit -7707177.35087337  	 Actual Profit -7438716
+	 [4699820, 436618411, 5776368, 336914, 197656250]
+	Estimated Profit -8249650.066442941  	 Actual Profit 0
+	 [6503905, 538281250, 1, 97852, 28906250]
+	Estimated Profit -6290292.360719241  	 Actual Profit -6112511
+	 [7383417, 485117645, 2290980, 6445, 538242645]
+	Estimated Profit -3790142.169191465  	 Actual Profit 0
+	 [8854047, 680468750, 171034, 525586, 464843750]
+	Estimated Profit -2568314.605087219  	 Actual Profit -3910697
+	 [1, 1, 1, 9300, 18307]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 10833, 9160348]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 10834, 5004047]
+	Estimated Profit 276306.0  	 Actual Profit 0
+	 [1, 1, 1, 277178, 413234375]
+	Estimated Profit 2493517.0  	 Actual Profit 0
+	 [1, 363168, 1, 1, 680700663]
+	Estimated Profit 5537549.0  	 Actual Profit 0
+ ===== Best Profit:  1.0  Best Paras:  [] ,   time:  479.678227186203
+ ===== Strength:  1  Last Profit:  1.0   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell, EminenceBuy, EminenceSell
+	 [1, 1, 1, 1]
+	Estimated Profit 552614.0  	 Actual Profit -2
+	 [1, 1, 1, 728445]
+	Estimated Profit 552614.0  	 Actual Profit 0
+	 [1, 1, 1297375, 127616741]
+	Estimated Profit 1153633.724277893  	 Actual Profit 0
+	 [1, 22, 1, 406493399]
+	Estimated Profit 2769825.0  	 Actual Profit 0
+	 [1, 615204, 1, 177385950]
+	Estimated Profit 1160077.0  	 Actual Profit 0
+	 [1, 303897337, 1, 652324640]
+	Estimated Profit 4349402.0  	 Actual Profit 0
+	 [1, 352524946, 1, 107812500]
+	Estimated Profit 2451008.0  	 Actual Profit 0
+	 [1, 370312494, 1, 595312493]
+	Estimated Profit 4349402.0  	 Actual Profit 0
+	 [1, 578906230, 1, 277343734]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 639062477, 1, 139062500]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 691406250, 1, 364843750]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 749211886, 1, 219530251]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 782812490, 1, 432812493]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [69919, 6231946, 89087, 12910988]
+	Estimated Profit 393609.322306145  	 Actual Profit 0
+	 [151943, 167416, 1, 16654861]
+	Estimated Profit 400671.2814962547  	 Actual Profit 0
+	 [367632, 7812500, 5148163, 498495388]
+	Estimated Profit 1217278.8853180371  	 Actual Profit -28223
+	 [397964, 93, 337306, 55157711]
+	Estimated Profit 424808.1955979783  	 Actual Profit -137528
+	 [444918, 510148377, 1, 733584996]
+	Estimated Profit 7267333.04324691  	 Actual Profit 0
+	 [1287962, 122373177, 8955904, 52808382]
+	Estimated Profit -7274582.2162701115  	 Actual Profit 0
+	 [1436459, 710142107, 1, 533580367]
+	Estimated Profit 4984861.58224329  	 Actual Profit 0
+	 [1503150, 128906250, 7936742, 727343750]
+	Estimated Profit 1806696.105555918  	 Actual Profit -159073
+	 [1787919, 185465810, 1796942, 11718750]
+	Estimated Profit -748333.5403667409  	 Actual Profit 0
+	 [2719865, 391, 1, 133969395]
+	Estimated Profit -183944.2600829061  	 Actual Profit -1267901
+	 [4699823, 60696014, 1, 373606036]
+	Estimated Profit 525095.8587879203  	 Actual Profit 0
+	 [5076590, 472111382, 1, 293977]
+	Estimated Profit -186318.08775530756  	 Actual Profit 0
+	 [6697777, 57265591, 120687, 271369587]
+	Estimated Profit -2022454.2989537697  	 Actual Profit -3256126
+	 [8241790, 711816071, 8241790, 769896673]
+	Estimated Profit 1660192.394378014  	 Actual Profit -422646
+	 [1, 1, 1, 726988]
+	Estimated Profit 552614.0  	 Actual Profit 0
+	 [1, 1, 1294780, 127361507]
+	Estimated Profit 1156229.0  	 Actual Profit 0
+	 [1, 21, 1, 405680412]
+	Estimated Profit 2451008.0  	 Actual Profit 0
+	 [1, 613973, 1, 177031178]
+	Estimated Profit 1160077.0  	 Actual Profit 0
+	 [1, 303289542, 1, 651019990]
+	Estimated Profit 4349402.0  	 Actual Profit 0
+	 [1, 351819896, 1, 107596875]
+	Estimated Profit 2451008.0  	 Actual Profit 0
+	 [1, 369571869, 1, 594121868]
+	Estimated Profit 3058471.0  	 Actual Profit 0
+	 [1, 577748417, 1, 276789046]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 637784352, 1, 138784375]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 690023437, 1, 364114062]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 747713462, 1, 219091190]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 781246865, 1, 431946868]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [69779, 6219482, 88908, 12885166]
+	Estimated Profit 393929.0  	 Actual Profit 0
+	 [151639, 167081, 1, 16621551]
+	Estimated Profit 400976.0  	 Actual Profit 0
+	 [366896, 7796875, 5137866, 497498397]
+	Estimated Profit -614489.0  	 Actual Profit -28167
+	 [397168, 92, 336631, 55047395]
+	Estimated Profit -181183.0  	 Actual Profit -137253
+	 [444028, 509128080, 1, 732117826]
+	Estimated Profit 7268224.0  	 Actual Profit 0
+	 [1433586, 708721822, 1, 532513206]
+	Estimated Profit 4987735.0  	 Actual Profit 0
+	 [1500143, 128648437, 7920868, 725889062]
+	Estimated Profit 166940.0  	 Actual Profit -158757
+	 [4690423, 60574621, 1, 372858823]
+	Estimated Profit 534496.0  	 Actual Profit 0
+	 [8225306, 710392438, 8225306, 768356879]
+	Estimated Profit 1693162.0  	 Actual Profit -421807
+ ===== Best Profit:  4.1000000000000005  Best Paras:  [] ,   time:  479.67880415916443
+ ===== Strength:  1  Last Profit:  0.7000000000000001   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, eAAVESell, EminenceSell
+	 [1, 1, 1, 5434861]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 10855, 1]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 10855, 8814480]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 388476, 107031250]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 64062500, 42608, 357738290]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 132812488, 540234, 382812497]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 138273772, 125664, 255461272]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 300781250, 47461, 292968750]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 366406250, 73243, 139843750]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 392968750, 374414, 38281250]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 442968750, 36915, 288281250]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 485156250, 87305, 8593750]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 510156250, 68555, 733593750]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 549175824, 16993, 522613324]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 673558702, 423047, 139062500]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 710156250, 218555, 533593750]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 764711686, 230859, 220312500]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 782812500, 352734, 432812500]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 786711633, 257227, 582026243]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [2471872, 733812692, 188899, 726000529]
+	Estimated Profit -297170.4956740029  	 Actual Profit 0
+	 [3251253, 799999999, 542259, 799999999]
+	Estimated Profit 2286297.4998255894  	 Actual Profit 0
+	 [3804769, 799996051, 542259, 799997485]
+	Estimated Profit 1732781.505343832  	 Actual Profit 0
+	 [4166504, 1, 2930, 364034056]
+	Estimated Profit 503210.48454674333  	 Actual Profit 0
+	 [4498837, 419449877, 318164, 309601258]
+	Estimated Profit -1357887.9711150117  	 Actual Profit 0
+	 [8068230, 183665031, 174024, 550852791]
+	Estimated Profit -1537558.6335941888  	 Actual Profit -2016121
+	 [9401326, 739171288, 166992, 712608788]
+	Estimated Profit -1664972.3850774579  	 Actual Profit 0
+	 [18000000, 264923401, 86258, 509500501]
+	Estimated Profit -12406320.0  	 Actual Profit 0
+	 [1, 1, 1, 5423991]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 10833, 1]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 10833, 8796851]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 387699, 106817187]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 63934375, 42522, 357022813]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 132546863, 539153, 382046872]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 137997224, 125412, 254950349]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 300179687, 47366, 292382812]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 365673437, 73096, 139564062]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 392182812, 373665, 38204687]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 442082812, 36841, 287704687]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 484185937, 87130, 8576562]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 509135937, 68417, 732126562]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 548077472, 16959, 521568097]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 672211584, 422200, 138784375]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 708735937, 218117, 532526562]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 763182262, 230397, 219871875]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 781246875, 352028, 431946875]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 785138209, 256712, 580862190]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [3244750, 798399999, 541174, 798399999]
+	Estimated Profit -1070048.0  	 Actual Profit 0
+	 [3797159, 798396058, 541174, 798397490]
+	Estimated Profit 1740392.0  	 Actual Profit 0
+	 [4158170, 1, 2924, 363305987]
+	Estimated Profit -127260.0  	 Actual Profit 0
+ ===== Best Profit:  4.2  Best Paras:  [] ,   time:  479.67929792404175
+ ===== Strength:  1  Last Profit:  0.5   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, EminenceSell, eAAVESell, EminenceSell
+	 [1, 1, 1, 1, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 1, 1, 10700, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 1, 4799, 1, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 1, 150429769, 304102, 167239682]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 132812500, 720312498, 287109, 101562500]
+	Estimated Profit 5813858.0  	 Actual Profit 0
+	 [1, 205468750, 261718750, 94336, 189843750]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 245312500, 557812500, 202735, 514062500]
+	Estimated Profit 2451009.0  	 Actual Profit 0
+	 [10955776, 559900336, 454620458, 336914, 197656250]
+	Estimated Profit -3458958.241265867  	 Actual Profit 0
+	 [13589954, 230899762, 22656250, 361198, 260275353]
+	Estimated Profit -9898004.602285555  	 Actual Profit 0
+	 [18000000, 72656250, 178921651, 43482, 800000000]
+	Estimated Profit -7747293.0  	 Actual Profit 0
+	 [1, 1, 1, 10678, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 1, 4789, 1, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 1, 150128909, 303493, 166905202]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 132546875, 718871873, 286534, 101359375]
+	Estimated Profit 5813858.0  	 Actual Profit 0
+	 [1, 205057812, 261195312, 94147, 189464062]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 244821875, 556696875, 202329, 513034375]
+	Estimated Profit 2451009.0  	 Actual Profit 0
+ ===== Best Profit:  1.3  Best Paras:  [] ,   time:  479.6794774532318
+ ===== Strength:  1  Last Profit:  0.4   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell, eAAVEBuy, eAAVESell, EminenceSell
+	 [1, 1, 1, 1, 1]
+	Estimated Profit 552614.7514235675  	 Actual Profit 0
+	 [1, 1, 1, 10856, 8814480]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 41406250, 373272396, 311133, 622603465]
+	Estimated Profit 2451009.0  	 Actual Profit 0
+	 [1, 110015410, 1, 346289, 100872981]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 130468750, 486718750, 413086, 114843750]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 205468585, 261718590, 94336, 189843632]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 411718750, 67968750, 42774, 296093750]
+	Estimated Profit 2769826.0  	 Actual Profit 0
+	 [1, 532812310, 320312310, 587109, 501562310]
+	Estimated Profit 2769826.0  	 Actual Profit 0
+	 [68726, 94103728, 720308828, 287109, 101562500]
+	Estimated Profit 1091352.9947788753  	 Actual Profit 0
+	 [5521173, 107330915, 560544492, 454936, 447650534]
+	Estimated Profit 1473182.2346044611  	 Actual Profit 0
+	 [5521991, 230601000, 543100981, 202734, 499350983]
+	Estimated Profit -411655.3009115942  	 Actual Profit 0
+	 [8971244, 706548055, 69048056, 1, 66122287]
+	Estimated Profit -351119.28445747495  	 Actual Profit 0
+	 [1, 1, 1, 10834, 8796851]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 41323437, 372525851, 310510, 621358258]
+	Estimated Profit 2451009.0  	 Actual Profit 0
+	 [1, 109795379, 1, 345596, 100671235]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 130207812, 485745312, 412259, 114614062]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 205057647, 261195152, 94147, 189463944]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 410895312, 67832812, 42688, 295501562]
+	Estimated Profit 2769826.0  	 Actual Profit 0
+	 [1, 531746685, 319671685, 585934, 500559185]
+	Estimated Profit 2769826.0  	 Actual Profit 0
+	 [68588, 93915520, 718868210, 286534, 101359375]
+	Estimated Profit 484028.0  	 Actual Profit 0
+	 [5510130, 107116253, 559423403, 454026, 446755232]
+	Estimated Profit 1055499.0  	 Actual Profit 0
+ ===== Best Profit:  1.9000000000000001  Best Paras:  [] ,   time:  479.67969250679016
+ ===== Strength:  1  Last Profit:  0.1   ===== 
+Now global best profit is,  4.7
+===== in total  218  concrete attack vectors are checked ======
+==== in total  19  executions succeed
+===== Next round we have  7  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  2  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 4.7 ================================= 
+ ================================================================================= 
+EminenceBuy number of points: 
+200
+EminenceSell number of points: 
+200
+eAAVEBuy number of points: 
+200
+eAAVESell number of points: 
+200
+Check Contract: 	EminenceBuy, EminenceSell    Profit of Previous Interation: 	4.7  time: 479.75197172164917
+The optimizer takes 4.472079038619995 seconds
+best para: [1.00000000e+00 6.46874526e+08] best profit: 5537550.0
+Optimization terminated successfully.    Next only show the first 5/25 profitable solutions
+[1, 1] 	  estimated profit is, 276307.0   	   
+[1, 92924] 	  estimated profit is, 276306.2711470742   	   
+[1, 181996] 	  estimated profit is, 276306.9696662426   	   
+[1, 320507] 	  estimated profit is, 276307.0   	   
+[1, 363981] 	  estimated profit is, 276306.999974465   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	4.2  time: 484.28172731399536
+The optimizer takes 59.963361740112305 seconds
+best para: [3.25125350e+06 8.00000000e+08 5.42259186e+05 8.00000000e+08] best profit: 2286297.4998255894
+Optimization terminated successfully.    Next only show the first 5/27 profitable solutions
+[1, 1, 1, 5434861] 	  estimated profit is, 276307.0   	   
+[1, 1, 10855, 1] 	  estimated profit is, 276307.0   	   
+[1, 1, 10855, 8814480] 	  estimated profit is, 276307.0   	   
+[1, 1, 388476, 107031250] 	  estimated profit is, 883770.0   	   
+[1, 64062500, 42608, 357738290] 	  estimated profit is, 2174701.0   	   
+
+Check Contract: 	EminenceBuy, EminenceSell, EminenceBuy, EminenceSell    Profit of Previous Interation: 	4.1000000000000005  time: 544.3215370178223
+The optimizer takes 57.43197178840637 seconds
+best para: [4.44918957e+05 5.10148378e+08 1.00000001e+00 7.33584996e+08] best profit: 7267333.04324691
+Optimization terminated successfully.    Next only show the first 5/27 profitable solutions
+[1, 1, 1, 1] 	  estimated profit is, 552614.0   	   
+[1, 1, 1, 728445] 	  estimated profit is, 552614.0   	   
+[1, 1, 1297375, 127616741] 	  estimated profit is, 1153633.724277893   	   
+[1, 22, 1, 406493399] 	  estimated profit is, 2769825.0   	   
+[1, 615204, 1, 177385950] 	  estimated profit is, 1160077.0   	   
+
+Check Contract: 	EminenceBuy, EminenceSell, eAAVEBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	1.9000000000000001  time: 601.8304715156555
+The optimizer takes 34.109938859939575 seconds
+best para: [1.00000000e+00 5.32812310e+08 3.20312311e+08 5.87109066e+05
+ 5.01562311e+08] best profit: 2769826.0
+Optimization terminated successfully.    Next only show the first 5/12 profitable solutions
+[1, 1, 1, 1, 1] 	  estimated profit is, 552614.7514235675   	   
+[1, 1, 1, 10856, 8814480] 	  estimated profit is, 552615.0   	   
+[1, 41406250, 373272396, 311133, 622603465] 	  estimated profit is, 2451009.0   	   
+[1, 110015410, 1, 346289, 100872981] 	  estimated profit is, 1160078.0   	   
+[1, 130468750, 486718750, 413086, 114843750] 	  estimated profit is, 1160078.0   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, EminenceSell, eAAVESell, EminenceSell    Profit of Previous Interation: 	1.3  time: 636.0043909549713
+The optimizer takes 29.701108932495117 seconds
+best para: [1.00000000e+00 1.32812501e+08 7.20312498e+08 2.87109896e+05
+ 1.01562501e+08] best profit: 5813858.0
+Optimization terminated successfully.    Next only show the first 5/10 profitable solutions
+[1, 1, 1, 1, 1] 	  estimated profit is, 552615.0   	   
+[1, 1, 1, 10700, 1] 	  estimated profit is, 552615.0   	   
+[1, 1, 4799, 1, 1] 	  estimated profit is, 552615.0   	   
+[1, 1, 150429769, 304102, 167239682] 	  estimated profit is, 1160078.0   	   
+[1, 132812500, 720312498, 287109, 101562500] 	  estimated profit is, 5813858.0   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, EminenceBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	1.0  time: 665.7825081348419
+Timeout!
+Check Contract: 	EminenceBuy, eAAVEBuy, eAAVESell, EminenceBuy, EminenceSell    Profit of Previous Interation: 	1.0  time: 775.8528490066528
+Timeout!
+forge test --match-contract attackTester --fork-url https://nd-193-046-905.p2pify.com/f38bbbfe5955755aaa0ba48accc03f3d --fork-block-number 10954410
+b'Compiling 2 files with 0.7.6\nSolc 0.7.6 finished in 1.19s\nCompiler run successful (with warnings)\n\nRunning 182 tests for src/test/attack.t.sol:a
+Running attacks on foundry costs time:  23.891905069351196  seconds
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell
+	 [1, 1]
+	Estimated Profit 276307.0  	 Actual Profit -1
+	 [1, 92924]
+	Estimated Profit 276306.2711470742  	 Actual Profit 0
+	 [1, 181996]
+	Estimated Profit 276306.9696662426  	 Actual Profit 0
+	 [1, 320507]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 363981]
+	Estimated Profit 276306.999974465  	 Actual Profit 0
+	 [1, 134375000]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 173437500]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 229687500]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 265624992]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 278125000]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 296874687]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 308961011]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 390624708]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 410937500]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 446875000]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 473437500]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 517084847]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 567187500]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 578125000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 596875000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 646874526]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 704687500]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 721875000]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 767187500]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [790721, 52704302]
+	Estimated Profit -356026.6831513811  	 Actual Profit -219565
+	 [1, 92738]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 181632]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 319865]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 363253]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 134106250]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 173090625]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 229228125]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 265093742]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 277568750]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 296280937]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 308343088]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 389843458]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 410115625]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 445981250]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 472490625]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 516050677]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 566053125]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 576968750]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 595681250]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 645580776]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 703278125]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 720431250]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 765653125]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+ ===== Best Profit:  4.7  Best Paras:  [] ,   time:  909.9706528186798
+ ===== Strength:  1  Last Profit:  4.7   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, eAAVESell, EminenceSell
+	 [1, 1, 1, 5434861]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 10855, 1]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 10855, 8814480]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 388476, 107031250]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 64062500, 42608, 357738290]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 132812488, 540234, 382812497]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 138273772, 125664, 255461272]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 300781250, 47461, 292968750]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 366406250, 73243, 139843750]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 392968750, 374414, 38281250]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 442968750, 36915, 288281250]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 485156250, 87305, 8593750]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 510156250, 68555, 733593750]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 549175824, 16993, 522613324]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 673558702, 423047, 139062500]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 710156250, 218555, 533593750]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 764711686, 230859, 220312500]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 782812500, 352734, 432812500]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 786711633, 257227, 582026243]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [2471872, 733812692, 188899, 726000529]
+	Estimated Profit -297170.4956740029  	 Actual Profit 0
+	 [3251253, 799999999, 542259, 799999999]
+	Estimated Profit 2286297.4998255894  	 Actual Profit 0
+	 [3804769, 799996051, 542259, 799997485]
+	Estimated Profit 1732781.505343832  	 Actual Profit 0
+	 [4166504, 1, 2930, 364034056]
+	Estimated Profit 503210.48454674333  	 Actual Profit 0
+	 [4498837, 419449877, 318164, 309601258]
+	Estimated Profit -1357887.9711150117  	 Actual Profit 0
+	 [8068230, 183665031, 174024, 550852791]
+	Estimated Profit -1537558.6335941888  	 Actual Profit -2016121
+	 [9401326, 739171288, 166992, 712608788]
+	Estimated Profit -1664972.3850774579  	 Actual Profit 0
+	 [18000000, 264923401, 86258, 509500501]
+	Estimated Profit -12406320.0  	 Actual Profit 0
+	 [1, 1, 1, 5423991]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 10833, 1]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 10833, 8796851]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 1, 387699, 106817187]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 63934375, 42522, 357022813]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 132546863, 539153, 382046872]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 137997224, 125412, 254950349]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 300179687, 47366, 292382812]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 365673437, 73096, 139564062]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 392182812, 373665, 38204687]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 442082812, 36841, 287704687]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 484185937, 87130, 8576562]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 509135937, 68417, 732126562]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 548077472, 16959, 521568097]
+	Estimated Profit 883770.0  	 Actual Profit 0
+	 [1, 672211584, 422200, 138784375]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 708735937, 218117, 532526562]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 763182262, 230397, 219871875]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 781246875, 352028, 431946875]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 785138209, 256712, 580862190]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [3244750, 798399999, 541174, 798399999]
+	Estimated Profit -1070048.0  	 Actual Profit 0
+	 [3797159, 798396058, 541174, 798397490]
+	Estimated Profit 1740392.0  	 Actual Profit 0
+	 [4158170, 1, 2924, 363305987]
+	Estimated Profit -127260.0  	 Actual Profit 0
+ ===== Best Profit:  4.2  Best Paras:  [] ,   time:  909.9711956977844
+ ===== Strength:  1  Last Profit:  4.2   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell, EminenceBuy, EminenceSell
+	 [1, 1, 1, 1]
+	Estimated Profit 552614.0  	 Actual Profit -2
+	 [1, 1, 1, 728445]
+	Estimated Profit 552614.0  	 Actual Profit 0
+	 [1, 1, 1297375, 127616741]
+	Estimated Profit 1153633.724277893  	 Actual Profit 0
+	 [1, 22, 1, 406493399]
+	Estimated Profit 2769825.0  	 Actual Profit 0
+	 [1, 615204, 1, 177385950]
+	Estimated Profit 1160077.0  	 Actual Profit 0
+	 [1, 303897337, 1, 652324640]
+	Estimated Profit 4349402.0  	 Actual Profit 0
+	 [1, 352524946, 1, 107812500]
+	Estimated Profit 2451008.0  	 Actual Profit 0
+	 [1, 370312494, 1, 595312493]
+	Estimated Profit 4349402.0  	 Actual Profit 0
+	 [1, 578906230, 1, 277343734]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 639062477, 1, 139062500]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 691406250, 1, 364843750]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 749211886, 1, 219530251]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 782812490, 1, 432812493]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [69919, 6231946, 89087, 12910988]
+	Estimated Profit 393609.322306145  	 Actual Profit 0
+	 [151943, 167416, 1, 16654861]
+	Estimated Profit 400671.2814962547  	 Actual Profit 0
+	 [367632, 7812500, 5148163, 498495388]
+	Estimated Profit 1217278.8853180371  	 Actual Profit -28223
+	 [397964, 93, 337306, 55157711]
+	Estimated Profit 424808.1955979783  	 Actual Profit -137528
+	 [444918, 510148377, 1, 733584996]
+	Estimated Profit 7267333.04324691  	 Actual Profit 0
+	 [1287962, 122373177, 8955904, 52808382]
+	Estimated Profit -7274582.2162701115  	 Actual Profit 0
+	 [1436459, 710142107, 1, 533580367]
+	Estimated Profit 4984861.58224329  	 Actual Profit 0
+	 [1503150, 128906250, 7936742, 727343750]
+	Estimated Profit 1806696.105555918  	 Actual Profit -159073
+	 [1787919, 185465810, 1796942, 11718750]
+	Estimated Profit -748333.5403667409  	 Actual Profit 0
+	 [2719865, 391, 1, 133969395]
+	Estimated Profit -183944.2600829061  	 Actual Profit -1267901
+	 [4699823, 60696014, 1, 373606036]
+	Estimated Profit 525095.8587879203  	 Actual Profit 0
+	 [5076590, 472111382, 1, 293977]
+	Estimated Profit -186318.08775530756  	 Actual Profit 0
+	 [6697777, 57265591, 120687, 271369587]
+	Estimated Profit -2022454.2989537697  	 Actual Profit -3256126
+	 [8241790, 711816071, 8241790, 769896673]
+	Estimated Profit 1660192.394378014  	 Actual Profit -422646
+	 [1, 1, 1, 726988]
+	Estimated Profit 552614.0  	 Actual Profit 0
+	 [1, 1, 1294780, 127361507]
+	Estimated Profit 1156229.0  	 Actual Profit 0
+	 [1, 21, 1, 405680412]
+	Estimated Profit 2451008.0  	 Actual Profit 0
+	 [1, 613973, 1, 177031178]
+	Estimated Profit 1160077.0  	 Actual Profit 0
+	 [1, 303289542, 1, 651019990]
+	Estimated Profit 4349402.0  	 Actual Profit 0
+	 [1, 351819896, 1, 107596875]
+	Estimated Profit 2451008.0  	 Actual Profit 0
+	 [1, 369571869, 1, 594121868]
+	Estimated Profit 3058471.0  	 Actual Profit 0
+	 [1, 577748417, 1, 276789046]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 637784352, 1, 138784375]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 690023437, 1, 364114062]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 747713462, 1, 219091190]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [1, 781246865, 1, 431946868]
+	Estimated Profit 5813857.0  	 Actual Profit 0
+	 [69779, 6219482, 88908, 12885166]
+	Estimated Profit 393929.0  	 Actual Profit 0
+	 [151639, 167081, 1, 16621551]
+	Estimated Profit 400976.0  	 Actual Profit 0
+	 [366896, 7796875, 5137866, 497498397]
+	Estimated Profit -614489.0  	 Actual Profit -28167
+	 [397168, 92, 336631, 55047395]
+	Estimated Profit -181183.0  	 Actual Profit -137253
+	 [444028, 509128080, 1, 732117826]
+	Estimated Profit 7268224.0  	 Actual Profit 0
+	 [1433586, 708721822, 1, 532513206]
+	Estimated Profit 4987735.0  	 Actual Profit 0
+	 [1500143, 128648437, 7920868, 725889062]
+	Estimated Profit 166940.0  	 Actual Profit -158757
+	 [4690423, 60574621, 1, 372858823]
+	Estimated Profit 534496.0  	 Actual Profit 0
+	 [8225306, 710392438, 8225306, 768356879]
+	Estimated Profit 1693162.0  	 Actual Profit -421807
+ ===== Best Profit:  4.1000000000000005  Best Paras:  [] ,   time:  909.9717268943787
+ ===== Strength:  1  Last Profit:  4.1000000000000005   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell, eAAVEBuy, eAAVESell, EminenceSell
+	 [1, 1, 1, 1, 1]
+	Estimated Profit 552614.7514235675  	 Actual Profit 0
+	 [1, 1, 1, 10856, 8814480]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 41406250, 373272396, 311133, 622603465]
+	Estimated Profit 2451009.0  	 Actual Profit 0
+	 [1, 110015410, 1, 346289, 100872981]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 130468750, 486718750, 413086, 114843750]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 205468585, 261718590, 94336, 189843632]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 411718750, 67968750, 42774, 296093750]
+	Estimated Profit 2769826.0  	 Actual Profit 0
+	 [1, 532812310, 320312310, 587109, 501562310]
+	Estimated Profit 2769826.0  	 Actual Profit 0
+	 [68726, 94103728, 720308828, 287109, 101562500]
+	Estimated Profit 1091352.9947788753  	 Actual Profit 0
+	 [5521173, 107330915, 560544492, 454936, 447650534]
+	Estimated Profit 1473182.2346044611  	 Actual Profit 0
+	 [5521991, 230601000, 543100981, 202734, 499350983]
+	Estimated Profit -411655.3009115942  	 Actual Profit 0
+	 [8971244, 706548055, 69048056, 1, 66122287]
+	Estimated Profit -351119.28445747495  	 Actual Profit 0
+	 [1, 1, 1, 10834, 8796851]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 41323437, 372525851, 310510, 621358258]
+	Estimated Profit 2451009.0  	 Actual Profit 0
+	 [1, 109795379, 1, 345596, 100671235]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 130207812, 485745312, 412259, 114614062]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 205057647, 261195152, 94147, 189463944]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 410895312, 67832812, 42688, 295501562]
+	Estimated Profit 2769826.0  	 Actual Profit 0
+	 [1, 531746685, 319671685, 585934, 500559185]
+	Estimated Profit 2769826.0  	 Actual Profit 0
+	 [68588, 93915520, 718868210, 286534, 101359375]
+	Estimated Profit 484028.0  	 Actual Profit 0
+	 [5510130, 107116253, 559423403, 454026, 446755232]
+	Estimated Profit 1055499.0  	 Actual Profit 0
+ ===== Best Profit:  1.9000000000000001  Best Paras:  [] ,   time:  909.9719295501709
+ ===== Strength:  1  Last Profit:  1.9000000000000001   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, EminenceSell, eAAVESell, EminenceSell
+	 [1, 1, 1, 1, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 1, 1, 10700, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 1, 4799, 1, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 1, 150429769, 304102, 167239682]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 132812500, 720312498, 287109, 101562500]
+	Estimated Profit 5813858.0  	 Actual Profit 0
+	 [1, 205468750, 261718750, 94336, 189843750]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 245312500, 557812500, 202735, 514062500]
+	Estimated Profit 2451009.0  	 Actual Profit 0
+	 [10955776, 559900336, 454620458, 336914, 197656250]
+	Estimated Profit -3458958.241265867  	 Actual Profit 0
+	 [13589954, 230899762, 22656250, 361198, 260275353]
+	Estimated Profit -9898004.602285555  	 Actual Profit 0
+	 [18000000, 72656250, 178921651, 43482, 800000000]
+	Estimated Profit -7747293.0  	 Actual Profit 0
+	 [1, 1, 1, 10678, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 1, 4789, 1, 1]
+	Estimated Profit 552615.0  	 Actual Profit 0
+	 [1, 1, 150128909, 303493, 166905202]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 132546875, 718871873, 286534, 101359375]
+	Estimated Profit 5813858.0  	 Actual Profit 0
+	 [1, 205057812, 261195312, 94147, 189464062]
+	Estimated Profit 1160078.0  	 Actual Profit 0
+	 [1, 244821875, 556696875, 202329, 513034375]
+	Estimated Profit 2451009.0  	 Actual Profit 0
+ ===== Best Profit:  1.3  Best Paras:  [] ,   time:  909.9720883369446
+ ===== Strength:  1  Last Profit:  1.3   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, EminenceBuy, eAAVESell, EminenceSell
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  909.972131729126
+ ===== Strength:  2  Last Profit:  1.0   ===== 
+Now global best profit is,  4.7
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, eAAVESell, EminenceBuy, EminenceSell
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  909.972235918045
+ ===== Strength:  2  Last Profit:  1.0   ===== 
+Now global best profit is,  4.7
+===== in total  182  concrete attack vectors are checked ======
+==== in total  13  executions succeed
+===== Next round we have  5  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  3  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 4.7 ================================= 
+ ================================================================================= 
+EminenceBuy number of points: 
+200
+EminenceSell number of points: 
+200
+eAAVEBuy number of points: 
+200
+eAAVESell number of points: 
+200
+Check Contract: 	EminenceBuy, EminenceSell    Profit of Previous Interation: 	4.7  time: 910.261846780777
+The optimizer takes 23.98255228996277 seconds
+best para: [1.00000000e+00 6.69140625e+08] best profit: 5537550.0
+Optimization terminated successfully.    Next only show the first 5/52 profitable solutions
+[1, 1] 	  estimated profit is, 276307.0   	   
+[1, 13] 	  estimated profit is, 276307.0   	   
+[1, 144304] 	  estimated profit is, 276307.0   	   
+[1, 301333] 	  estimated profit is, 276307.0   	   
+[1, 310915] 	  estimated profit is, 276307.0   	   
+
+Check Contract: 	EminenceBuy, eAAVEBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	4.2  time: 934.3268146514893
+QhullError!
+Check Contract: 	EminenceBuy, EminenceSell, EminenceBuy, EminenceSell    Profit of Previous Interation: 	4.1000000000000005  time: 937.0665864944458
+Timeout!
+Check Contract: 	EminenceBuy, EminenceSell, eAAVEBuy, eAAVESell, EminenceSell    Profit of Previous Interation: 	1.9000000000000001  time: 1045.1179790496826
+Timeout!
+Check Contract: 	EminenceBuy, eAAVEBuy, EminenceSell, eAAVESell, EminenceSell    Profit of Previous Interation: 	1.3  time: 1155.184730052948
+Timeout!
+forge test --match-contract attackTester --fork-url https://nd-193-046-905.p2pify.com/f38bbbfe5955755aaa0ba48accc03f3d --fork-block-number 10954410
+b'Compiling 2 files with 0.7.6\nSolc 0.7.6 finished in 1.04s\nCompiler run successful\n\nRunning 101 tests for src/test/attack.t.sol:attackTester\n\x1
+Running attacks on foundry costs time:  29.025700330734253  seconds
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell
+	 [1, 1]
+	Estimated Profit 276307.0  	 Actual Profit -1
+	 [1, 13]
+	Estimated Profit 276307.0  	 Actual Profit -1
+	 [1, 144304]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 301333]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 310915]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 346371]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 357862]
+	Estimated Profit 276306.57920945436  	 Actual Profit 0
+	 [1, 363565]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 364095]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 364223]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 364226]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 364227]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 237510933]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 244921875]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 251171875]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 256605703]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 298046875]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 330078125]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 356640625]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 363883731]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 378515625]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 409439242]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 409765625]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 426158589]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 449609375]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 465234375]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 475390625]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 477343750]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 488671875]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 534765625]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 562109375]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 573819322]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 597265625]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 610546875]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 619484474]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 625390625]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 669140625]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 687109375]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 691015625]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 716015625]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 730859375]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 734765625]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 746093519]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 782481743]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 797265625]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 799994097]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1214667, 112205737]
+	Estimated Profit 108493.44549845345  	 Actual Profit 0
+	 [3126163, 289697106]
+	Estimated Profit 14786.278557037935  	 Actual Profit 0
+	 [4625388, 433117272]
+	Estimated Profit -11423.46188345924  	 Actual Profit 0
+	 [5521173, 484097582]
+	Estimated Profit 935593.0719099827  	 Actual Profit -274262
+	 [5678562, 525851739]
+	Estimated Profit 778204.3968776241  	 Actual Profit 0
+	 [14999909, 721915575]
+	Estimated Profit -6631574.462326096  	 Actual Profit -7172417
+	 [1, 12]
+	Estimated Profit 276307.0  	 Actual Profit -1
+	 [1, 144015]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 300730]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 310293]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 345678]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 357146]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 362837]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 363366]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 363494]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 363497]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 363498]
+	Estimated Profit 276307.0  	 Actual Profit 0
+	 [1, 237035911]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 244432031]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 250669531]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 256092491]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 297450781]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 329417968]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 355927343]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 363155963]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 377758593]
+	Estimated Profit 2174701.0  	 Actual Profit 0
+	 [1, 408620363]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 408946093]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 425306271]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 448710156]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 464303906]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 474439843]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 476389062]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 487694531]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 533696093]
+	Estimated Profit 2493518.0  	 Actual Profit 0
+	 [1, 560985156]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 572671683]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 596071093]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 609325781]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 618245505]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 624139843]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 667802343]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 685735156]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 689633593]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 714583593]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 729397656]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 733296093]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 744601331]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 780916779]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 795671093]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1, 798394108]
+	Estimated Profit 5537550.0  	 Actual Profit 0
+	 [1212237, 111981325]
+	Estimated Profit 110924.0  	 Actual Profit 0
+	 [3119910, 289117711]
+	Estimated Profit 21040.0  	 Actual Profit 0
+	 [5510130, 483129386]
+	Estimated Profit -867721.0  	 Actual Profit -273715
+	 [5667204, 524800035]
+	Estimated Profit 789563.0  	 Actual Profit 0
+ ===== Best Profit:  9.8  Best Paras:  [] ,   time:  1295.0064067840576
+ ===== Strength:  2  Last Profit:  4.7   ===== 
+Now global best profit is,  9.8
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, eAAVESell, EminenceSell
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  1295.0064580440521
+ ===== Strength:  2  Last Profit:  4.2   ===== 
+Now global best profit is,  9.8
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell, EminenceBuy, EminenceSell
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  1295.0065004825592
+ ===== Strength:  2  Last Profit:  4.1000000000000005   ===== 
+Now global best profit is,  9.8
+For Symbolic Attack Vector:  EminenceBuy, EminenceSell, eAAVEBuy, eAAVESell, EminenceSell
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  1295.0065248012543
+ ===== Strength:  2  Last Profit:  1.9000000000000001   ===== 
+Now global best profit is,  9.8
+For Symbolic Attack Vector:  EminenceBuy, eAAVEBuy, EminenceSell, eAAVESell, EminenceSell
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  1295.0065479278564
+ ===== Strength:  2  Last Profit:  1.3   ===== 
+Now global best profit is,  9.8
+===== in total  101  concrete attack vectors are checked ======
+==== in total  3  executions succeed
+===== Next round we have  0  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  4  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 9.8 ================================= 
+ ================================================================================= 
+EminenceBuy number of points: 
+200
+EminenceSell number of points: 
+200
+eAAVEBuy number of points: 
+200
+eAAVESell number of points: 
+200
+ ================================================================================= 
+ ======================= End of Synthesis, time in total:  1295.0067875385284 s ============== 
+ ================================================================================= 
+ ======================= Now shows the answers: ======================================== 
+ ======================= End of Answers    ===================================== 
+ =================== Best Profit  9.8  ============================ 

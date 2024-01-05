@@ -1,0 +1,579 @@
+/h/200/zhiychen/defi_attack_synthesis
+Deposit number of points: 
+1000
+EmergencyWithdraw number of points: 
+1000
+Check Contract: 	Deposit, EmergencyWithdraw  time: 0.9335203170776367
+The optimizer takes 0.09466338157653809 seconds
+best para: [2734375.7265625] best profit: -0.9999999701976776
+Optimization terminated successfully.    Next only show the first 5/5 profitable solutions
+[2109375] 	  estimated profit is, -0.9999999701976776   	   
+[2421875] 	  estimated profit is, -0.9999999701976776   	   
+[2734375] 	  estimated profit is, -0.9999999701976776   	   
+[3046875] 	  estimated profit is, -0.9999999701976776   	   
+[3359375] 	  estimated profit is, -0.9999999701976776   	   
+
+Check Contract: 	Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw  time: 1.078857183456421
+The optimizer takes 0.0980997085571289 seconds
+best para: [7734375.2265625 1484375.8515625] best profit: 209868.64063464105
+Optimization terminated successfully.    Next only show the first 3/3 profitable solutions
+[7500000, 2500000] 	  estimated profit is, 203508.9093143195   	   
+[7656250, 5468750] 	  estimated profit is, 207748.73019452393   	   
+[7734375, 1484375] 	  estimated profit is, 209868.64063464105   	   
+[7485000, 2495000] 	  estimated profit is, 203101.87968540192   	   
+[7640937, 5457812] 	  estimated profit is, 207333.2077795565   	   
+
+forge test --match-contract attackTester --fork-url https://nd-684-551-799.p2pify.com/3e54d46043d0604a11da94477b1eeb50 --fork-block-number 7457124
+b'Compiling 3 files with 0.7.6\nSolc 0.7.6 finished in 1.10s\nCompiler run successful\n\nRunning 11 tests for src/test/attack.t.sol:attackTester\n\x1b
+Running attacks on foundry costs time:  26.29800295829773  seconds
+For Symbolic Attack Vector:  Deposit, EmergencyWithdraw
+	 [2109375]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [2421875]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [2734375]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [3046875]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [3359375]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  27.547512531280518
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  0
+For Symbolic Attack Vector:  Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw
+	 [7500000, 2500000]
+	Estimated Profit 203508.9093143195  	 Actual Profit 4458
+	 [7656250, 5468750]
+	Estimated Profit 207748.73019452393  	 Actual Profit 9702
+	 [7734375, 1484375]
+	Estimated Profit 209868.64063464105  	 Actual Profit 2754
+	 [7485000, 2495000]
+	Estimated Profit 203101.87968540192  	 Actual Profit 4440
+	 [7640937, 5457812]
+	Estimated Profit 207333.2077795565  	 Actual Profit 9664
+	 [7718906, 1481406]
+	Estimated Profit 209448.88539408147  	 Actual Profit 2743
+ ===== Best Profit:  9702  Best Paras:  [7656250, 5468750] ,   time:  27.54778218269348
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  9702
+===== in total  11  concrete attack vectors are checked ======
+==== in total  6  executions succeed
+===== Next round we have  2  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== Strength 0 - round 0 of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 9702 ================================= 
+ ================================================================================= 
+Deposit number of points: 
+1000
+EmergencyWithdraw number of points: 
+1000
+Check Contract: 	Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw    Profit of Previous Interation: 	9702  time: 27.619606256484985
+The optimizer takes 0.11284255981445312 seconds
+best para: [7734375.2265625 1484375.8515625] best profit: 209868.64063464105
+Optimization terminated successfully.    Next only show the first 3/3 profitable solutions
+[7500000, 2500000] 	  estimated profit is, 203508.9093143195   	   
+[7656250, 5468750] 	  estimated profit is, 207748.73019452393   	   
+[7734375, 1484375] 	  estimated profit is, 209868.64063464105   	   
+[7485000, 2495000] 	  estimated profit is, 203101.87968540192   	   
+[7640937, 5457812] 	  estimated profit is, 207333.2077795565   	   
+
+Check Contract: 	Deposit, EmergencyWithdraw    Profit of Previous Interation: 	0.0  time: 27.79882264137268
+The optimizer takes 0.09131217002868652 seconds
+best para: [2734375.7265625] best profit: -0.9999999701976776
+Optimization terminated successfully.    Next only show the first 5/5 profitable solutions
+[2109375] 	  estimated profit is, -0.9999999701976776   	   
+[2421875] 	  estimated profit is, -0.9999999701976776   	   
+[2734375] 	  estimated profit is, -0.9999999701976776   	   
+[3046875] 	  estimated profit is, -0.9999999701976776   	   
+[3359375] 	  estimated profit is, -0.9999999701976776   	   
+
+forge test --match-contract attackTester --fork-url https://nd-684-551-799.p2pify.com/3e54d46043d0604a11da94477b1eeb50 --fork-block-number 7457124
+b'Compiling 2 files with 0.7.6\nCompiling 5 files with 0.8.12\nSolc 0.7.6 finished in 1.07s\nSolc 0.8.12 finished in 7.80s\nCompiler run successful (w
+Running attacks on foundry costs time:  34.61759042739868  seconds
+For Symbolic Attack Vector:  Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw
+	 [7500000, 2500000]
+	Estimated Profit 203508.9093143195  	 Actual Profit 4458
+	 [7656250, 5468750]
+	Estimated Profit 207748.73019452393  	 Actual Profit 9702
+	 [7734375, 1484375]
+	Estimated Profit 209868.64063464105  	 Actual Profit 2754
+	 [7485000, 2495000]
+	Estimated Profit 203101.87968540192  	 Actual Profit 4440
+	 [7640937, 5457812]
+	Estimated Profit 207333.2077795565  	 Actual Profit 9664
+	 [7718906, 1481406]
+	Estimated Profit 209448.88539408147  	 Actual Profit 2743
+ ===== Best Profit:  9702  Best Paras:  [7656250, 5468750] ,   time:  62.584577560424805
+ ===== Strength:  0  Last Profit:  9702   ===== 
+Now global best profit is,  9702
+For Symbolic Attack Vector:  Deposit, EmergencyWithdraw
+	 [2109375]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [2421875]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [2734375]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [3046875]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [3359375]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  62.58466649055481
+ ===== Strength:  1  Last Profit:  0.0   ===== 
+Now global best profit is,  9702
+===== in total  11  concrete attack vectors are checked ======
+==== in total  6  executions succeed
+===== Next round we have  2  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  1  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 9702 ================================= 
+ ================================================================================= 
+Deposit number of points: 
+1000
+EmergencyWithdraw number of points: 
+1000
+Check Contract: 	Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw    Profit of Previous Interation: 	9702  time: 62.661463022232056
+The optimizer takes 0.16905975341796875 seconds
+best para: [7792968.97070312 3496094.40039062] best profit: 211458.57346472144
+Optimization terminated successfully.    Next only show the first 5/13 profitable solutions
+[39063, 7803715] 	  estimated profit is, 1057.4622842483222   	   
+[214844, 7011719] 	  estimated profit is, 5827.260774508119   	   
+[4023438, 7802300] 	  estimated profit is, 109172.89472964872   	   
+[5898437, 7804066] 	  estimated profit is, 160050.74529217184   	   
+[6679687, 7799469] 	  estimated profit is, 181249.84969320614   	   
+
+Check Contract: 	Deposit, EmergencyWithdraw    Profit of Previous Interation: 	0.0  time: 62.89918613433838
+The optimizer takes 0.26134705543518066 seconds
+best para: [5927734.78222656] best profit: -0.9999999701976776
+Optimization terminated successfully.    Next only show the first 5/62 profitable solutions
+[29297] 	  estimated profit is, -0.9999999701976776   	   
+[68360] 	  estimated profit is, -0.9999999701976776   	   
+[302735] 	  estimated profit is, -0.9999999701976776   	   
+[341797] 	  estimated profit is, -0.9999999701976776   	   
+[380860] 	  estimated profit is, -0.9999999701976776   	   
+
+forge test --match-contract attackTester --fork-url https://nd-684-551-799.p2pify.com/3e54d46043d0604a11da94477b1eeb50 --fork-block-number 7457124
+b'Compiling 1 files with 0.7.6\nCompiling 5 files with 0.8.12\nSolc 0.7.6 finished in 1.16s\nSolc 0.8.12 finished in 7.79s\nCompiler run successful (w
+Running attacks on foundry costs time:  33.05526351928711  seconds
+For Symbolic Attack Vector:  Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw
+	 [39063, 7803715]
+	Estimated Profit 1057.4622842483222  	 Actual Profit 69
+	 [214844, 7011719]
+	Estimated Profit 5827.260774508119  	 Actual Profit 344
+	 [4023438, 7802300]
+	Estimated Profit 109172.89472964872  	 Actual Profit 7132
+	 [5898437, 7804066]
+	Estimated Profit 160050.74529217184  	 Actual Profit 10458
+	 [6679687, 7799469]
+	Estimated Profit 181249.84969320614  	 Actual Profit 11837
+	 [6933594, 6855469]
+	Estimated Profit 188139.55862356722  	 Actual Profit 10886
+	 [7460937, 7539062]
+	Estimated Profit 202448.95409427583  	 Actual Profit 12808
+	 [7558593, 2480469]
+	Estimated Profit 205098.84214439988  	 Actual Profit 4458
+	 [7617187, 820313]
+	Estimated Profit 206688.77497448027  	 Actual Profit 1507
+	 [7636718, 5839844]
+	Estimated Profit 207218.7525845319  	 Actual Profit 10302
+	 [7695312, 4492188]
+	Estimated Profit 208808.6854145676  	 Actual Profit 8078
+	 [7773437, 7804118]
+	Estimated Profit 210928.59585470147  	 Actual Profit 13783
+	 [7792968, 3496094]
+	Estimated Profit 211458.57346472144  	 Actual Profit 6421
+	 [38984, 7788107]
+	Estimated Profit 1055.3051691800356  	 Actual Profit 68
+	 [214414, 6997695]
+	Estimated Profit 5815.573018088937  	 Actual Profit 343
+	 [4015391, 7786695]
+	Estimated Profit 108954.53789073229  	 Actual Profit 7104
+	 [5886640, 7788457]
+	Estimated Profit 159730.61069487035  	 Actual Profit 10418
+	 [6666327, 7783870]
+	Estimated Profit 180887.30543538928  	 Actual Profit 11791
+	 [6919726, 6841758]
+	Estimated Profit 187763.25089879334  	 Actual Profit 10843
+	 [7446015, 7523983]
+	Estimated Profit 202044.02731072903  	 Actual Profit 12758
+	 [7543475, 2475508]
+	Estimated Profit 204688.59041027725  	 Actual Profit 4440
+	 [7601952, 818672]
+	Estimated Profit 206275.35540486872  	 Actual Profit 1501
+	 [7621444, 5828164]
+	Estimated Profit 206804.2680247873  	 Actual Profit 10261
+	 [7679921, 4483203]
+	Estimated Profit 208391.03301937878  	 Actual Profit 8046
+	 [7757890, 7788509]
+	Estimated Profit 210506.71063388884  	 Actual Profit 13730
+	 [7777382, 3489101]
+	Estimated Profit 211035.62325382233  	 Actual Profit 6396
+ ===== Best Profit:  13783  Best Paras:  [7773437, 7804118] ,   time:  96.30646824836731
+ ===== Strength:  1  Last Profit:  9702   ===== 
+Now global best profit is,  13783
+For Symbolic Attack Vector:  Deposit, EmergencyWithdraw
+	 [29297]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [68360]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [302735]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [341797]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [380860]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [654297]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [966797]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [1142579]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [1279297]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [1591797]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [1904297]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [2314453]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [2363282]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [2392578]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [2626953]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [2675781]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [2705078]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [2939453]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [2988281]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [3017578]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [3095703]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [3251953]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [3300781]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [3330078]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [3564453]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [3613281]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [3642578]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [3847656]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [3925781]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [4052734]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [4160156]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [4238281]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [4365234]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [4472656]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [4550781]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [4677734]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [4785156]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [4863281]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [4990234]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [5029297]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [5097656]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [5175781]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [5302734]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [5341797]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [5615234]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [5654297]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [5693359]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [5927734]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [5966797]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6005859]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6240234]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6279297]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6318359]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6552734]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6591797]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6630859]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6689453]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6865234]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6904297]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [6943359]
+	Estimated Profit -0.9999999701976776  	 Actual Profit -1
+	 [7216797]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+	 [7529297]
+	Estimated Profit -0.9999999850988388  	 Actual Profit -1
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  96.30691814422607
+ ===== Strength:  2  Last Profit:  0.0   ===== 
+Now global best profit is,  13783
+===== in total  88  concrete attack vectors are checked ======
+==== in total  26  executions succeed
+===== Next round we have  1  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  2  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 13783 ================================= 
+ ================================================================================= 
+Deposit number of points: 
+1000
+EmergencyWithdraw number of points: 
+1000
+Check Contract: 	Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw    Profit of Previous Interation: 	13783  time: 96.38335394859314
+The optimizer takes 0.17293834686279297 seconds
+best para: [7792968.97070312 3496094.40039062] best profit: 211458.57346472144
+Optimization terminated successfully.    Next only show the first 5/13 profitable solutions
+[39063, 7803715] 	  estimated profit is, 1057.4622842483222   	   
+[214844, 7011719] 	  estimated profit is, 5827.260774508119   	   
+[4023438, 7802300] 	  estimated profit is, 109172.89472964872   	   
+[5898437, 7804066] 	  estimated profit is, 160050.74529217184   	   
+[6679687, 7799469] 	  estimated profit is, 181249.84969320614   	   
+
+forge test --match-contract attackTester --fork-url https://nd-684-551-799.p2pify.com/3e54d46043d0604a11da94477b1eeb50 --fork-block-number 7457124
+b'Compiling 2 files with 0.7.6\nCompiling 6 files with 0.8.12\nSolc 0.7.6 finished in 1.08s\nSolc 0.8.12 finished in 7.65s\nCompiler run successful (w
+Running attacks on foundry costs time:  32.9876823425293  seconds
+For Symbolic Attack Vector:  Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw
+	 [39063, 7803715]
+	Estimated Profit 1057.4622842483222  	 Actual Profit 69
+	 [214844, 7011719]
+	Estimated Profit 5827.260774508119  	 Actual Profit 344
+	 [4023438, 7802300]
+	Estimated Profit 109172.89472964872  	 Actual Profit 7132
+	 [5898437, 7804066]
+	Estimated Profit 160050.74529217184  	 Actual Profit 10458
+	 [6679687, 7799469]
+	Estimated Profit 181249.84969320614  	 Actual Profit 11837
+	 [6933594, 6855469]
+	Estimated Profit 188139.55862356722  	 Actual Profit 10886
+	 [7460937, 7539062]
+	Estimated Profit 202448.95409427583  	 Actual Profit 12808
+	 [7558593, 2480469]
+	Estimated Profit 205098.84214439988  	 Actual Profit 4458
+	 [7617187, 820313]
+	Estimated Profit 206688.77497448027  	 Actual Profit 1507
+	 [7636718, 5839844]
+	Estimated Profit 207218.7525845319  	 Actual Profit 10302
+	 [7695312, 4492188]
+	Estimated Profit 208808.6854145676  	 Actual Profit 8078
+	 [7773437, 7804118]
+	Estimated Profit 210928.59585470147  	 Actual Profit 13783
+	 [7792968, 3496094]
+	Estimated Profit 211458.57346472144  	 Actual Profit 6421
+	 [38984, 7788107]
+	Estimated Profit 1055.3051691800356  	 Actual Profit 68
+	 [214414, 6997695]
+	Estimated Profit 5815.573018088937  	 Actual Profit 343
+	 [4015391, 7786695]
+	Estimated Profit 108954.53789073229  	 Actual Profit 7104
+	 [5886640, 7788457]
+	Estimated Profit 159730.61069487035  	 Actual Profit 10418
+	 [6666327, 7783870]
+	Estimated Profit 180887.30543538928  	 Actual Profit 11791
+	 [6919726, 6841758]
+	Estimated Profit 187763.25089879334  	 Actual Profit 10843
+	 [7446015, 7523983]
+	Estimated Profit 202044.02731072903  	 Actual Profit 12758
+	 [7543475, 2475508]
+	Estimated Profit 204688.59041027725  	 Actual Profit 4440
+	 [7601952, 818672]
+	Estimated Profit 206275.35540486872  	 Actual Profit 1501
+	 [7621444, 5828164]
+	Estimated Profit 206804.2680247873  	 Actual Profit 10261
+	 [7679921, 4483203]
+	Estimated Profit 208391.03301937878  	 Actual Profit 8046
+	 [7757890, 7788509]
+	Estimated Profit 210506.71063388884  	 Actual Profit 13730
+	 [7777382, 3489101]
+	Estimated Profit 211035.62325382233  	 Actual Profit 6396
+ ===== Best Profit:  13783  Best Paras:  [7773437, 7804118] ,   time:  129.6272885799408
+ ===== Strength:  1  Last Profit:  13783   ===== 
+Now global best profit is,  13783
+===== in total  26  concrete attack vectors are checked ======
+==== in total  26  executions succeed
+===== Next round we have  1  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  3  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 13783 ================================= 
+ ================================================================================= 
+Deposit number of points: 
+1000
+EmergencyWithdraw number of points: 
+1000
+Check Contract: 	Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw    Profit of Previous Interation: 	13783  time: 129.70275354385376
+The optimizer takes 0.43047666549682617 seconds
+best para: [7788086.15869141 7241211.21337891] best profit: 211326.07906220853
+Optimization terminated successfully.    Next only show the first 5/28 profitable solutions
+[400391, 7804238] 	  estimated profit is, 10862.048069730401   	   
+[791016, 7799804] 	  estimated profit is, 21461.600270282477   	   
+[1181641, 7803985] 	  estimated profit is, 32061.152470799163   	   
+[2119141, 7803131] 	  estimated profit is, 57500.07775208354   	   
+[2436524, 7804236] 	  estimated profit is, 66112.21391498577   	   
+
+forge test --match-contract attackTester --fork-url https://nd-684-551-799.p2pify.com/3e54d46043d0604a11da94477b1eeb50 --fork-block-number 7457124
+b'Compiling 2 files with 0.7.6\nSolc 0.7.6 finished in 1.11s\nCompiler run successful\n\nRunning 56 tests for src/test/attack.t.sol:attackTester\n\x1b
+Running attacks on foundry costs time:  25.05134391784668  seconds
+For Symbolic Attack Vector:  Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw
+	 [400391, 7804238]
+	Estimated Profit 10862.048069730401  	 Actual Profit 709
+	 [791016, 7799804]
+	Estimated Profit 21461.600270282477  	 Actual Profit 1401
+	 [1181641, 7803985]
+	Estimated Profit 32061.152470799163  	 Actual Profit 2095
+	 [2119141, 7803131]
+	Estimated Profit 57500.07775208354  	 Actual Profit 3757
+	 [2436524, 7804236]
+	Estimated Profit 66112.21391498577  	 Actual Profit 4320
+	 [2514649, 6264648]
+	Estimated Profit 68232.12435507774  	 Actual Profit 3625
+	 [2666016, 7804238]
+	Estimated Profit 72339.45083280839  	 Actual Profit 4727
+	 [3134766, 7801879]
+	Estimated Profit 85058.91347342264  	 Actual Profit 5556
+	 [3452149, 7804161]
+	Estimated Profit 93671.04963637143  	 Actual Profit 6121
+	 [4228516, 7804134]
+	Estimated Profit 114737.659634904  	 Actual Profit 7497
+	 [4462891, 7803427]
+	Estimated Profit 121097.39095520135  	 Actual Profit 7912
+	 [4750977, 7778320]
+	Estimated Profit 128914.56070311368  	 Actual Profit 8398
+	 [5087891, 7804136]
+	Estimated Profit 138056.67447605357  	 Actual Profit 9021
+	 [6103516, 7804238]
+	Estimated Profit 165615.51019742992  	 Actual Profit 10822
+	 [6259765, 7804147]
+	Estimated Profit 169855.33107765298  	 Actual Profit 11099
+	 [6264648, 2514649]
+	Estimated Profit 169987.8254801482  	 Actual Profit 3745
+	 [7041015, 7804018]
+	Estimated Profit 191054.43547869753  	 Actual Profit 12484
+	 [7431640, 7803000]
+	Estimated Profit 201653.98767924495  	 Actual Profit 13175
+	 [7514648, 1264649]
+	Estimated Profit 203906.3925218284  	 Actual Profit 2284
+	 [7680664, 6723633]
+	Estimated Profit 208411.20220708847  	 Actual Profit 11840
+	 [7690429, 4252930]
+	Estimated Profit 208676.19101206958  	 Actual Profit 7658
+	 [7709961, 756836]
+	Estimated Profit 209206.1686570039  	 Actual Profit 1408
+	 [7729492, 5776367]
+	Estimated Profit 209736.14623212814  	 Actual Profit 10319
+	 [7744140, 7803884]
+	Estimated Profit 210133.62943965849  	 Actual Profit 13731
+	 [7749023, 2749024]
+	Estimated Profit 210266.12384214997  	 Actual Profit 5053
+	 [7758789, 239258]
+	Estimated Profit 210531.1126471907  	 Actual Profit 450
+	 [7778320, 4750977]
+	Estimated Profit 211061.09025721252  	 Actual Profit 8616
+	 [7788086, 7241211]
+	Estimated Profit 211326.07906220853  	 Actual Profit 12873
+	 [399590, 7788629]
+	Estimated Profit 10840.297176986933  	 Actual Profit 707
+	 [789433, 7784204]
+	Estimated Profit 21418.630979806185  	 Actual Profit 1396
+	 [1179277, 7788377]
+	Estimated Profit 31996.991917476058  	 Actual Profit 2087
+	 [2114902, 7787524]
+	Estimated Profit 57385.0418869853  	 Actual Profit 3742
+	 [2431650, 7788627]
+	Estimated Profit 65979.95336514711  	 Actual Profit 4303
+	 [2509619, 6252118]
+	Estimated Profit 68095.63097965717  	 Actual Profit 3611
+	 [2660683, 7788629]
+	Estimated Profit 72194.73091882467  	 Actual Profit 4708
+	 [3128496, 7786275]
+	Estimated Profit 84888.7694709748  	 Actual Profit 5535
+	 [3445244, 7788552]
+	Estimated Profit 93483.68094916642  	 Actual Profit 6097
+	 [4220058, 7788525]
+	Estimated Profit 114508.14753465354  	 Actual Profit 7468
+	 [4453965, 7787820]
+	Estimated Profit 120855.18037816882  	 Actual Profit 7882
+	 [4741475, 7762763]
+	Estimated Profit 128656.72292643785  	 Actual Profit 8365
+	 [5077715, 7788527]
+	Estimated Profit 137780.54702453315  	 Actual Profit 8986
+	 [6091308, 7788629]
+	Estimated Profit 165284.24747367203  	 Actual Profit 10780
+	 [6247245, 7788538]
+	Estimated Profit 169515.57556785643  	 Actual Profit 11056
+	 [6252118, 2509619]
+	Estimated Profit 169647.80372281373  	 Actual Profit 3730
+	 [7026932, 7788409]
+	Estimated Profit 190672.27030831575  	 Actual Profit 12436
+	 [7416776, 7787394]
+	Estimated Profit 201250.63124600053  	 Actual Profit 13124
+	 [7499618, 1262119]
+	Estimated Profit 203498.53701546788  	 Actual Profit 2275
+	 [7665302, 6710185]
+	Estimated Profit 207994.3485544622  	 Actual Profit 11794
+	 [7675048, 4244424]
+	Estimated Profit 208258.8048644066  	 Actual Profit 7628
+	 [7694541, 755322]
+	Estimated Profit 208787.7446191907  	 Actual Profit 1403
+	 [7714033, 5764814]
+	Estimated Profit 209316.65723907948  	 Actual Profit 10279
+	 [7728651, 7788276]
+	Estimated Profit 209713.31456917524  	 Actual Profit 13677
+	 [7733524, 2743525]
+	Estimated Profit 209845.54272414744  	 Actual Profit 5033
+	 [7743271, 238779]
+	Estimated Profit 210110.02616898715  	 Actual Profit 448
+	 [7762763, 4741475]
+	Estimated Profit 210638.93878884614  	 Actual Profit 8582
+	 [7772509, 7226728]
+	Estimated Profit 210903.39509882033  	 Actual Profit 12824
+ ===== Best Profit:  13731  Best Paras:  [7744140, 7803884] ,   time:  155.2720582485199
+ ===== Strength:  2  Last Profit:  13783   ===== 
+Now global best profit is,  13731
+===== in total  56  concrete attack vectors are checked ======
+==== in total  56  executions succeed
+===== Next round we have  0  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  4  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 13731 ================================= 
+ ================================================================================= 
+Deposit number of points: 
+1000
+EmergencyWithdraw number of points: 
+1000
+ ================================================================================= 
+ ======================= End of Synthesis, time in total:  155.27213406562805 s ============== 
+ ================================================================================= 
+ ======================= Now shows the answers: ======================================== 
+For Symbolic Attack Vector:  Deposit, EmergencyWithdraw, Deposit, EmergencyWithdraw
+Best Profit:  13783   Parameters:  [7773437, 7804118]
+ ======================= End of Answers    ===================================== 
+ =================== Best Profit  13783  ============================ 

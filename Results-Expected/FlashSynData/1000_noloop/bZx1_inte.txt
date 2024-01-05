@@ -1,0 +1,2055 @@
+/h/200/zhiychen/defi_attack_synthesis
+SwapUniswapWBTC2ETH number of points: 
+1000
+MarginShort number of points: 
+1000
+SwapUniswapETH2WBTC number of points: 
+1000
+Check Contract: 	SwapUniswapWBTC2ETH, SwapUniswapETH2WBTC  time: 0.09181046485900879
+The optimizer takes 0.46797609329223633 seconds
+best para: [ 103.48830757 1485.07502706] best profit: 229.0819130245104
+Optimization terminated successfully.    Next only show the first 5/18 profitable solutions
+[1, 1] 	  estimated profit is, -5.079999999999998   	   
+[11, 586] 	  estimated profit is, 178.28378250533564   	   
+[42, 1055] 	  estimated profit is, 151.506709127837   	   
+[45, 4921] 	  estimated profit is, -1741.382559758973   	   
+[47, 2265] 	  estimated profit is, -59.768011181758766   	   
+
+Check Contract: 	MarginShort, SwapUniswapWBTC2ETH  time: 0.628556489944458
+The optimizer takes 0.18817758560180664 seconds
+best para: [1171.66510529   12.41939333] best profit: 3227.9850032322474
+Optimization terminated successfully.    Next only show the first 5/9 profitable solutions
+[467, 1] 	  estimated profit is, 1686.9093355866767   	   
+[844, 28] 	  estimated profit is, 2661.222493205528   	   
+[1030, 28] 	  estimated profit is, 1714.5967742584212   	   
+[1171, 12] 	  estimated profit is, 3227.9850032322474   	   
+[1342, 31] 	  estimated profit is, 2791.362324422   	   
+
+Check Contract: 	MarginShort, SwapUniswapETH2WBTC  time: 0.8649961948394775
+result.x[i] <= 1 for all i !
+Check Contract: 	SwapUniswapETH2WBTC, SwapUniswapWBTC2ETH  time: 0.9843311309814453
+The optimizer takes 0.3320801258087158 seconds
+best para: [2.3417778e+03 1.0000000e+00] best profit: 1848.8621957368946
+Optimization terminated successfully.    Next only show the first 5/10 profitable solutions
+[1171, 7] 	  estimated profit is, 982.817687919453   	   
+[1729, 1] 	  estimated profit is, 1424.6296508895905   	   
+[2069, 26] 	  estimated profit is, 288.11416987097465   	   
+[2341, 1] 	  estimated profit is, 1848.8621957368946   	   
+[2578, 48] 	  estimated profit is, 641.4078296328003   	   
+
+forge test --match-contract attackTester --fork-url https://nd-193-046-905.p2pify.com/f38bbbfe5955755aaa0ba48accc03f3d --fork-block-number 9484687
+b'Compiling 2 files with 0.7.6\nCompiling 6 files with 0.8.12\nSolc 0.7.6 finished in 973.66ms\nSolc 0.8.12 finished in 2.91s\nCompiler run successful
+Running attacks on foundry costs time:  50.737184286117554  seconds
+For Symbolic Attack Vector:  SwapUniswapWBTC2ETH, SwapUniswapETH2WBTC
+	 [1, 1]
+	Estimated Profit -5.079999999999998  	 Actual Profit -3.0081250224093026
+	 [11, 586]
+	Estimated Profit 178.28378250533564  	 Actual Profit -5.74717300610024
+	 [42, 1055]
+	Estimated Profit 151.506709127837  	 Actual Profit -3.480300049227793
+	 [45, 4921]
+	Estimated Profit -1741.382559758973  	 Actual Profit -2142.589953453977
+	 [47, 2265]
+	Estimated Profit -59.768011181758766  	 Actual Profit -306.08817368906944
+	 [53, 4803]
+	Estimated Profit -1544.661758319202  	 Actual Profit -1960.0509251304416
+	 [60, 3008]
+	Estimated Profit -436.4213456284715  	 Actual Profit -617.8729623323557
+	 [67, 2773]
+	Estimated Profit -142.7100738831234  	 Actual Profit -441.05856185331436
+	 [67, 3163]
+	Estimated Profit -299.4973397964893  	 Actual Profit -665.2294169453137
+	 [70, 4335]
+	Estimated Profit -1128.5800928789333  	 Actual Profit -1449.0022071243814
+	 [75, 1875]
+	Estimated Profit 164.8756819155294  	 Actual Profit -51.379471487145565
+	 [78, 3359]
+	Estimated Profit -419.26938596643436  	 Actual Profit -720.5676879281139
+	 [84, 4491]
+	Estimated Profit -1160.6085521284479  	 Actual Profit -1470.0215331238858
+	 [90, 4140]
+	Estimated Profit -994.6065747416837  	 Actual Profit -1177.7043794378658
+	 [95, 2461]
+	Estimated Profit 12.040238258927957  	 Actual Profit -181.95954244437974
+	 [98, 3827]
+	Estimated Profit -528.772353718248  	 Actual Profit -920.3952087198979
+	 [100, 2148]
+	Estimated Profit 67.67474262056294  	 Actual Profit -69.35215879466341
+	 [103, 1485]
+	Estimated Profit 229.0819130245104  	 Actual Profit -25.414589046189377
+	 [10, 584]
+	Estimated Profit -124.60000000000002  	 Actual Profit -8.167272499481584
+	 [41, 1052]
+	Estimated Profit -209.24  	 Actual Profit -3.1531224012463213
+	 [74, 1871]
+	Estimated Profit -268.52  	 Actual Profit -52.546505574444666
+	 [94, 2456]
+	Estimated Profit 74.0  	 Actual Profit -182.8492967936104
+	 [99, 2143]
+	Estimated Profit 103.36000000000001  	 Actual Profit -69.81792209413925
+	 [102, 1482]
+	Estimated Profit -153.56  	 Actual Profit -24.72889673196005
+ ===== Best Profit:  0.8  Best Paras:  [] ,   time:  52.16860604286194
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  0.8
+For Symbolic Attack Vector:  MarginShort, SwapUniswapWBTC2ETH
+	 [467, 1]
+	Estimated Profit 1686.9093355866767  	 Actual Profit -370.1984504045777
+	 [844, 28]
+	Estimated Profit 2661.222493205528  	 Actual Profit 1788.7031258678096
+	 [1030, 28]
+	Estimated Profit 1714.5967742584212  	 Actual Profit 1394.6573955076435
+	 [1171, 12]
+	Estimated Profit 3227.9850032322474  	 Actual Profit 750.0289126884654
+	 [1342, 31]
+	Estimated Profit 2791.362324422  	 Actual Profit 2204.7221254470037
+	 [1437, 56]
+	Estimated Profit 2947.0968174724617  	 Actual Profit 0
+	 [1577, 37]
+	Estimated Profit 2345.8046723696775  	 Actual Profit 0
+	 [1765, 56]
+	Estimated Profit 2616.3049404894878  	 Actual Profit 0
+	 [1968, 56]
+	Estimated Profit 2415.4074174353136  	 Actual Profit 0
+	 [466, 1]
+	Estimated Profit 1687.92  	 Actual Profit -369.47676232725286
+	 [842, 27]
+	Estimated Profit -98.15999999999985  	 Actual Profit 1753.2626533347884
+	 [1027, 27]
+	Estimated Profit 1789.8400000000001  	 Actual Profit 1361.2278611219153
+	 [1168, 11]
+	Estimated Profit 911.12  	 Actual Profit 643.2875696143138
+	 [1339, 30]
+	Estimated Profit 2870.6000000000004  	 Actual Profit 2166.334163905897
+	 [1434, 55]
+	Estimated Profit 1798.6  	 Actual Profit 0
+	 [1573, 36]
+	Estimated Profit 368.1200000000001  	 Actual Profit 0
+	 [1761, 55]
+	Estimated Profit 1471.6  	 Actual Profit 0
+	 [1964, 55]
+	Estimated Profit 1268.6  	 Actual Profit 0
+ ===== Best Profit:  2204.7221254470037  Best Paras:  [1342, 31] ,   time:  52.16884469985962
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  2204.7221254470037
+For Symbolic Attack Vector:  MarginShort, SwapUniswapETH2WBTC
+ ===== Best Profit:  0.0  Best Paras:  [] ,   time:  52.168877840042114
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  2204.7221254470037
+For Symbolic Attack Vector:  SwapUniswapETH2WBTC, SwapUniswapWBTC2ETH
+	 [1171, 7]
+	Estimated Profit 982.817687919453  	 Actual Profit -109.2641993740674
+	 [1729, 1]
+	Estimated Profit 1424.6296508895905  	 Actual Profit -531.7937884565636
+	 [2069, 26]
+	Estimated Profit 288.11416987097465  	 Actual Profit -13.16095096320106
+	 [2341, 1]
+	Estimated Profit 1848.8621957368946  	 Actual Profit -896.0994999769946
+	 [2578, 48]
+	Estimated Profit 641.4078296328003  	 Actual Profit -88.09406330038388
+	 [2811, 37]
+	Estimated Profit 508.06885319128355  	 Actual Profit -5.899386152218874
+	 [3125, 20]
+	Estimated Profit 417.8564456532433  	 Actual Profit -229.18698162452404
+	 [3711, 49]
+	Estimated Profit 280.14183966271685  	 Actual Profit -34.66806442267995
+	 [4077, 1]
+	Estimated Profit 1123.278246366022  	 Actual Profit -2125.7667656552258
+	 [4414, 55]
+	Estimated Profit 103.89843509176507  	 Actual Profit -57.40003680195281
+	 [1168, 6]
+	Estimated Profit 1063.28  	 Actual Profit -127.63208075127704
+	 [1725, 1]
+	Estimated Profit 1160.24  	 Actual Profit -529.5979649785029
+	 [2064, 25]
+	Estimated Profit -1047.44  	 Actual Profit -18.14645980659799
+	 [2336, 1]
+	Estimated Profit -513.3600000000001  	 Actual Profit -892.92346956816
+	 [2572, 47]
+	Estimated Profit -1175.88  	 Actual Profit -77.6952163786454
+	 [2805, 36]
+	Estimated Profit 41.16  	 Actual Profit -5.332656998539619
+	 [3118, 19]
+	Estimated Profit -1849.3200000000002  	 Actual Profit -257.79617481512173
+	 [3703, 48]
+	Estimated Profit 329.6  	 Actual Profit -28.347707411115664
+	 [4068, 1]
+	Estimated Profit -1944.48  	 Actual Profit -2118.918946175834
+	 [4405, 54]
+	Estimated Profit -190.64  	 Actual Profit -49.06185906029373
+ ===== Best Profit:  1.4000000000000001  Best Paras:  [] ,   time:  52.16913032531738
+ ===== Strength:  0  Last Profit:  0   ===== 
+Now global best profit is,  2204.7221254470037
+===== in total  62  concrete attack vectors are checked ======
+==== in total  54  executions succeed
+===== Next round we have  4  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== Strength 0 - round 0 of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 2204.7221254470037 ================================= 
+ ================================================================================= 
+SwapUniswapWBTC2ETH number of points: 
+1000
+MarginShort number of points: 
+1000
+SwapUniswapETH2WBTC number of points: 
+1000
+Check Contract: 	MarginShort, SwapUniswapWBTC2ETH    Profit of Previous Interation: 	2204.7221254470037  time: 52.233052492141724
+The optimizer takes 0.1935594081878662 seconds
+best para: [1171.66510529   12.41939333] best profit: 3227.9850032322474
+Optimization terminated successfully.    Next only show the first 5/9 profitable solutions
+[467, 1] 	  estimated profit is, 1686.9093355866767   	   
+[844, 28] 	  estimated profit is, 2661.222493205528   	   
+[1030, 28] 	  estimated profit is, 1714.5967742584212   	   
+[1171, 12] 	  estimated profit is, 3227.9850032322474   	   
+[1342, 31] 	  estimated profit is, 2791.362324422   	   
+
+Check Contract: 	SwapUniswapETH2WBTC, SwapUniswapWBTC2ETH    Profit of Previous Interation: 	1.4000000000000001  time: 52.475191831588745
+The optimizer takes 0.33177733421325684 seconds
+best para: [2.3417778e+03 1.0000000e+00] best profit: 1848.8621957368946
+Optimization terminated successfully.    Next only show the first 5/10 profitable solutions
+[1171, 7] 	  estimated profit is, 982.817687919453   	   
+[1729, 1] 	  estimated profit is, 1424.6296508895905   	   
+[2069, 26] 	  estimated profit is, 288.11416987097465   	   
+[2341, 1] 	  estimated profit is, 1848.8621957368946   	   
+[2578, 48] 	  estimated profit is, 641.4078296328003   	   
+
+Check Contract: 	SwapUniswapWBTC2ETH, SwapUniswapETH2WBTC    Profit of Previous Interation: 	0.8  time: 52.855146169662476
+The optimizer takes 0.35127711296081543 seconds
+best para: [ 103.48830757 1485.07502706] best profit: 229.0819130245104
+Optimization terminated successfully.    Next only show the first 5/18 profitable solutions
+[1, 1] 	  estimated profit is, -5.079999999999998   	   
+[11, 586] 	  estimated profit is, 178.28378250533564   	   
+[42, 1055] 	  estimated profit is, 151.506709127837   	   
+[45, 4921] 	  estimated profit is, -1741.382559758973   	   
+[47, 2265] 	  estimated profit is, -59.768011181758766   	   
+
+Check Contract: 	MarginShort, SwapUniswapETH2WBTC    Profit of Previous Interation: 	0.0  time: 53.25307488441467
+The optimizer takes 1.0820186138153076 seconds
+best para: [358.59270971   1.0000084 ] best profit: 109.36728189054787
+Optimization terminated successfully.    Next only show the first 4/4 profitable solutions
+[1, 1] 	  estimated profit is, -2.0   	   
+[1, 116] 	  estimated profit is, -0.7203786646876011   	   
+[1, 284] 	  estimated profit is, -12.007893423867642   	   
+[358, 1] 	  estimated profit is, 109.36728189054787   	   
+[357, 1] 	  estimated profit is, -358.0   	   
+
+forge test --match-contract attackTester --fork-url https://nd-193-046-905.p2pify.com/f38bbbfe5955755aaa0ba48accc03f3d --fork-block-number 9484687
+b'Compiling 2 files with 0.7.6\nSolc 0.7.6 finished in 1.02s\nCompiler run successful\n\nRunning 67 tests for src/test/attack.t.sol:attackTester\n\x1b
+Running attacks on foundry costs time:  22.0202374458313  seconds
+For Symbolic Attack Vector:  MarginShort, SwapUniswapWBTC2ETH
+	 [467, 1]
+	Estimated Profit 1686.9093355866767  	 Actual Profit -370.1984504045777
+	 [844, 28]
+	Estimated Profit 2661.222493205528  	 Actual Profit 1788.7031258678096
+	 [1030, 28]
+	Estimated Profit 1714.5967742584212  	 Actual Profit 1394.6573955076435
+	 [1171, 12]
+	Estimated Profit 3227.9850032322474  	 Actual Profit 750.0289126884654
+	 [1342, 31]
+	Estimated Profit 2791.362324422  	 Actual Profit 2204.7221254470037
+	 [1437, 56]
+	Estimated Profit 2947.0968174724617  	 Actual Profit 0
+	 [1577, 37]
+	Estimated Profit 2345.8046723696775  	 Actual Profit 0
+	 [1765, 56]
+	Estimated Profit 2616.3049404894878  	 Actual Profit 0
+	 [1968, 56]
+	Estimated Profit 2415.4074174353136  	 Actual Profit 0
+	 [466, 1]
+	Estimated Profit 1687.92  	 Actual Profit -369.47676232725286
+	 [842, 27]
+	Estimated Profit -98.15999999999985  	 Actual Profit 1753.2626533347884
+	 [1027, 27]
+	Estimated Profit 1789.8400000000001  	 Actual Profit 1361.2278611219153
+	 [1168, 11]
+	Estimated Profit 911.12  	 Actual Profit 643.2875696143138
+	 [1339, 30]
+	Estimated Profit 2870.6000000000004  	 Actual Profit 2166.334163905897
+	 [1434, 55]
+	Estimated Profit 1798.6  	 Actual Profit 0
+	 [1573, 36]
+	Estimated Profit 368.1200000000001  	 Actual Profit 0
+	 [1761, 55]
+	Estimated Profit 1471.6  	 Actual Profit 0
+	 [1964, 55]
+	Estimated Profit 1268.6  	 Actual Profit 0
+ ===== Best Profit:  2204.7221254470037  Best Paras:  [1342, 31] ,   time:  76.40333294868469
+ ===== Strength:  0  Last Profit:  2204.7221254470037   ===== 
+Now global best profit is,  2204.7221254470037
+For Symbolic Attack Vector:  SwapUniswapETH2WBTC, SwapUniswapWBTC2ETH
+	 [1171, 7]
+	Estimated Profit 982.817687919453  	 Actual Profit -109.2641993740674
+	 [1729, 1]
+	Estimated Profit 1424.6296508895905  	 Actual Profit -531.7937884565636
+	 [2069, 26]
+	Estimated Profit 288.11416987097465  	 Actual Profit -13.16095096320106
+	 [2341, 1]
+	Estimated Profit 1848.8621957368946  	 Actual Profit -896.0994999769946
+	 [2578, 48]
+	Estimated Profit 641.4078296328003  	 Actual Profit -88.09406330038388
+	 [2811, 37]
+	Estimated Profit 508.06885319128355  	 Actual Profit -5.899386152218874
+	 [3125, 20]
+	Estimated Profit 417.8564456532433  	 Actual Profit -229.18698162452404
+	 [3711, 49]
+	Estimated Profit 280.14183966271685  	 Actual Profit -34.66806442267995
+	 [4077, 1]
+	Estimated Profit 1123.278246366022  	 Actual Profit -2125.7667656552258
+	 [4414, 55]
+	Estimated Profit 103.89843509176507  	 Actual Profit -57.40003680195281
+	 [1168, 6]
+	Estimated Profit 1063.28  	 Actual Profit -127.63208075127704
+	 [1725, 1]
+	Estimated Profit 1160.24  	 Actual Profit -529.5979649785029
+	 [2064, 25]
+	Estimated Profit -1047.44  	 Actual Profit -18.14645980659799
+	 [2336, 1]
+	Estimated Profit -513.3600000000001  	 Actual Profit -892.92346956816
+	 [2572, 47]
+	Estimated Profit -1175.88  	 Actual Profit -77.6952163786454
+	 [2805, 36]
+	Estimated Profit 41.16  	 Actual Profit -5.332656998539619
+	 [3118, 19]
+	Estimated Profit -1849.3200000000002  	 Actual Profit -257.79617481512173
+	 [3703, 48]
+	Estimated Profit 329.6  	 Actual Profit -28.347707411115664
+	 [4068, 1]
+	Estimated Profit -1944.48  	 Actual Profit -2118.918946175834
+	 [4405, 54]
+	Estimated Profit -190.64  	 Actual Profit -49.06185906029373
+ ===== Best Profit:  1.4000000000000001  Best Paras:  [] ,   time:  76.40369033813477
+ ===== Strength:  0  Last Profit:  1.4000000000000001   ===== 
+Now global best profit is,  2204.7221254470037
+For Symbolic Attack Vector:  SwapUniswapWBTC2ETH, SwapUniswapETH2WBTC
+	 [1, 1]
+	Estimated Profit -5.079999999999998  	 Actual Profit -3.0081250224093026
+	 [11, 586]
+	Estimated Profit 178.28378250533564  	 Actual Profit -5.74717300610024
+	 [42, 1055]
+	Estimated Profit 151.506709127837  	 Actual Profit -3.480300049227793
+	 [45, 4921]
+	Estimated Profit -1741.382559758973  	 Actual Profit -2142.589953453977
+	 [47, 2265]
+	Estimated Profit -59.768011181758766  	 Actual Profit -306.08817368906944
+	 [53, 4803]
+	Estimated Profit -1544.661758319202  	 Actual Profit -1960.0509251304416
+	 [60, 3008]
+	Estimated Profit -436.4213456284715  	 Actual Profit -617.8729623323557
+	 [67, 2773]
+	Estimated Profit -142.7100738831234  	 Actual Profit -441.05856185331436
+	 [67, 3163]
+	Estimated Profit -299.4973397964893  	 Actual Profit -665.2294169453137
+	 [70, 4335]
+	Estimated Profit -1128.5800928789333  	 Actual Profit -1449.0022071243814
+	 [75, 1875]
+	Estimated Profit 164.8756819155294  	 Actual Profit -51.379471487145565
+	 [78, 3359]
+	Estimated Profit -419.26938596643436  	 Actual Profit -720.5676879281139
+	 [84, 4491]
+	Estimated Profit -1160.6085521284479  	 Actual Profit -1470.0215331238858
+	 [90, 4140]
+	Estimated Profit -994.6065747416837  	 Actual Profit -1177.7043794378658
+	 [95, 2461]
+	Estimated Profit 12.040238258927957  	 Actual Profit -181.95954244437974
+	 [98, 3827]
+	Estimated Profit -528.772353718248  	 Actual Profit -920.3952087198979
+	 [100, 2148]
+	Estimated Profit 67.67474262056294  	 Actual Profit -69.35215879466341
+	 [103, 1485]
+	Estimated Profit 229.0819130245104  	 Actual Profit -25.414589046189377
+	 [10, 584]
+	Estimated Profit -124.60000000000002  	 Actual Profit -8.167272499481584
+	 [41, 1052]
+	Estimated Profit -209.24  	 Actual Profit -3.1531224012463213
+	 [74, 1871]
+	Estimated Profit -268.52  	 Actual Profit -52.546505574444666
+	 [94, 2456]
+	Estimated Profit 74.0  	 Actual Profit -182.8492967936104
+	 [99, 2143]
+	Estimated Profit 103.36000000000001  	 Actual Profit -69.81792209413925
+	 [102, 1482]
+	Estimated Profit -153.56  	 Actual Profit -24.72889673196005
+ ===== Best Profit:  0.8  Best Paras:  [] ,   time:  76.40401458740234
+ ===== Strength:  0  Last Profit:  0.8   ===== 
+Now global best profit is,  2204.7221254470037
+For Symbolic Attack Vector:  MarginShort, SwapUniswapETH2WBTC
+	 [1, 1]
+	Estimated Profit -2.0  	 Actual Profit -0.9344685588001325
+	 [1, 116]
+	Estimated Profit -0.7203786646876011  	 Actual Profit 1.7706264291999787
+	 [1, 284]
+	Estimated Profit -12.007893423867642  	 Actual Profit -9.923383359999889
+	 [358, 1]
+	Estimated Profit 109.36728189054787  	 Actual Profit -358.64543263119987
+	 [357, 1]
+	Estimated Profit -358.0  	 Actual Profit -357.6445986639997
+ ===== Best Profit:  1.7706264291999787  Best Paras:  [1, 116] ,   time:  76.40411806106567
+ ===== Strength:  1  Last Profit:  0.0   ===== 
+Now global best profit is,  2204.7221254470037
+===== in total  67  concrete attack vectors are checked ======
+==== in total  59  executions succeed
+===== Next round we have  4  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  1  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 2204.7221254470037 ================================= 
+ ================================================================================= 
+SwapUniswapWBTC2ETH number of points: 
+1000
+MarginShort number of points: 
+1000
+SwapUniswapETH2WBTC number of points: 
+1000
+Check Contract: 	MarginShort, SwapUniswapWBTC2ETH    Profit of Previous Interation: 	2204.7221254470037  time: 76.47654581069946
+The optimizer takes 0.6375524997711182 seconds
+best para: [1.30513876e+03 1.00000000e+00] best profit: 3850.781238089872
+Optimization terminated successfully.    Next only show the first 5/28 profitable solutions
+[1, 1] 	  estimated profit is, -5.079999999999998   	   
+[197, 1] 	  estimated profit is, 1369.3359575398745   	   
+[307, 1] 	  estimated profit is, 1893.4123362073365   	   
+[334, 27] 	  estimated profit is, 666.5494557659376   	   
+[387, 34] 	  estimated profit is, 1173.6085841229408   	   
+
+Check Contract: 	MarginShort, SwapUniswapETH2WBTC    Profit of Previous Interation: 	1.7706264291999787  time: 77.17698764801025
+The optimizer takes 1.0693719387054443 seconds
+best para: [358.59270971   1.0000084 ] best profit: 109.36728189054787
+Optimization terminated successfully.    Next only show the first 4/4 profitable solutions
+[1, 1] 	  estimated profit is, -2.0   	   
+[1, 116] 	  estimated profit is, -0.7203786646876011   	   
+[1, 284] 	  estimated profit is, -12.007893423867642   	   
+[358, 1] 	  estimated profit is, 109.36728189054787   	   
+[357, 1] 	  estimated profit is, -358.0   	   
+
+Check Contract: 	SwapUniswapETH2WBTC, SwapUniswapWBTC2ETH    Profit of Previous Interation: 	1.4000000000000001  time: 78.29000306129456
+The optimizer takes 0.9644849300384521 seconds
+best para: [2.35354627e+03 1.00000000e+00] best profit: 1876.1737302164397
+Optimization terminated successfully.    Next only show the first 5/20 profitable solutions
+[48, 1] 	  estimated profit is, 845.9968645569293   	   
+[140, 1] 	  estimated profit is, 1216.9676405544901   	   
+[200, 1] 	  estimated profit is, 1234.8212799687   	   
+[491, 1] 	  estimated profit is, 1014.2489763942556   	   
+[928, 38] 	  estimated profit is, 285.2916460876165   	   
+
+Check Contract: 	SwapUniswapWBTC2ETH, SwapUniswapETH2WBTC    Profit of Previous Interation: 	0.8  time: 79.30871152877808
+The optimizer takes 0.6639764308929443 seconds
+best para: [  69.13025263 1201.38793778] best profit: 434.1617893130905
+Optimization terminated successfully.    Next only show the first 5/31 profitable solutions
+[1, 70] 	  estimated profit is, 4.0582419401644785   	   
+[1, 471] 	  estimated profit is, -45.867214389739615   	   
+[4, 498] 	  estimated profit is, 106.73890064491121   	   
+[22, 1933] 	  estimated profit is, -304.1427737800677   	   
+[26, 1435] 	  estimated profit is, 153.0137719041702   	   
+
+forge test --match-contract attackTester --fork-url https://nd-193-046-905.p2pify.com/f38bbbfe5955755aaa0ba48accc03f3d --fork-block-number 9484687
+b'Compiling 2 files with 0.7.6\nSolc 0.7.6 finished in 1.01s\nCompiler run successful (with warnings)\n\nRunning 143 tests for src/test/attack.t.sol:a
+Running attacks on foundry costs time:  21.378833770751953  seconds
+For Symbolic Attack Vector:  MarginShort, SwapUniswapWBTC2ETH
+	 [1, 1]
+	Estimated Profit -5.079999999999998  	 Actual Profit -4.1014341368091465
+	 [197, 1]
+	Estimated Profit 1369.3359575398745  	 Actual Profit -165.432831437247
+	 [307, 1]
+	Estimated Profit 1893.4123362073365  	 Actual Profit -251.28140802312197
+	 [334, 27]
+	Estimated Profit 666.5494557659376  	 Actual Profit 369.69765915144944
+	 [387, 34]
+	Estimated Profit 1173.6085841229408  	 Actual Profit 511.6640544176946
+	 [407, 1]
+	Estimated Profit 2454.133854494755  	 Actual Profit -326.4205427358275
+	 [465, 7]
+	Estimated Profit 1435.9952671965466  	 Actual Profit 86.89712420710697
+	 [612, 1]
+	Estimated Profit 2523.2676532697133  	 Actual Profit -473.3528958739749
+	 [683, 25]
+	Estimated Profit 2132.784486653523  	 Actual Profit 1251.963136649515
+	 [847, 1]
+	Estimated Profit 1477.7832849108354  	 Actual Profit -631.5189514870618
+	 [865, 28]
+	Estimated Profit 2816.2058464292995  	 Actual Profit 1850.3841981571693
+	 [918, 27]
+	Estimated Profit 2125.501029512919  	 Actual Profit 1540.8175824765149
+	 [1020, 39]
+	Estimated Profit 1881.394040967328  	 Actual Profit 1540.2730582259237
+	 [1027, 62]
+	Estimated Profit 1791.1494806612718  	 Actual Profit 1449.5096580278487
+	 [1163, 35]
+	Estimated Profit 2692.040177614207  	 Actual Profit 1852.7818427862114
+	 [1253, 1]
+	Estimated Profit 3103.6616074831063  	 Actual Profit -991.5316716425247
+	 [1305, 1]
+	Estimated Profit 3850.781238089872  	 Actual Profit -1027.203757641017
+	 [1367, 38]
+	Estimated Profit 2518.534455081343  	 Actual Profit 0
+	 [1417, 38]
+	Estimated Profit 2462.2319238740483  	 Actual Profit 0
+	 [1461, 10]
+	Estimated Profit 1458.1266486633588  	 Actual Profit 0
+	 [1552, 57]
+	Estimated Profit 2817.8201185486773  	 Actual Profit 0
+	 [1558, 57]
+	Estimated Profit 2801.2600138119046  	 Actual Profit 0
+	 [1651, 39]
+	Estimated Profit 2169.867821080396  	 Actual Profit 0
+	 [1709, 42]
+	Estimated Profit 2025.1101157385026  	 Actual Profit 0
+	 [1756, 9]
+	Estimated Profit 1201.0904355224766  	 Actual Profit 0
+	 [1786, 57]
+	Estimated Profit 2583.6894720155883  	 Actual Profit 0
+	 [1792, 59]
+	Estimated Profit 2477.486412401056  	 Actual Profit 0
+	 [1964, 59]
+	Estimated Profit 2313.0797097587874  	 Actual Profit 0
+	 [196, 1]
+	Estimated Profit 1370.92  	 Actual Profit -164.63682921883816
+	 [306, 1]
+	Estimated Profit 1714.92  	 Actual Profit -250.51614093360246
+	 [333, 26]
+	Estimated Profit 733.9200000000001  	 Actual Profit 364.78150631587687
+	 [386, 33]
+	Estimated Profit 1244.3600000000001  	 Actual Profit 510.72575945609105
+	 [406, 1]
+	Estimated Profit 2455.92  	 Actual Profit -325.6826668300619
+	 [464, 6]
+	Estimated Profit 937.52  	 Actual Profit 23.147538060992275
+	 [610, 1]
+	Estimated Profit -308.08  	 Actual Profit -471.9592977308885
+	 [681, 24]
+	Estimated Profit 996.08  	 Actual Profit 1218.7525392978205
+	 [845, 1]
+	Estimated Profit 914.92  	 Actual Profit -630.2175772922857
+	 [863, 27]
+	Estimated Profit -403.15999999999985  	 Actual Profit 1813.8961402953055
+	 [916, 26]
+	Estimated Profit 2120.92  	 Actual Profit 1522.9154130209427
+	 [1017, 38]
+	Estimated Profit 1619.96  	 Actual Profit 1525.5693159512903
+	 [1024, 61]
+	Estimated Profit 1857.12  	 Actual Profit 1453.938360788191
+	 [1160, 34]
+	Estimated Profit 1439.28  	 Actual Profit 1828.1836290506665
+	 [1250, 1]
+	Estimated Profit 1677.92  	 Actual Profit -989.4609735200262
+	 [1302, 1]
+	Estimated Profit -1028.08  	 Actual Profit -1025.1570497335915
+	 [1364, 37]
+	Estimated Profit 2572.04  	 Actual Profit 0
+	 [1414, 37]
+	Estimated Profit 2522.04  	 Actual Profit 0
+	 [1458, 9]
+	Estimated Profit 69.28000000000003  	 Actual Profit 0
+	 [1548, 56]
+	Estimated Profit 1645.52  	 Actual Profit 0
+	 [1554, 56]
+	Estimated Profit 1639.52  	 Actual Profit 0
+	 [1647, 38]
+	Estimated Profit 2249.96  	 Actual Profit 0
+	 [1705, 41]
+	Estimated Profit 2074.7200000000003  	 Actual Profit 0
+	 [1752, 8]
+	Estimated Profit -185.64  	 Actual Profit 0
+	 [1782, 56]
+	Estimated Profit 1411.52  	 Actual Profit 0
+	 [1788, 58]
+	Estimated Profit 2551.36  	 Actual Profit 0
+	 [1960, 58]
+	Estimated Profit 2379.36  	 Actual Profit 0
+ ===== Best Profit:  1852.7818427862114  Best Paras:  [1163, 35] ,   time:  101.43265056610107
+ ===== Strength:  1  Last Profit:  2204.7221254470037   ===== 
+Now global best profit is,  1852.7818427862114
+For Symbolic Attack Vector:  MarginShort, SwapUniswapETH2WBTC
+	 [1, 1]
+	Estimated Profit -2.0  	 Actual Profit -0.9344685588001325
+	 [1, 116]
+	Estimated Profit -0.7203786646876011  	 Actual Profit 1.7706264291999787
+	 [1, 284]
+	Estimated Profit -12.007893423867642  	 Actual Profit -9.923383359999889
+	 [358, 1]
+	Estimated Profit 109.36728189054787  	 Actual Profit -358.64543263119987
+	 [357, 1]
+	Estimated Profit -358.0  	 Actual Profit -357.6445986639997
+ ===== Best Profit:  1.7706264291999787  Best Paras:  [1, 116] ,   time:  101.43280625343323
+ ===== Strength:  1  Last Profit:  1.7706264291999787   ===== 
+Now global best profit is,  1852.7818427862114
+For Symbolic Attack Vector:  SwapUniswapETH2WBTC, SwapUniswapWBTC2ETH
+	 [48, 1]
+	Estimated Profit 845.9968645569293  	 Actual Profit 0.4340287594494683
+	 [140, 1]
+	Estimated Profit 1216.9676405544901  	 Actual Profit 2.715923718275846
+	 [200, 1]
+	Estimated Profit 1234.8212799687  	 Actual Profit 1.2346726430445472
+	 [491, 1]
+	Estimated Profit 1014.2489763942556  	 Actual Profit -34.705866103401604
+	 [928, 38]
+	Estimated Profit 285.2916460876165  	 Actual Profit -188.85927059154278
+	 [994, 1]
+	Estimated Profit 816.5686967633203  	 Actual Profit -183.75012883798945
+	 [1138, 1]
+	Estimated Profit 1288.4492132203463  	 Actual Profit -241.80324755344566
+	 [1486, 1]
+	Estimated Profit 865.4990664539573  	 Actual Profit -403.67832852875006
+	 [1727, 1]
+	Estimated Profit 1426.6590635652258  	 Actual Profit -530.6955332198318
+	 [2156, 1]
+	Estimated Profit 1153.7139346190932  	 Actual Profit -780.5775122629761
+	 [2295, 28]
+	Estimated Profit 556.5047056177824  	 Actual Profit -13.489352644089422
+	 [2353, 1]
+	Estimated Profit 1876.1737302164397  	 Actual Profit -903.7336758193585
+	 [3036, 16]
+	Estimated Profit 853.0691634422311  	 Actual Profit -343.0965784415239
+	 [3493, 1]
+	Estimated Profit 1283.2802470174433  	 Actual Profit -1689.5222232893343
+	 [3690, 42]
+	Estimated Profit 574.4737925233748  	 Actual Profit -6.881146119742382
+	 [3739, 1]
+	Estimated Profit 1116.0150852392408  	 Actual Profit -1871.1589564761107
+	 [4073, 1]
+	Estimated Profit 1126.8391528899108  	 Actual Profit -2122.7228552711313
+	 [4248, 52]
+	Estimated Profit 125.37088523221564  	 Actual Profit -38.527178667315496
+	 [4394, 24]
+	Estimated Profit -34.71698915054776  	 Actual Profit -309.0144316404468
+	 [4495, 39]
+	Estimated Profit 302.0856557551112  	 Actual Profit -27.06366110821773
+	 [47, 1]
+	Estimated Profit -12.0  	 Actual Profit 0.377311308967311
+	 [139, 1]
+	Estimated Profit 833.16  	 Actual Profit 2.7213674622026787
+	 [199, 1]
+	Estimated Profit 1236.32  	 Actual Profit 1.2775987974645489
+	 [490, 1]
+	Estimated Profit 164.79999999999995  	 Actual Profit -34.50946228118585
+	 [926, 37]
+	Estimated Profit -952.4399999999999  	 Actual Profit -174.04289136583782
+	 [992, 1]
+	Estimated Profit 819.52  	 Actual Profit -182.9855619984088
+	 [1135, 1]
+	Estimated Profit 927.68  	 Actual Profit -240.53560887034234
+	 [1483, 1]
+	Estimated Profit 612.0  	 Actual Profit -402.16770472394956
+	 [1723, 1]
+	Estimated Profit 1162.24  	 Actual Profit -528.5010849147777
+	 [2151, 1]
+	Estimated Profit 156.55999999999995  	 Actual Profit -777.5143597120648
+	 [2290, 27]
+	Estimated Profit 621.56  	 Actual Profit -18.465698138235496
+	 [2348, 1]
+	Estimated Profit 1842.6399999999999  	 Actual Profit -900.5507665262371
+	 [3029, 15]
+	Estimated Profit 244.91999999999996  	 Actual Profit -380.5391504257519
+	 [3486, 1]
+	Estimated Profit -1542.72  	 Actual Profit -1684.4038438199136
+	 [3682, 41]
+	Estimated Profit -1100.84  	 Actual Profit -6.547517123356386
+	 [3731, 1]
+	Estimated Profit -1098.64  	 Actual Profit -1865.2004633681133
+	 [4064, 1]
+	Estimated Profit -1940.48  	 Actual Profit -2115.8766044401336
+	 [4239, 51]
+	Estimated Profit -206.39999999999998  	 Actual Profit -31.850739941901253
+	 [4486, 38]
+	Estimated Profit 368.71999999999997  	 Actual Profit -34.396468686657954
+ ===== Best Profit:  3.1  Best Paras:  [] ,   time:  101.43332290649414
+ ===== Strength:  1  Last Profit:  1.4000000000000001   ===== 
+Now global best profit is,  1852.7818427862114
+For Symbolic Attack Vector:  SwapUniswapWBTC2ETH, SwapUniswapETH2WBTC
+	 [1, 70]
+	Estimated Profit 4.0582419401644785  	 Actual Profit 1.5839317991910988
+	 [1, 471]
+	Estimated Profit -45.867214389739615  	 Actual Profit -33.36731624760881
+	 [4, 498]
+	Estimated Profit 106.73890064491121  	 Actual Profit -20.27650238866346
+	 [22, 1933]
+	Estimated Profit -304.1427737800677  	 Actual Profit -357.62018197432076
+	 [26, 1435]
+	Estimated Profit 153.0137719041702  	 Actual Profit -113.53428053531707
+	 [28, 2441]
+	Estimated Profit -567.5168388413908  	 Actual Profit -566.2351970527627
+	 [28, 3925]
+	Estimated Profit -1193.597359857455  	 Actual Profit -1583.5317798147623
+	 [39, 928]
+	Estimated Profit 132.8535617087449  	 Actual Profit -7.341599005787465
+	 [45, 3271]
+	Estimated Profit -792.3038299450909  	 Actual Profit -907.1719580991769
+	 [47, 839]
+	Estimated Profit 155.8509569059905  	 Actual Profit -43.68130224306901
+	 [49, 2568]
+	Estimated Profit -395.8214334056529  	 Actual Profit -445.73919426619454
+	 [57, 3544]
+	Estimated Profit -881.8873748184615  	 Actual Profit -984.366631604014
+	 [62, 1592]
+	Estimated Profit 207.16114521995394  	 Actual Profit -23.030071163720947
+	 [62, 4082]
+	Estimated Profit -1098.4215157103351  	 Actual Profit -1324.3104226101207
+	 [65, 4628]
+	Estimated Profit -1579.2196836757971  	 Actual Profit -1711.827661212562
+	 [69, 1201]
+	Estimated Profit 434.1617893130905  	 Actual Profit -24.039221191998422
+	 [70, 4277]
+	Estimated Profit -1072.865221251096  	 Actual Profit -1405.757411761581
+	 [71, 3847]
+	Estimated Profit -949.7041497172538  	 Actual Profit -1088.21740512082
+	 [74, 1035]
+	Estimated Profit 210.7576635808468  	 Actual Profit -83.89154941804446
+	 [78, 3349]
+	Estimated Profit -419.66195635135546  	 Actual Profit -714.3296608185144
+	 [78, 4863]
+	Estimated Profit -1610.420819484802  	 Actual Profit -1795.3910501589144
+	 [79, 1787]
+	Estimated Profit 127.0759909535551  	 Actual Profit -27.7645289827052
+	 [83, 2997]
+	Estimated Profit 92.10001295683242  	 Actual Profit -481.4659683333525
+	 [83, 4511]
+	Estimated Profit -1144.2195069455804  	 Actual Profit -1491.3672789529535
+	 [84, 3661]
+	Estimated Profit -301.6757027266956  	 Actual Profit -881.4278370622862
+	 [84, 4989]
+	Estimated Profit -1587.3555189091064  	 Actual Profit -1853.5000872094852
+	 [88, 2168]
+	Estimated Profit 55.36845778029317  	 Actual Profit -99.1750313002068
+	 [93, 1670]
+	Estimated Profit 223.08646366130677  	 Actual Profit -6.812278979528429
+	 [93, 4160]
+	Estimated Profit -1118.3449543489792  	 Actual Profit -1175.6717003835288
+	 [102, 2832]
+	Estimated Profit -152.00973102569128  	 Actual Profit -322.20159362076026
+	 [107, 2334]
+	Estimated Profit 3.4795173117677223  	 Actual Profit -109.02743129225325
+	 [1, 69]
+	Estimated Profit -34.0  	 Actual Profit 1.5427464163907842
+	 [3, 497]
+	Estimated Profit -1.2000000000000455  	 Actual Profit -25.57210965276232
+	 [25, 1432]
+	Estimated Profit -314.12  	 Actual Profit -119.20267991879496
+	 [38, 926]
+	Estimated Profit -76.16  	 Actual Profit -6.147652672955358
+	 [46, 837]
+	Estimated Profit -137.71999999999997  	 Actual Profit -40.42578844969208
+	 [61, 1588]
+	Estimated Profit -44.360000000000014  	 Actual Profit -24.0532866277523
+	 [68, 1198]
+	Estimated Profit -398.03999999999996  	 Actual Profit -22.72783519426136
+	 [73, 1032]
+	Estimated Profit -250.19999999999993  	 Actual Profit -81.29278567292243
+	 [78, 1783]
+	Estimated Profit -308.84000000000003  	 Actual Profit -28.515457868513295
+	 [82, 2991]
+	Estimated Profit -768.4000000000001  	 Actual Profit -482.83234670254865
+	 [87, 2163]
+	Estimated Profit -250.12  	 Actual Profit -100.04450407531533
+	 [92, 1666]
+	Estimated Profit 247.79999999999995  	 Actual Profit -6.849375201170403
+	 [106, 2329]
+	Estimated Profit 42.51999999999998  	 Actual Profit -109.44880096441625
+ ===== Best Profit:  1.5839317991910988  Best Paras:  [1, 70] ,   time:  101.43381071090698
+ ===== Strength:  1  Last Profit:  0.8   ===== 
+Now global best profit is,  1852.7818427862114
+===== in total  143  concrete attack vectors are checked ======
+==== in total  121  executions succeed
+===== Next round we have  4  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  2  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 1852.7818427862114 ================================= 
+ ================================================================================= 
+SwapUniswapWBTC2ETH number of points: 
+1000
+MarginShort number of points: 
+1000
+SwapUniswapETH2WBTC number of points: 
+1000
+Check Contract: 	MarginShort, SwapUniswapWBTC2ETH    Profit of Previous Interation: 	1852.7818427862114  time: 101.50571179389954
+The optimizer takes 2.540220260620117 seconds
+best para: [1.30350821e+03 1.00000000e+00] best profit: 3852.4117923171125
+Optimization terminated successfully.    Next only show the first 5/102 profitable solutions
+[1, 1] 	  estimated profit is, -5.079999999999998   	   
+[109, 1] 	  estimated profit is, 893.1263740149443   	   
+[142, 1] 	  estimated profit is, 842.0894534858545   	   
+[170, 1] 	  estimated profit is, 859.2679209273651   	   
+[182, 1] 	  estimated profit is, 1020.5680458938987   	   
+
+Check Contract: 	SwapUniswapETH2WBTC, SwapUniswapWBTC2ETH    Profit of Previous Interation: 	3.1  time: 104.22051334381104
+The optimizer takes 0.8042783737182617 seconds
+best para: [2.35354627e+03 1.00000000e+00] best profit: 1876.1737302164397
+Optimization terminated successfully.    Next only show the first 5/20 profitable solutions
+[48, 1] 	  estimated profit is, 845.9968645569293   	   
+[140, 1] 	  estimated profit is, 1216.9676405544901   	   
+[200, 1] 	  estimated profit is, 1234.8212799687   	   
+[491, 1] 	  estimated profit is, 1014.2489763942556   	   
+[928, 38] 	  estimated profit is, 285.2916460876165   	   
+
+Check Contract: 	MarginShort, SwapUniswapETH2WBTC    Profit of Previous Interation: 	1.7706264291999787  time: 105.08043551445007
+The optimizer takes 5.591344356536865 seconds
+best para: [358.56836803   1.00000108] best profit: 109.39163089185962
+Optimization terminated successfully.    Next only show the first 5/25 profitable solutions
+[1, 1] 	  estimated profit is, -2.0   	   
+[1, 39] 	  estimated profit is, -1.1241564276851221   	   
+[1, 70] 	  estimated profit is, 6.6669301668636365   	   
+[1, 71] 	  estimated profit is, 5.629443976430736   	   
+[1, 115] 	  estimated profit is, 1.0630863913022353   	   
+
+Check Contract: 	SwapUniswapWBTC2ETH, SwapUniswapETH2WBTC    Profit of Previous Interation: 	1.5839317991910988  time: 110.71777319908142
+The optimizer takes 0.6575429439544678 seconds
+best para: [  69.13025263 1201.38793778] best profit: 434.1617893130905
+Optimization terminated successfully.    Next only show the first 5/31 profitable solutions
+[1, 70] 	  estimated profit is, 4.0582419401644785   	   
+[1, 471] 	  estimated profit is, -45.867214389739615   	   
+[4, 498] 	  estimated profit is, 106.73890064491121   	   
+[22, 1933] 	  estimated profit is, -304.1427737800677   	   
+[26, 1435] 	  estimated profit is, 153.0137719041702   	   
+
+forge test --match-contract attackTester --fork-url https://nd-193-046-905.p2pify.com/f38bbbfe5955755aaa0ba48accc03f3d --fork-block-number 9484687
+b'Compiling 2 files with 0.7.6\nSolc 0.7.6 finished in 1.27s\nCompiler run successful (with warnings)\n\nRunning 313 tests for src/test/attack.t.sol:a
+Running attacks on foundry costs time:  21.686208248138428  seconds
+For Symbolic Attack Vector:  MarginShort, SwapUniswapWBTC2ETH
+	 [1, 1]
+	Estimated Profit -5.079999999999998  	 Actual Profit -4.1014341368091465
+	 [109, 1]
+	Estimated Profit 893.1263740149443  	 Actual Profit -94.29787850065266
+	 [142, 1]
+	Estimated Profit 842.0894534858545  	 Actual Profit -121.23200212864965
+	 [170, 1]
+	Estimated Profit 859.2679209273651  	 Actual Profit -143.84150754060562
+	 [182, 1]
+	Estimated Profit 1020.5680458938987  	 Actual Profit -153.46312631393545
+	 [184, 1]
+	Estimated Profit 1018.8494465033745  	 Actual Profit -155.06276344369513
+	 [214, 1]
+	Estimated Profit 919.7191036113268  	 Actual Profit -178.92172026412942
+	 [236, 1]
+	Estimated Profit 1065.3978054979857  	 Actual Profit -196.2572483136983
+	 [252, 1]
+	Estimated Profit 826.334658823654  	 Actual Profit -208.77968390955817
+	 [295, 1]
+	Estimated Profit 1456.613130493111  	 Actual Profit -242.0799400914321
+	 [307, 1]
+	Estimated Profit 1893.0076168926162  	 Actual Profit -251.28140802312197
+	 [310, 1]
+	Estimated Profit 1890.394846892602  	 Actual Profit -253.5755505501666
+	 [402, 14]
+	Estimated Profit 1942.4989707834397  	 Actual Profit 326.13667288680597
+	 [406, 1]
+	Estimated Profit 2455.3612565934613  	 Actual Profit -325.6826668300619
+	 [407, 1]
+	Estimated Profit 2454.7210002848988  	 Actual Profit -326.4205427358275
+	 [408, 1]
+	Estimated Profit 2453.891352660328  	 Actual Profit -327.1581473146262
+	 [423, 1]
+	Estimated Profit 2336.6708290450547  	 Actual Profit -338.1896943371558
+	 [456, 11]
+	Estimated Profit 906.9104125613896  	 Actual Profit 288.9700672029313
+	 [494, 1]
+	Estimated Profit 642.4238457267566  	 Actual Profit -389.66730404895594
+	 [507, 26]
+	Estimated Profit 1358.4142205161402  	 Actual Profit 807.227188394595
+	 [526, 1]
+	Estimated Profit 1770.4907703944282  	 Actual Profit -412.6604615277984
+	 [554, 53]
+	Estimated Profit 1563.8871354684957  	 Actual Profit 931.8286641256072
+	 [570, 10]
+	Estimated Profit 1945.021656837702  	 Actual Profit 366.6909878070603
+	 [587, 27]
+	Estimated Profit 1685.5355366343965  	 Actual Profit 1035.8342300390668
+	 [591, 1]
+	Estimated Profit 2326.306648454849  	 Actual Profit -458.6782177626697
+	 [609, 46]
+	Estimated Profit 1544.5253449029567  	 Actual Profit 1187.7842833725967
+	 [630, 13]
+	Estimated Profit 2058.5791620807913  	 Actual Profit 635.9091928861108
+	 [655, 1]
+	Estimated Profit 2519.116248371338  	 Actual Profit -503.11444107273206
+	 [656, 1]
+	Estimated Profit 2518.8586916586487  	 Actual Profit -503.80204217889656
+	 [663, 14]
+	Estimated Profit 2113.5919785085216  	 Actual Profit 750.7118898189436
+	 [667, 78]
+	Estimated Profit 1178.9869338983485  	 Actual Profit 935.3993016939676
+	 [696, 9]
+	Estimated Profit 1735.534098756399  	 Actual Profit 431.487756401931
+	 [700, 42]
+	Estimated Profit 2042.4208705322305  	 Actual Profit 1509.8141318076175
+	 [728, 33]
+	Estimated Profit 1801.5517568936375  	 Actual Profit 1541.2059790084081
+	 [759, 50]
+	Estimated Profit 1716.190271657467  	 Actual Profit 1695.376989818802
+	 [765, 1]
+	Estimated Profit 2411.242799567946  	 Actual Profit -577.5508866474071
+	 [782, 42]
+	Estimated Profit 2024.792456043133  	 Actual Profit 1788.62837689815
+	 [812, 20]
+	Estimated Profit 2173.696911674795  	 Actual Profit 1394.410928701836
+	 [821, 40]
+	Estimated Profit 2587.1728227372914  	 Actual Profit 1911.5934234285905
+	 [836, 1]
+	Estimated Profit 2945.524545324575  	 Actual Profit -624.3522827086914
+	 [843, 34]
+	Estimated Profit 2602.1674756563457  	 Actual Profit 1917.6171052874554
+	 [860, 32]
+	Estimated Profit 2787.267164306474  	 Actual Profit 1934.543983463373
+	 [895, 15]
+	Estimated Profit 2523.7333323571747  	 Actual Profit 1094.8541203052791
+	 [896, 1]
+	Estimated Profit 2885.3369078752617  	 Actual Profit -683.547486345654
+	 [909, 47]
+	Estimated Profit 2248.829310985042  	 Actual Profit 1830.740532836657
+	 [942, 44]
+	Estimated Profit 1857.7832336004137  	 Actual Profit 1607.4793364646507
+	 [964, 31]
+	Estimated Profit 1793.5401838158227  	 Actual Profit 1370.7695411524714
+	 [993, 27]
+	Estimated Profit 1935.5781710638423  	 Actual Profit 1289.0863538324602
+	 [998, 42]
+	Estimated Profit 1988.213805482058  	 Actual Profit 1497.709778032612
+	 [1005, 1]
+	Estimated Profit 1535.8662053115386  	 Actual Profit -815.6528943396721
+	 [1018, 53]
+	Estimated Profit 1744.8786808560467  	 Actual Profit 1519.174573278201
+	 [1056, 50]
+	Estimated Profit 1973.281578339932  	 Actual Profit 1641.9596826325687
+	 [1083, 7]
+	Estimated Profit 2450.2054759289213  	 Actual Profit 102.63228857527014
+	 [1118, 30]
+	Estimated Profit 2606.5288110663314  	 Actual Profit 1642.7531054652634
+	 [1122, 35]
+	Estimated Profit 2297.337029203073  	 Actual Profit 1751.2680113568888
+	 [1156, 42]
+	Estimated Profit 2302.4023401430604  	 Actual Profit 1909.623424888994
+	 [1168, 28]
+	Estimated Profit 2591.341200882718  	 Actual Profit 1701.1235955192994
+	 [1186, 7]
+	Estimated Profit 1184.100072265586  	 Actual Profit 159.4937074447284
+	 [1189, 35]
+	Estimated Profit 2095.8912253674944  	 Actual Profit 1917.6135189174058
+	 [1198, 61]
+	Estimated Profit 2169.272409890668  	 Actual Profit 1957.413311479796
+	 [1227, 70]
+	Estimated Profit 2464.7836435640697  	 Actual Profit 1921.6235727978842
+	 [1242, 1]
+	Estimated Profit 1685.2401004321046  	 Actual Profit -983.9323343671764
+	 [1247, 49]
+	Estimated Profit 2500.256096336335  	 Actual Profit 2173.786550881645
+	 [1253, 1]
+	Estimated Profit 3103.1466077488217  	 Actual Profit -991.5316716425247
+	 [1291, 61]
+	Estimated Profit 2639.4128824875265  	 Actual Profit 2230.4858150594728
+	 [1294, 37]
+	Estimated Profit 2950.8270534097464  	 Actual Profit 2218.6850969234156
+	 [1303, 1]
+	Estimated Profit 3852.4117923171125  	 Actual Profit -1025.83943925004
+	 [1337, 73]
+	Estimated Profit 2665.384000253126  	 Actual Profit 2206.0535020317534
+	 [1366, 37]
+	Estimated Profit 2555.293981291764  	 Actual Profit 0
+	 [1395, 57]
+	Estimated Profit 2950.2051816803696  	 Actual Profit 0
+	 [1408, 58]
+	Estimated Profit 2919.1361316249927  	 Actual Profit 0
+	 [1428, 59]
+	Estimated Profit 2869.6328798246686  	 Actual Profit 0
+	 [1434, 57]
+	Estimated Profit 2907.846202809302  	 Actual Profit 0
+	 [1455, 39]
+	Estimated Profit 2379.192059808981  	 Actual Profit 0
+	 [1462, 41]
+	Estimated Profit 2301.8142458772595  	 Actual Profit 0
+	 [1481, 57]
+	Estimated Profit 2866.845598231211  	 Actual Profit 0
+	 [1493, 57]
+	Estimated Profit 2883.97827340949  	 Actual Profit 0
+	 [1501, 10]
+	Estimated Profit 1452.1805636820452  	 Actual Profit 0
+	 [1524, 37]
+	Estimated Profit 2403.065280807282  	 Actual Profit 0
+	 [1541, 10]
+	Estimated Profit 1377.6611073345543  	 Actual Profit 0
+	 [1543, 59]
+	Estimated Profit 2734.411211549854  	 Actual Profit 0
+	 [1546, 57]
+	Estimated Profit 2823.450396212805  	 Actual Profit 0
+	 [1591, 59]
+	Estimated Profit 2691.049170422545  	 Actual Profit 0
+	 [1607, 11]
+	Estimated Profit 1306.5227218219293  	 Actual Profit 0
+	 [1616, 57]
+	Estimated Profit 2756.1724302217845  	 Actual Profit 0
+	 [1678, 42]
+	Estimated Profit 2030.3593311484146  	 Actual Profit 0
+	 [1696, 57]
+	Estimated Profit 2663.9958505528966  	 Actual Profit 0
+	 [1728, 42]
+	Estimated Profit 2005.1477116202893  	 Actual Profit 0
+	 [1750, 10]
+	Estimated Profit 1202.3530101542412  	 Actual Profit 0
+	 [1759, 57]
+	Estimated Profit 2613.756764296195  	 Actual Profit 0
+	 [1781, 57]
+	Estimated Profit 2589.114731779335  	 Actual Profit 0
+	 [1784, 58]
+	Estimated Profit 2527.081550073271  	 Actual Profit 0
+	 [1817, 56]
+	Estimated Profit 2563.637892049226  	 Actual Profit 0
+	 [1825, 37]
+	Estimated Profit 2072.8643279754915  	 Actual Profit 0
+	 [1883, 57]
+	Estimated Profit 2471.7484689183375  	 Actual Profit 0
+	 [1889, 11]
+	Estimated Profit 1022.0178709510426  	 Actual Profit 0
+	 [1935, 42]
+	Estimated Profit 1798.1231791248447  	 Actual Profit 0
+	 [1955, 59]
+	Estimated Profit 2338.693221124538  	 Actual Profit 0
+	 [1961, 58]
+	Estimated Profit 2357.957380231538  	 Actual Profit 0
+	 [1977, 10]
+	Estimated Profit 978.645454085572  	 Actual Profit 0
+	 [1985, 41]
+	Estimated Profit 1759.528940192959  	 Actual Profit 0
+	 [1985, 56]
+	Estimated Profit 2400.9590318227342  	 Actual Profit 0
+	 [108, 1]
+	Estimated Profit 894.92  	 Actual Profit -93.47682292157067
+	 [141, 1]
+	Estimated Profit 843.92  	 Actual Profit -120.42039055347966
+	 [169, 1]
+	Estimated Profit 860.92  	 Actual Profit -143.03786287452118
+	 [181, 1]
+	Estimated Profit 848.92  	 Actual Profit -152.66288312431521
+	 [183, 1]
+	Estimated Profit 1019.92  	 Actual Profit -154.26308640785743
+	 [213, 1]
+	Estimated Profit 920.92  	 Actual Profit -178.13050994729844
+	 [235, 1]
+	Estimated Profit 328.92  	 Actual Profit -195.47221641443417
+	 [251, 1]
+	Estimated Profit 814.92  	 Actual Profit -207.99912927526663
+	 [294, 1]
+	Estimated Profit 84.92  	 Actual Profit -241.31135110327074
+	 [306, 1]
+	Estimated Profit 1714.92  	 Actual Profit -250.51614093360246
+	 [309, 1]
+	Estimated Profit 1891.92  	 Actual Profit -252.81111278208033
+	 [401, 13]
+	Estimated Profit -376.03999999999996  	 Actual Profit 294.1148752946656
+	 [405, 1]
+	Estimated Profit 2456.92  	 Actual Profit -324.9445196147181
+	 [422, 1]
+	Estimated Profit 2337.92  	 Actual Profit -337.4561531849941
+	 [455, 10]
+	Estimated Profit 707.2  	 Actual Profit 241.53521356852457
+	 [493, 1]
+	Estimated Profit 643.92  	 Actual Profit -388.9451067085375
+	 [505, 25]
+	Estimated Profit 1419.0  	 Actual Profit 787.1735173627185
+	 [524, 1]
+	Estimated Profit -413.08  	 Actual Profit -411.2300081886297
+	 [552, 52]
+	Estimated Profit 1073.8400000000001  	 Actual Profit 936.1222509286499
+	 [568, 9]
+	Estimated Profit -178.71999999999997  	 Actual Profit 297.6887758622491
+	 [585, 26]
+	Estimated Profit 1367.92  	 Actual Profit 1012.4557902002025
+	 [589, 1]
+	Estimated Profit 1026.92  	 Actual Profit -457.2757804042058
+	 [607, 45]
+	Estimated Profit 946.4000000000001  	 Actual Profit 1186.0048881561893
+	 [628, 12]
+	Estimated Profit 1338.04  	 Actual Profit 571.1698800166141
+	 [653, 1]
+	Estimated Profit 298.92  	 Actual Profit -501.738626127331
+	 [654, 1]
+	Estimated Profit 297.92  	 Actual Profit -502.42663580403865
+	 [661, 13]
+	Estimated Profit 2180.96  	 Actual Profit 685.9759039943201
+	 [665, 77]
+	Estimated Profit 1066.8400000000001  	 Actual Profit 948.716960748041
+	 [694, 8]
+	Estimated Profit 198.36  	 Actual Profit 337.03329132071883
+	 [698, 41]
+	Estimated Profit 846.72  	 Actual Profit 1501.8964662213236
+	 [726, 32]
+	Estimated Profit 1504.44  	 Actual Profit 1520.7372504289374
+	 [757, 49]
+	Estimated Profit 1764.0800000000002  	 Actual Profit 1693.3769939304832
+	 [763, 1]
+	Estimated Profit 1321.92  	 Actual Profit -576.2186866094963
+	 [780, 41]
+	Estimated Profit 1739.72  	 Actual Profit 1778.4376015409568
+	 [810, 19]
+	Estimated Profit 170.48000000000002  	 Actual Profit 1337.9057042307254
+	 [819, 39]
+	Estimated Profit 1408.88  	 Actual Profit 1897.9140592493786
+	 [834, 1]
+	Estimated Profit 1435.92  	 Actual Profit -623.0468545271721
+	 [841, 33]
+	Estimated Profit 2659.36  	 Actual Profit 1894.288463208623
+	 [858, 31]
+	Estimated Profit 185.51999999999998  	 Actual Profit 1906.901107175126
+	 [893, 14]
+	Estimated Profit 358.88  	 Actual Profit 1029.1353697588193
+	 [894, 1]
+	Estimated Profit 865.92  	 Actual Profit -680.4789283367892
+	 [907, 46]
+	Estimated Profit 2291.32  	 Actual Profit 1846.7234014707478
+	 [940, 43]
+	Estimated Profit 1906.5600000000002  	 Actual Profit 1619.0207799424713
+	 [962, 30]
+	Estimated Profit 1820.6000000000001  	 Actual Profit 1362.347526351942
+	 [991, 26]
+	Estimated Profit 1679.92  	 Actual Profit 1257.17420631004
+	 [996, 41]
+	Estimated Profit 1388.72  	 Actual Profit 1489.6478341681611
+	 [1002, 1]
+	Estimated Profit 1528.92  	 Actual Profit -813.4667903796563
+	 [1015, 52]
+	Estimated Profit 1479.8400000000001  	 Actual Profit 1518.0735696099728
+	 [1053, 49]
+	Estimated Profit 1085.0800000000002  	 Actual Profit 1637.9042572990786
+	 [1080, 6]
+	Estimated Profit 994.52  	 Actual Profit -32.12544903463865
+	 [1115, 29]
+	Estimated Profit 2668.6800000000003  	 Actual Profit 1610.071015825836
+	 [1119, 34]
+	Estimated Profit 2469.2799999999997  	 Actual Profit 1727.8810993853842
+	 [1153, 41]
+	Estimated Profit 2101.7200000000003  	 Actual Profit 1895.4731072598831
+	 [1165, 27]
+	Estimated Profit 288.84000000000015  	 Actual Profit 1661.8667689478807
+	 [1183, 6]
+	Estimated Profit 1262.52  	 Actual Profit 7.558174905378593
+	 [1186, 34]
+	Estimated Profit 1945.28  	 Actual Profit 1892.2572485757003
+	 [1195, 60]
+	Estimated Profit 1962.2000000000003  	 Actual Profit 1959.400978650077
+	 [1224, 69]
+	Estimated Profit 2386.48  	 Actual Profit 1928.1876687612007
+	 [1239, 1]
+	Estimated Profit -213.07999999999998  	 Actual Profit -981.856552231172
+	 [1244, 48]
+	Estimated Profit 2567.16  	 Actual Profit 2165.740810617177
+	 [1250, 1]
+	Estimated Profit 1677.92  	 Actual Profit -989.4609735200262
+	 [1288, 60]
+	Estimated Profit 2362.2000000000003  	 Actual Profit 2231.5262123379975
+	 [1291, 36]
+	Estimated Profit 2497.12  	 Actual Profit 2193.965726469024
+	 [1300, 1]
+	Estimated Profit -1026.08  	 Actual Profit -1023.7918100931198
+	 [1334, 72]
+	Estimated Profit 2662.2400000000002  	 Actual Profit 2213.201826212348
+	 [1363, 36]
+	Estimated Profit 578.1200000000001  	 Actual Profit 0
+	 [1392, 56]
+	Estimated Profit 1801.52  	 Actual Profit 0
+	 [1405, 57]
+	Estimated Profit 2973.44  	 Actual Profit 0
+	 [1425, 58]
+	Estimated Profit 2914.36  	 Actual Profit 0
+	 [1431, 56]
+	Estimated Profit 1762.52  	 Actual Profit 0
+	 [1452, 38]
+	Estimated Profit 2444.96  	 Actual Profit 0
+	 [1459, 40]
+	Estimated Profit 2359.8  	 Actual Profit 0
+	 [1478, 56]
+	Estimated Profit 1715.52  	 Actual Profit 0
+	 [1490, 56]
+	Estimated Profit 1703.52  	 Actual Profit 0
+	 [1497, 9]
+	Estimated Profit 30.28000000000003  	 Actual Profit 0
+	 [1520, 36]
+	Estimated Profit 421.1200000000001  	 Actual Profit 0
+	 [1537, 9]
+	Estimated Profit -9.71999999999997  	 Actual Profit 0
+	 [1539, 58]
+	Estimated Profit 2800.36  	 Actual Profit 0
+	 [1542, 56]
+	Estimated Profit 1651.52  	 Actual Profit 0
+	 [1587, 58]
+	Estimated Profit 2752.36  	 Actual Profit 0
+	 [1603, 10]
+	Estimated Profit 1354.2  	 Actual Profit 0
+	 [1612, 56]
+	Estimated Profit 1581.52  	 Actual Profit 0
+	 [1674, 41]
+	Estimated Profit 2105.7200000000003  	 Actual Profit 0
+	 [1692, 56]
+	Estimated Profit 1501.52  	 Actual Profit 0
+	 [1724, 41]
+	Estimated Profit 2055.7200000000003  	 Actual Profit 0
+	 [1746, 9]
+	Estimated Profit -218.71999999999997  	 Actual Profit 0
+	 [1755, 56]
+	Estimated Profit 1438.52  	 Actual Profit 0
+	 [1777, 56]
+	Estimated Profit 1416.52  	 Actual Profit 0
+	 [1780, 57]
+	Estimated Profit 2598.44  	 Actual Profit 0
+	 [1813, 55]
+	Estimated Profit 1419.6  	 Actual Profit 0
+	 [1821, 36]
+	Estimated Profit 120.12000000000012  	 Actual Profit 0
+	 [1879, 56]
+	Estimated Profit 1314.52  	 Actual Profit 0
+	 [1885, 10]
+	Estimated Profit 1072.2  	 Actual Profit 0
+	 [1931, 41]
+	Estimated Profit 1848.72  	 Actual Profit 0
+	 [1951, 58]
+	Estimated Profit 2388.36  	 Actual Profit 0
+	 [1957, 57]
+	Estimated Profit 2421.44  	 Actual Profit 0
+	 [1973, 9]
+	Estimated Profit -445.71999999999997  	 Actual Profit 0
+	 [1981, 40]
+	Estimated Profit 1837.8000000000002  	 Actual Profit 0
+	 [1981, 55]
+	Estimated Profit 1251.6  	 Actual Profit 0
+ ===== Best Profit:  2231.5262123379975  Best Paras:  [1288, 60] ,   time:  133.12903690338135
+ ===== Strength:  2  Last Profit:  1852.7818427862114   ===== 
+Now global best profit is,  2231.5262123379975
+For Symbolic Attack Vector:  SwapUniswapETH2WBTC, SwapUniswapWBTC2ETH
+	 [48, 1]
+	Estimated Profit 845.9968645569293  	 Actual Profit 0.4340287594494683
+	 [140, 1]
+	Estimated Profit 1216.9676405544901  	 Actual Profit 2.715923718275846
+	 [200, 1]
+	Estimated Profit 1234.8212799687  	 Actual Profit 1.2346726430445472
+	 [491, 1]
+	Estimated Profit 1014.2489763942556  	 Actual Profit -34.705866103401604
+	 [928, 38]
+	Estimated Profit 285.2916460876165  	 Actual Profit -188.85927059154278
+	 [994, 1]
+	Estimated Profit 816.5686967633203  	 Actual Profit -183.75012883798945
+	 [1138, 1]
+	Estimated Profit 1288.4492132203463  	 Actual Profit -241.80324755344566
+	 [1486, 1]
+	Estimated Profit 865.4990664539573  	 Actual Profit -403.67832852875006
+	 [1727, 1]
+	Estimated Profit 1426.6590635652258  	 Actual Profit -530.6955332198318
+	 [2156, 1]
+	Estimated Profit 1153.7139346190932  	 Actual Profit -780.5775122629761
+	 [2295, 28]
+	Estimated Profit 556.5047056177824  	 Actual Profit -13.489352644089422
+	 [2353, 1]
+	Estimated Profit 1876.1737302164397  	 Actual Profit -903.7336758193585
+	 [3036, 16]
+	Estimated Profit 853.0691634422311  	 Actual Profit -343.0965784415239
+	 [3493, 1]
+	Estimated Profit 1283.2802470174433  	 Actual Profit -1689.5222232893343
+	 [3690, 42]
+	Estimated Profit 574.4737925233748  	 Actual Profit -6.881146119742382
+	 [3739, 1]
+	Estimated Profit 1116.0150852392408  	 Actual Profit -1871.1589564761107
+	 [4073, 1]
+	Estimated Profit 1126.8391528899108  	 Actual Profit -2122.7228552711313
+	 [4248, 52]
+	Estimated Profit 125.37088523221564  	 Actual Profit -38.527178667315496
+	 [4394, 24]
+	Estimated Profit -34.71698915054776  	 Actual Profit -309.0144316404468
+	 [4495, 39]
+	Estimated Profit 302.0856557551112  	 Actual Profit -27.06366110821773
+	 [47, 1]
+	Estimated Profit -12.0  	 Actual Profit 0.377311308967311
+	 [139, 1]
+	Estimated Profit 833.16  	 Actual Profit 2.7213674622026787
+	 [199, 1]
+	Estimated Profit 1236.32  	 Actual Profit 1.2775987974645489
+	 [490, 1]
+	Estimated Profit 164.79999999999995  	 Actual Profit -34.50946228118585
+	 [926, 37]
+	Estimated Profit -952.4399999999999  	 Actual Profit -174.04289136583782
+	 [992, 1]
+	Estimated Profit 819.52  	 Actual Profit -182.9855619984088
+	 [1135, 1]
+	Estimated Profit 927.68  	 Actual Profit -240.53560887034234
+	 [1483, 1]
+	Estimated Profit 612.0  	 Actual Profit -402.16770472394956
+	 [1723, 1]
+	Estimated Profit 1162.24  	 Actual Profit -528.5010849147777
+	 [2151, 1]
+	Estimated Profit 156.55999999999995  	 Actual Profit -777.5143597120648
+	 [2290, 27]
+	Estimated Profit 621.56  	 Actual Profit -18.465698138235496
+	 [2348, 1]
+	Estimated Profit 1842.6399999999999  	 Actual Profit -900.5507665262371
+	 [3029, 15]
+	Estimated Profit 244.91999999999996  	 Actual Profit -380.5391504257519
+	 [3486, 1]
+	Estimated Profit -1542.72  	 Actual Profit -1684.4038438199136
+	 [3682, 41]
+	Estimated Profit -1100.84  	 Actual Profit -6.547517123356386
+	 [3731, 1]
+	Estimated Profit -1098.64  	 Actual Profit -1865.2004633681133
+	 [4064, 1]
+	Estimated Profit -1940.48  	 Actual Profit -2115.8766044401336
+	 [4239, 51]
+	Estimated Profit -206.39999999999998  	 Actual Profit -31.850739941901253
+	 [4486, 38]
+	Estimated Profit 368.71999999999997  	 Actual Profit -34.396468686657954
+ ===== Best Profit:  3.1  Best Paras:  [] ,   time:  133.12954449653625
+ ===== Strength:  1  Last Profit:  3.1   ===== 
+Now global best profit is,  2231.5262123379975
+For Symbolic Attack Vector:  MarginShort, SwapUniswapETH2WBTC
+	 [1, 1]
+	Estimated Profit -2.0  	 Actual Profit -0.9344685588001325
+	 [1, 39]
+	Estimated Profit -1.1241564276851221  	 Actual Profit 1.0046126215997333
+	 [1, 70]
+	Estimated Profit 6.6669301668636365  	 Actual Profit 1.8102665020000757
+	 [1, 71]
+	Estimated Profit 5.629443976430736  	 Actual Profit 1.824923208399909
+	 [1, 115]
+	Estimated Profit 1.0630863913022353  	 Actual Profit 1.7867745328001234
+	 [1, 116]
+	Estimated Profit 0.1884738912878987  	 Actual Profit 1.7706264291999787
+	 [1, 117]
+	Estimated Profit -0.770224721539094  	 Actual Profit 1.7538096667997536
+	 [1, 198]
+	Estimated Profit -4.3516135182568405  	 Actual Profit -1.7676579939999613
+	 [1, 199]
+	Estimated Profit -4.911009154472254  	 Actual Profit -1.8370596320000914
+	 [1, 239]
+	Estimated Profit -5.951692629739711  	 Actual Profit -5.11102545519995
+	 [1, 284]
+	Estimated Profit -12.298271703839816  	 Actual Profit -9.923383359999889
+	 [1, 285]
+	Estimated Profit -13.11806951316106  	 Actual Profit -10.04352842399976
+	 [1, 318]
+	Estimated Profit -6.8250273039469675  	 Actual Profit -14.32228933639982
+	 [1, 523]
+	Estimated Profit -55.158844662950344  	 Actual Profit -53.581102175200044
+	 [1, 1128]
+	Estimated Profit -269.5172411376918  	 Actual Profit -269.6390357191997
+	 [1, 1277]
+	Estimated Profit -340.71336700070435  	 Actual Profit -340.45188098119957
+	 [1, 2116]
+	Estimated Profit -828.0412750832093  	 Actual Profit -827.2022676487995
+	 [4, 626]
+	Estimated Profit -84.229805282337  	 Actual Profit -83.73580705799998
+	 [82, 40]
+	Estimated Profit -84.10248724571458  	 Actual Profit -79.95866024200006
+	 [345, 89]
+	Estimated Profit 33.85355468749998  	 Actual Profit -402.03963426160004
+	 [358, 1]
+	Estimated Profit 109.39163089185962  	 Actual Profit -358.64543263119987
+	 [359, 1]
+	Estimated Profit 108.94017739008262  	 Actual Profit -359.64626425359984
+	 [360, 1]
+	Estimated Profit 107.71009812921596  	 Actual Profit -360.64709235879974
+	 [486, 2475]
+	Estimated Profit -2376.7757812500004  	 Actual Profit -2499.6797812456
+	 [941, 3557]
+	Estimated Profit -3912.799999997749  	 Actual Profit -4109.4465759372
+	 [1, 69]
+	Estimated Profit -30.92  	 Actual Profit 1.7949087004000006
+	 [1, 114]
+	Estimated Profit -36.84  	 Actual Profit 1.8022535867998926
+	 [344, 88]
+	Estimated Profit -353.84000000000003  	 Actual Profit -400.31741998199976
+	 [357, 1]
+	Estimated Profit -358.0  	 Actual Profit -357.6445986639997
+ ===== Best Profit:  1.824923208399909  Best Paras:  [1, 71] ,   time:  133.12991762161255
+ ===== Strength:  2  Last Profit:  1.7706264291999787   ===== 
+Now global best profit is,  2231.5262123379975
+For Symbolic Attack Vector:  SwapUniswapWBTC2ETH, SwapUniswapETH2WBTC
+	 [1, 70]
+	Estimated Profit 4.0582419401644785  	 Actual Profit 1.5839317991910988
+	 [1, 471]
+	Estimated Profit -45.867214389739615  	 Actual Profit -33.36731624760881
+	 [4, 498]
+	Estimated Profit 106.73890064491121  	 Actual Profit -20.27650238866346
+	 [22, 1933]
+	Estimated Profit -304.1427737800677  	 Actual Profit -357.62018197432076
+	 [26, 1435]
+	Estimated Profit 153.0137719041702  	 Actual Profit -113.53428053531707
+	 [28, 2441]
+	Estimated Profit -567.5168388413908  	 Actual Profit -566.2351970527627
+	 [28, 3925]
+	Estimated Profit -1193.597359857455  	 Actual Profit -1583.5317798147623
+	 [39, 928]
+	Estimated Profit 132.8535617087449  	 Actual Profit -7.341599005787465
+	 [45, 3271]
+	Estimated Profit -792.3038299450909  	 Actual Profit -907.1719580991769
+	 [47, 839]
+	Estimated Profit 155.8509569059905  	 Actual Profit -43.68130224306901
+	 [49, 2568]
+	Estimated Profit -395.8214334056529  	 Actual Profit -445.73919426619454
+	 [57, 3544]
+	Estimated Profit -881.8873748184615  	 Actual Profit -984.366631604014
+	 [62, 1592]
+	Estimated Profit 207.16114521995394  	 Actual Profit -23.030071163720947
+	 [62, 4082]
+	Estimated Profit -1098.4215157103351  	 Actual Profit -1324.3104226101207
+	 [65, 4628]
+	Estimated Profit -1579.2196836757971  	 Actual Profit -1711.827661212562
+	 [69, 1201]
+	Estimated Profit 434.1617893130905  	 Actual Profit -24.039221191998422
+	 [70, 4277]
+	Estimated Profit -1072.865221251096  	 Actual Profit -1405.757411761581
+	 [71, 3847]
+	Estimated Profit -949.7041497172538  	 Actual Profit -1088.21740512082
+	 [74, 1035]
+	Estimated Profit 210.7576635808468  	 Actual Profit -83.89154941804446
+	 [78, 3349]
+	Estimated Profit -419.66195635135546  	 Actual Profit -714.3296608185144
+	 [78, 4863]
+	Estimated Profit -1610.420819484802  	 Actual Profit -1795.3910501589144
+	 [79, 1787]
+	Estimated Profit 127.0759909535551  	 Actual Profit -27.7645289827052
+	 [83, 2997]
+	Estimated Profit 92.10001295683242  	 Actual Profit -481.4659683333525
+	 [83, 4511]
+	Estimated Profit -1144.2195069455804  	 Actual Profit -1491.3672789529535
+	 [84, 3661]
+	Estimated Profit -301.6757027266956  	 Actual Profit -881.4278370622862
+	 [84, 4989]
+	Estimated Profit -1587.3555189091064  	 Actual Profit -1853.5000872094852
+	 [88, 2168]
+	Estimated Profit 55.36845778029317  	 Actual Profit -99.1750313002068
+	 [93, 1670]
+	Estimated Profit 223.08646366130677  	 Actual Profit -6.812278979528429
+	 [93, 4160]
+	Estimated Profit -1118.3449543489792  	 Actual Profit -1175.6717003835288
+	 [102, 2832]
+	Estimated Profit -152.00973102569128  	 Actual Profit -322.20159362076026
+	 [107, 2334]
+	Estimated Profit 3.4795173117677223  	 Actual Profit -109.02743129225325
+	 [1, 69]
+	Estimated Profit -34.0  	 Actual Profit 1.5427464163907842
+	 [3, 497]
+	Estimated Profit -1.2000000000000455  	 Actual Profit -25.57210965276232
+	 [25, 1432]
+	Estimated Profit -314.12  	 Actual Profit -119.20267991879496
+	 [38, 926]
+	Estimated Profit -76.16  	 Actual Profit -6.147652672955358
+	 [46, 837]
+	Estimated Profit -137.71999999999997  	 Actual Profit -40.42578844969208
+	 [61, 1588]
+	Estimated Profit -44.360000000000014  	 Actual Profit -24.0532866277523
+	 [68, 1198]
+	Estimated Profit -398.03999999999996  	 Actual Profit -22.72783519426136
+	 [73, 1032]
+	Estimated Profit -250.19999999999993  	 Actual Profit -81.29278567292243
+	 [78, 1783]
+	Estimated Profit -308.84000000000003  	 Actual Profit -28.515457868513295
+	 [82, 2991]
+	Estimated Profit -768.4000000000001  	 Actual Profit -482.83234670254865
+	 [87, 2163]
+	Estimated Profit -250.12  	 Actual Profit -100.04450407531533
+	 [92, 1666]
+	Estimated Profit 247.79999999999995  	 Actual Profit -6.849375201170403
+	 [106, 2329]
+	Estimated Profit 42.51999999999998  	 Actual Profit -109.44880096441625
+ ===== Best Profit:  1.5839317991910988  Best Paras:  [1, 70] ,   time:  133.13044357299805
+ ===== Strength:  1  Last Profit:  1.5839317991910988   ===== 
+Now global best profit is,  2231.5262123379975
+===== in total  313  concrete attack vectors are checked ======
+==== in total  245  executions succeed
+===== Next round we have  2  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  3  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 2231.5262123379975 ================================= 
+ ================================================================================= 
+SwapUniswapWBTC2ETH number of points: 
+1000
+MarginShort number of points: 
+1000
+SwapUniswapETH2WBTC number of points: 
+1000
+Check Contract: 	SwapUniswapETH2WBTC, SwapUniswapWBTC2ETH    Profit of Previous Interation: 	3.1  time: 133.1932168006897
+The optimizer takes 3.9825992584228516 seconds
+best para: [2.35259476e+03 1.00000000e+00] best profit: 1877.125238487216
+Optimization terminated successfully.    Next only show the first 5/80 profitable solutions
+[1, 1] 	  estimated profit is, -5.080000009661681   	   
+[40, 1] 	  estimated profit is, -5.533519995046425   	   
+[50, 1] 	  estimated profit is, 843.147214755003   	   
+[116, 1] 	  estimated profit is, 855.8807652135993   	   
+[139, 1] 	  estimated profit is, 1217.5515512709821   	   
+
+Check Contract: 	SwapUniswapWBTC2ETH, SwapUniswapETH2WBTC    Profit of Previous Interation: 	1.5839317991910988  time: 137.30698037147522
+The optimizer takes 2.0910778045654297 seconds
+best para: [  78.96177715 1985.06894109] best profit: 551.6648077173161
+Optimization terminated successfully.    Next only show the first 5/83 profitable solutions
+[1, 201] 	  estimated profit is, -9.985406702212174   	   
+[1, 318] 	  estimated profit is, -9.898092481357878   	   
+[1, 430] 	  estimated profit is, -43.930785448426775   	   
+[2, 2085] 	  estimated profit is, -743.0244223084994   	   
+[4, 1421] 	  estimated profit is, -116.80975944460965   	   
+
+forge test --match-contract attackTester --fork-url https://nd-193-046-905.p2pify.com/f38bbbfe5955755aaa0ba48accc03f3d --fork-block-number 9484687
+b'Compiling 3 files with 0.7.6\nSolc 0.7.6 finished in 1.18s\nCompiler run successful (with warnings)\n\nRunning 272 tests for src/test/attack.t.sol:a
+Running attacks on foundry costs time:  21.192604780197144  seconds
+For Symbolic Attack Vector:  SwapUniswapETH2WBTC, SwapUniswapWBTC2ETH
+	 [1, 1]
+	Estimated Profit -5.080000009661681  	 Actual Profit -3.010562253788436
+	 [40, 1]
+	Estimated Profit -5.533519995046425  	 Actual Profit -0.03960860304206415
+	 [50, 1]
+	Estimated Profit 843.147214755003  	 Actual Profit 0.5453398872455377
+	 [116, 1]
+	Estimated Profit 855.8807652135993  	 Actual Profit 2.6673935645911087
+	 [139, 1]
+	Estimated Profit 1217.5515512709821  	 Actual Profit 2.7213674622026787
+	 [163, 1]
+	Estimated Profit 1232.862596231195  	 Actual Profit 2.4143918709085312
+	 [164, 1]
+	Estimated Profit 1231.9844372123375  	 Actual Profit 2.3936806409829927
+	 [198, 1]
+	Estimated Profit 1236.4657092955272  	 Actual Profit 1.319918614187145
+	 [199, 1]
+	Estimated Profit 1236.244320414481  	 Actual Profit 1.2775987974645489
+	 [391, 1]
+	Estimated Profit 184.96733943749825  	 Actual Profit -17.403775789134784
+	 [474, 1]
+	Estimated Profit 180.32433668098366  	 Actual Profit -31.429604373873985
+	 [491, 1]
+	Estimated Profit 1014.7000809920144  	 Actual Profit -34.705866103401604
+	 [492, 1]
+	Estimated Profit 1013.6826460588298  	 Actual Profit -34.90272739676243
+	 [496, 1]
+	Estimated Profit 1009.6648943418732  	 Actual Profit -35.69474107238301
+	 [522, 1]
+	Estimated Profit 1022.8469411436245  	 Actual Profit -41.019339125501745
+	 [626, 1]
+	Estimated Profit 923.528542863996  	 Actual Profit -65.25618123115942
+	 [991, 1]
+	Estimated Profit 819.5691349774163  	 Actual Profit -182.60372374281735
+	 [1053, 1]
+	Estimated Profit 1213.9325359770892  	 Actual Profit -206.83075533984243
+	 [1055, 1]
+	Estimated Profit 1212.3858116367574  	 Actual Profit -207.63067845572152
+	 [1138, 1]
+	Estimated Profit 1288.277184486416  	 Actual Profit -241.80324755344566
+	 [1207, 1]
+	Estimated Profit -136.29979732335516  	 Actual Profit -271.6052397876539
+	 [1237, 1]
+	Estimated Profit 795.2246017257924  	 Actual Profit -284.9389904912392
+	 [1282, 16]
+	Estimated Profit 648.6547906440319  	 Actual Profit -19.153336659783804
+	 [1374, 1]
+	Estimated Profit 904.7821173938761  	 Actual Profit -348.5606812990346
+	 [1440, 1]
+	Estimated Profit 641.8395897794878  	 Actual Profit -380.7193189078678
+	 [1452, 1]
+	Estimated Profit 642.4698608750911  	 Actual Profit -386.6662522852155
+	 [1486, 1]
+	Estimated Profit 865.4053571938639  	 Actual Profit -403.67832852875006
+	 [1487, 1]
+	Estimated Profit 864.8807940223744  	 Actual Profit -404.1822774644545
+	 [1531, 1]
+	Estimated Profit 769.0872250402476  	 Actual Profit -426.5554985951287
+	 [1599, 37]
+	Estimated Profit 106.13637628627924  	 Actual Profit -64.55491088920877
+	 [1699, 1]
+	Estimated Profit 1185.4402848116094  	 Actual Profit -515.3925420597718
+	 [1702, 1]
+	Estimated Profit 1182.8794600114095  	 Actual Profit -517.0256269590939
+	 [1728, 1]
+	Estimated Profit 1425.4856701202805  	 Actual Profit -531.2445748583762
+	 [1729, 1]
+	Estimated Profit 1424.950847606903  	 Actual Profit -531.7937884565636
+	 [1793, 1]
+	Estimated Profit 1579.7337098208243  	 Actual Profit -567.2951654570156
+	 [2004, 29]
+	Estimated Profit 955.9096367487216  	 Actual Profit -3.9612946472256425
+	 [2092, 16]
+	Estimated Profit 675.2531549837792  	 Actual Profit -135.94298826425768
+	 [2101, 1]
+	Estimated Profit 167.24137986252026  	 Actual Profit -747.0626953839196
+	 [2145, 20]
+	Estimated Profit 514.96642248999  	 Actual Profit -74.83875570427574
+	 [2156, 1]
+	Estimated Profit 1153.99885817721  	 Actual Profit -780.5775122629761
+	 [2272, 29]
+	Estimated Profit 556.9503047759903  	 Actual Profit -8.819691628662355
+	 [2352, 1]
+	Estimated Profit 1877.125238487216  	 Actual Profit -903.0968656017603
+	 [2353, 1]
+	Estimated Profit 1876.239542016025  	 Actual Profit -903.7336758193585
+	 [2454, 9]
+	Estimated Profit 1340.0175504790195  	 Actual Profit -463.96834487142814
+	 [2488, 1]
+	Estimated Profit 367.218596017819  	 Actual Profit -990.7215621559103
+	 [2640, 1]
+	Estimated Profit 587.954245632737  	 Actual Profit -1090.9464360743564
+	 [2668, 27]
+	Estimated Profit 512.8505199281142  	 Actual Profit -42.06687876021374
+	 [2689, 1]
+	Estimated Profit 910.6503545534304  	 Actual Profit -1123.7373017966752
+	 [2758, 1]
+	Estimated Profit 856.2347344069194  	 Actual Profit -1170.2893886821148
+	 [2808, 26]
+	Estimated Profit 427.5742258339203  	 Actual Profit -64.89386126165181
+	 [2833, 17]
+	Estimated Profit 1101.5087347620897  	 Actual Profit -261.9485602285422
+	 [2951, 49]
+	Estimated Profit 292.90575760708816  	 Actual Profit -71.47752447164032
+	 [3052, 16]
+	Estimated Profit 867.3334763739513  	 Actual Profit -346.9745690514086
+	 [3117, 43]
+	Estimated Profit 574.5834962318763  	 Actual Profit -18.26384471386301
+	 [3158, 1]
+	Estimated Profit 419.6613681467802  	 Actual Profit -1448.028104018779
+	 [3234, 29]
+	Estimated Profit 864.6703843322339  	 Actual Profit -62.09595927170267
+	 [3289, 1]
+	Estimated Profit 1194.6082690285398  	 Actual Profit -1541.5917574645707
+	 [3479, 10]
+	Estimated Profit 944.0384163350443  	 Actual Profit -797.5674960256476
+	 [3512, 41]
+	Estimated Profit 467.6502495778667  	 Actual Profit -6.618336184299125
+	 [3604, 1]
+	Estimated Profit 708.0941652878175  	 Actual Profit -1771.0648696145129
+	 [3664, 35]
+	Estimated Profit 810.2301501786436  	 Actual Profit -27.4081905455659
+	 [3716, 18]
+	Estimated Profit 271.67940906538536  	 Actual Profit -420.29520069052273
+	 [3731, 12]
+	Estimated Profit 482.3589349890192  	 Actual Profit -752.0498245652809
+	 [3736, 1]
+	Estimated Profit 1119.1817787041462  	 Actual Profit -1868.924132264748
+	 [3779, 41]
+	Estimated Profit 251.782307414186  	 Actual Profit -6.8694105947015345
+	 [3814, 39]
+	Estimated Profit 565.1331293609221  	 Actual Profit -11.013953359837046
+	 [3820, 30]
+	Estimated Profit 914.5774761633007  	 Actual Profit -93.98029996358048
+	 [3859, 44]
+	Estimated Profit 224.62447303183157  	 Actual Profit -8.692651238900762
+	 [3980, 42]
+	Estimated Profit 521.9467280916726  	 Actual Profit -7.080261913580728
+	 [3983, 20]
+	Estimated Profit 1199.45978580356  	 Actual Profit -391.3763984440453
+	 [3996, 24]
+	Estimated Profit 1019.4195351361982  	 Actual Profit -250.794835268606
+	 [4040, 59]
+	Estimated Profit 228.64796465411985  	 Actual Profit -118.39310305486526
+	 [4062, 17]
+	Estimated Profit 953.2627262517478  	 Actual Profit -549.4754756441052
+	 [4078, 1]
+	Estimated Profit 1122.3635214677406  	 Actual Profit -2126.527851744518
+	 [4176, 48]
+	Estimated Profit 510.2126190805656  	 Actual Profit -16.96374419947942
+	 [4217, 1]
+	Estimated Profit -871.5286120333035  	 Actual Profit -2232.7313269096903
+	 [4224, 21]
+	Estimated Profit 214.10651465627745  	 Actual Profit -395.7091371393567
+	 [4379, 22]
+	Estimated Profit 56.969464437017336  	 Actual Profit -382.1862256711604
+	 [4454, 63]
+	Estimated Profit 175.8490466618607  	 Actual Profit -147.78170293316862
+	 [4489, 36]
+	Estimated Profit 421.3702566355905  	 Actual Profit -53.981152475551994
+	 [49, 1]
+	Estimated Profit 845.0  	 Actual Profit 0.4900382886740875
+	 [115, 1]
+	Estimated Profit 857.16  	 Actual Profit 2.657189248406837
+	 [138, 1]
+	Estimated Profit 834.16  	 Actual Profit 2.7261669705903557
+	 [162, 1]
+	Estimated Profit 1234.24  	 Actual Profit 2.4344748910849034
+	 [197, 1]
+	Estimated Profit 1199.24  	 Actual Profit 1.3616317056971354
+	 [390, 1]
+	Estimated Profit 186.64  	 Actual Profit -17.255364905378883
+	 [473, 1]
+	Estimated Profit 181.79999999999995  	 Actual Profit -31.24104719193076
+	 [490, 1]
+	Estimated Profit 164.79999999999995  	 Actual Profit -34.50946228118585
+	 [495, 1]
+	Estimated Profit 1010.8  	 Actual Profit -35.496052999083986
+	 [520, 1]
+	Estimated Profit 985.8  	 Actual Profit -40.598985272775565
+	 [624, 1]
+	Estimated Profit 44.95999999999998  	 Actual Profit -64.747428055824
+	 [989, 1]
+	Estimated Profit 783.4399999999999  	 Actual Profit -181.84094074131633
+	 [1050, 1]
+	Estimated Profit 761.52  	 Actual Profit -205.63299363304463
+	 [1052, 1]
+	Estimated Profit 1215.52  	 Actual Profit -206.43121806015586
+	 [1135, 1]
+	Estimated Profit 927.68  	 Actual Profit -240.53560887034234
+	 [1234, 1]
+	Estimated Profit -163.24  	 Actual Profit -283.59560166166455
+	 [1279, 15]
+	Estimated Profit -639.28  	 Actual Profit -25.980403363793982
+	 [1371, 1]
+	Estimated Profit 169.91999999999996  	 Actual Profit -347.12146367649905
+	 [1437, 1]
+	Estimated Profit 605.92  	 Actual Profit -379.2373153297443
+	 [1449, 1]
+	Estimated Profit 633.0  	 Actual Profit -385.1766896847273
+	 [1483, 1]
+	Estimated Profit 612.0  	 Actual Profit -402.16770472394956
+	 [1484, 1]
+	Estimated Profit 611.0  	 Actual Profit -402.6710417577792
+	 [1527, 1]
+	Estimated Profit 498.0  	 Actual Profit -424.5056089525773
+	 [1595, 36]
+	Estimated Profit -502.71999999999997  	 Actual Profit -55.447601767210756
+	 [1695, 1]
+	Estimated Profit -221.84000000000015  	 Actual Profit -513.2175480499302
+	 [1698, 1]
+	Estimated Profit 1187.24  	 Actual Profit -514.8485305649237
+	 [1724, 1]
+	Estimated Profit 1161.24  	 Actual Profit -529.0494387737292
+	 [1725, 1]
+	Estimated Profit 1160.24  	 Actual Profit -529.5979649785029
+	 [1789, 1]
+	Estimated Profit 1365.24  	 Actual Profit -565.0563202168805
+	 [1999, 28]
+	Estimated Profit 1036.24  	 Actual Profit -4.915591443715499
+	 [2087, 15]
+	Estimated Profit -679.64  	 Actual Profit -156.56809671518909
+	 [2096, 1]
+	Estimated Profit -141.51999999999998  	 Actual Profit -744.0357481268352
+	 [2140, 19]
+	Estimated Profit -535.88  	 Actual Profit -89.22083634169019
+	 [2151, 1]
+	Estimated Profit 156.55999999999995  	 Actual Profit -777.5143597120648
+	 [2267, 28]
+	Estimated Profit -717.52  	 Actual Profit -12.388010211769796
+	 [2347, 1]
+	Estimated Profit 1843.6399999999999  	 Actual Profit -899.9145275987798
+	 [2348, 1]
+	Estimated Profit 1842.6399999999999  	 Actual Profit -900.5507665262371
+	 [2449, 8]
+	Estimated Profit 1405.1599999999999  	 Actual Profit -510.58508953293403
+	 [2483, 1]
+	Estimated Profit 372.79999999999995  	 Actual Profit -987.4646862621528
+	 [2634, 1]
+	Estimated Profit -625.1200000000001  	 Actual Profit -1086.9468941419802
+	 [2662, 26]
+	Estimated Profit -596.12  	 Actual Profit -52.163557303173434
+	 [2683, 1]
+	Estimated Profit 359.8799999999999  	 Actual Profit -1119.7099637752915
+	 [2752, 1]
+	Estimated Profit 823.8799999999999  	 Actual Profit -1166.224252846131
+	 [2802, 25]
+	Estimated Profit 474.03999999999996  	 Actual Profit -78.00587340217453
+	 [2827, 16]
+	Estimated Profit -1827.24  	 Actual Profit -293.3036594950713
+	 [2945, 48]
+	Estimated Profit 348.28000000000003  	 Actual Profit -62.04356182663548
+	 [3045, 15]
+	Estimated Profit 228.91999999999996  	 Actual Profit -384.7157274449228
+	 [3110, 42]
+	Estimated Profit -413.15999999999997  	 Actual Profit -14.073696858268192
+	 [3151, 1]
+	Estimated Profit -1178.88  	 Actual Profit -1443.0620455077806
+	 [3227, 28]
+	Estimated Profit 949.04  	 Actual Profit -74.78038563160771
+	 [3282, 1]
+	Estimated Profit -977.8000000000002  	 Actual Profit -1536.562770537161
+	 [3472, 9]
+	Estimated Profit -1841.3600000000001  	 Actual Profit -867.5095138075046
+	 [3504, 40]
+	Estimated Profit -250.84  	 Actual Profit -6.339992594831017
+	 [3596, 1]
+	Estimated Profit 480.3599999999999  	 Actual Profit -1765.1644970437783
+	 [3656, 34]
+	Estimated Profit -1940.28  	 Actual Profit -34.92776400896605
+	 [3708, 17]
+	Estimated Profit -178.92000000000007  	 Actual Profit -463.52992096917615
+	 [3723, 11]
+	Estimated Profit -1481.44  	 Actual Profit -818.6590106479205
+	 [3728, 1]
+	Estimated Profit -1095.64  	 Actual Profit -1862.9668860650452
+	 [3771, 40]
+	Estimated Profit 329.32  	 Actual Profit -8.018446706050014
+	 [3806, 38]
+	Estimated Profit -221.52  	 Actual Profit -14.555340624472194
+	 [3812, 29]
+	Estimated Profit 124.19999999999993  	 Actual Profit -110.27260180330848
+	 [3851, 43]
+	Estimated Profit -791.92  	 Actual Profit -7.243828233658988
+	 [3972, 41]
+	Estimated Profit -668.6800000000001  	 Actual Profit -8.21114395615686
+	 [3975, 19]
+	Estimated Profit -137.92000000000007  	 Actual Profit -432.610636550417
+	 [3988, 23]
+	Estimated Profit 1095.76  	 Actual Profit -281.24806691643664
+	 [4031, 58]
+	Estimated Profit -301.03999999999996  	 Actual Profit -106.5589131394733
+	 [4053, 16]
+	Estimated Profit 19.319999999999936  	 Actual Profit -601.8921970361823
+	 [4069, 1]
+	Estimated Profit -1945.48  	 Actual Profit -2119.6796406997664
+	 [4167, 47]
+	Estimated Profit -642.16  	 Actual Profit -13.24522422658876
+	 [4215, 20]
+	Estimated Profit 264.0799999999999  	 Actual Profit -437.15986400303984
+	 [4370, 21]
+	Estimated Profit -813.0  	 Actual Profit -422.7008684086345
+	 [4445, 62]
+	Estimated Profit 233.80000000000007  	 Actual Profit -134.6901880474644
+	 [4480, 35]
+	Estimated Profit -139.04000000000002  	 Actual Profit -65.50038761556743
+ ===== Best Profit:  12.0  Best Paras:  [] ,   time:  160.72061967849731
+ ===== Strength:  2  Last Profit:  3.1   ===== 
+Now global best profit is,  12.0
+For Symbolic Attack Vector:  SwapUniswapWBTC2ETH, SwapUniswapETH2WBTC
+	 [1, 201]
+	Estimated Profit -9.985406702212174  	 Actual Profit 0.9601176907910371
+	 [1, 318]
+	Estimated Profit -9.898092481357878  	 Actual Profit -8.887989992009409
+	 [1, 430]
+	Estimated Profit -43.930785448426775  	 Actual Profit -25.609638467209095
+	 [2, 2085]
+	Estimated Profit -743.0244223084994  	 Actual Profit -760.6851859277588
+	 [4, 1421]
+	Estimated Profit -116.80975944460965  	 Actual Profit -342.63940816986417
+	 [5, 102]
+	Estimated Profit 154.9729679329015  	 Actual Profit -7.5478502291837515
+	 [5, 290]
+	Estimated Profit 19.706882540444653  	 Actual Profit 1.6868780016160088
+	 [5, 4428]
+	Estimated Profit -2313.791126450833  	 Actual Profit -2446.6679284339843
+	 [8, 42]
+	Estimated Profit 154.7799780613957  	 Actual Profit -36.779319392713546
+	 [10, 549]
+	Estimated Profit 263.58276367506284  	 Actual Profit -4.816087788281891
+	 [10, 701]
+	Estimated Profit 101.65500218865714  	 Actual Profit -24.38957282308172
+	 [10, 3190]
+	Estimated Profit -1255.8429300629043  	 Actual Profit -1350.9464713598818
+	 [11, 669]
+	Estimated Profit 102.64335077966433  	 Actual Profit -15.253706817699879
+	 [11, 4026]
+	Estimated Profit -1783.1599177761311  	 Actual Profit -1972.8333640445005
+	 [14, 4936]
+	Estimated Profit -2559.9655309753125  	 Actual Profit 0
+	 [15, 823]
+	Estimated Profit 46.046426462157854  	 Actual Profit -22.925582048380306
+	 [18, 427]
+	Estimated Profit 190.69842010169293  	 Actual Profit -14.876805073855664
+	 [18, 994]
+	Estimated Profit 20.403092480790917  	 Actual Profit -41.449192155055755
+	 [20, 1530]
+	Estimated Profit 103.28566323766904  	 Actual Profit -194.93582723479392
+	 [22, 1980]
+	Estimated Profit -186.95970577665184  	 Actual Profit -381.44389817992135
+	 [23, 1890]
+	Estimated Profit -280.8193896127651  	 Actual Profit -325.70242214641223
+	 [24, 891]
+	Estimated Profit 161.3880597252077  	 Actual Profit -6.561651031794042
+	 [26, 864]
+	Estimated Profit 161.57908977562056  	 Actual Profit -2.5798081713174668
+	 [26, 2751]
+	Estimated Profit -538.9438658236015  	 Actual Profit -780.421193640517
+	 [26, 4545]
+	Estimated Profit -1951.2419135531034  	 Actual Profit -2102.746663622517
+	 [31, 1147]
+	Estimated Profit 161.06347246292137  	 Actual Profit -20.972157343428307
+	 [32, 3015]
+	Estimated Profit -592.980409567105  	 Actual Profit -877.2376003072454
+	 [35, 795]
+	Estimated Profit 132.8787110829703  	 Actual Profit -14.060399851459138
+	 [36, 945]
+	Estimated Profit 8.547378443981636  	 Actual Profit -3.24390672653886
+	 [36, 2410]
+	Estimated Profit -373.4319857067974  	 Actual Profit -466.692067506139
+	 [38, 2795]
+	Estimated Profit -603.1248288568504  	 Actual Profit -671.1623345681548
+	 [40, 1812]
+	Estimated Profit 42.01492359455847  	 Actual Profit -158.13150382554022
+	 [42, 1311]
+	Estimated Profit 171.39872561085622  	 Actual Profit -18.921979352827577
+	 [43, 3308]
+	Estimated Profit -764.0339132078684  	 Actual Profit -951.7902388403825
+	 [43, 4819]
+	Estimated Profit -2106.723961118174  	 Actual Profit -2084.003899018783
+	 [46, 2302]
+	Estimated Profit -91.90234217175976  	 Actual Profit -330.61017822529254
+	 [47, 1477]
+	Estimated Profit 88.80063246117913  	 Actual Profit -34.263564368269215
+	 [47, 3630]
+	Estimated Profit -1128.6218763438771  	 Actual Profit -1134.2578071618686
+	 [49, 756]
+	Estimated Profit 17.837272947404472  	 Actual Profit -79.3804394185953
+	 [49, 4343]
+	Estimated Profit -1379.5121968052647  	 Actual Profit -1641.0564947405953
+	 [53, 2620]
+	Estimated Profit -157.92023633455233  	 Actual Profit -445.4190965496414
+	 [53, 4662]
+	Estimated Profit -1833.8511497661104  	 Actual Profit -1848.313999429642
+	 [55, 4232]
+	Estimated Profit -1068.9870036952977  	 Actual Profit -1497.164593071254
+	 [56, 1772]
+	Estimated Profit 179.8446064210434  	 Actual Profit -75.0509950511705
+	 [56, 3512]
+	Estimated Profit -817.1689284262695  	 Actual Profit -970.8478070851706
+	 [57, 3791]
+	Estimated Profit -1050.466851506577  	 Actual Profit -1156.2047526764136
+	 [57, 4116]
+	Estimated Profit -1011.4672287856201  	 Actual Profit -1392.1578521384138
+	 [59, 4702]
+	Estimated Profit -1844.9230441488164  	 Actual Profit -1822.0470377831307
+	 [59, 4987]
+	Estimated Profit -1911.3605719050752  	 Actual Profit -2048.57091197553
+	 [62, 2907]
+	Estimated Profit -94.79729252743095  	 Actual Profit -545.4353246761214
+	 [63, 2180]
+	Estimated Profit 139.95705847152976  	 Actual Profit -183.57247831302914
+	 [65, 3342]
+	Estimated Profit -535.9806358550209  	 Actual Profit -790.5516644753623
+	 [66, 3718]
+	Estimated Profit -914.2791391129329  	 Actual Profit -1034.095645596742
+	 [68, 1252]
+	Estimated Profit 415.46592648695145  	 Actual Profit -14.88844589746141
+	 [69, 1228]
+	Estimated Profit 401.49791651692465  	 Actual Profit -19.6451860091981
+	 [69, 2971]
+	Estimated Profit -373.8218180461379  	 Actual Profit -539.4843014099974
+	 [70, 2497]
+	Estimated Profit 205.3869332362608  	 Actual Profit -287.6945682199813
+	 [72, 3881]
+	Estimated Profit -952.6266983059654  	 Actual Profit -1105.1601081937138
+	 [74, 2532]
+	Estimated Profit 47.77096845649112  	 Actual Profit -285.9593862312447
+	 [75, 2624]
+	Estimated Profit -25.92297839621665  	 Actual Profit -324.927124765146
+	 [78, 1985]
+	Estimated Profit 551.6648077173161  	 Actual Profit -71.32285667571392
+	 [78, 3039]
+	Estimated Profit 62.46978059867979  	 Actual Profit -529.3447604721136
+	 [79, 2058]
+	Estimated Profit 372.76579218968357  	 Actual Profit -88.81822257750491
+	 [79, 3069]
+	Estimated Profit 6.95202830624703  	 Actual Profit -541.373137539505
+	 [79, 3127]
+	Estimated Profit -57.73106596059324  	 Actual Profit -574.9044824439052
+	 [79, 3395]
+	Estimated Profit -494.6480284442123  	 Actual Profit -737.5325614155047
+	 [83, 3181]
+	Estimated Profit -250.7023602786253  	 Actual Profit -586.2701533241534
+	 [83, 3440]
+	Estimated Profit -416.2703407739157  	 Actual Profit -744.0752918429534
+	 [83, 3659]
+	Estimated Profit -244.89767816254448  	 Actual Profit -885.6532172073532
+	 [83, 4401]
+	Estimated Profit -837.4349186478003  	 Actual Profit -1409.0714973849538
+	 [84, 4467]
+	Estimated Profit -1132.123037815392  	 Actual Profit -1452.035516025486
+	 [84, 4584]
+	Estimated Profit -1489.9799749523115  	 Actual Profit -1540.1764792946856
+	 [87, 4897]
+	Estimated Profit -1578.18913219931  	 Actual Profit -1762.079298636515
+	 [88, 3542]
+	Estimated Profit -378.80541471138054  	 Actual Profit -782.8664525582069
+	 [88, 4055]
+	Estimated Profit -900.108744195273  	 Actual Profit -1128.5836492810067
+	 [90, 1619]
+	Estimated Profit 343.04100435443104  	 Actual Profit -6.317161775465266
+	 [93, 1399]
+	Estimated Profit 386.333280517386  	 Actual Profit -27.620488016328096
+	 [93, 1838]
+	Estimated Profit 252.92839063216923  	 Actual Profit -19.357962335128093
+	 [97, 2370]
+	Estimated Profit 39.20172440265105  	 Actual Profit -143.1053823857069
+	 [98, 1033]
+	Estimated Profit 77.06915580232675  	 Actual Profit -186.89229883269843
+	 [98, 2727]
+	Estimated Profit 100.98462385648963  	 Actual Profit -285.7651163130987
+	 [103, 1116]
+	Estimated Profit 67.48039051639233  	 Actual Profit -157.71531260858967
+	 [103, 3796]
+	Estimated Profit -673.6045710107692  	 Actual Profit -877.0070996905888
+	 [4, 101]
+	Estimated Profit -74.16  	 Actual Profit -3.927689787863777
+	 [4, 289]
+	Estimated Profit -66.76  	 Actual Profit 0.9885788581365773
+	 [7, 41]
+	Estimated Profit 223.0  	 Actual Profit -29.454461446250633
+	 [9, 547]
+	Estimated Profit -48.52000000000001  	 Actual Profit -7.164739020901948
+	 [9, 699]
+	Estimated Profit -200.52  	 Actual Profit -29.000106456502635
+	 [10, 667]
+	Estimated Profit -207.60000000000002  	 Actual Profit -18.908508037881518
+	 [14, 821]
+	Estimated Profit 13.879999999999995  	 Actual Profit -26.821128930422447
+	 [17, 426]
+	Estimated Profit -270.71999999999997  	 Actual Profit -11.412454483806542
+	 [17, 992]
+	Estimated Profit 23.039999999999964  	 Actual Profit -46.141676365006845
+	 [19, 1526]
+	Estimated Profit -462.96000000000004  	 Actual Profit -202.638522868118
+	 [23, 889]
+	Estimated Profit -164.84  	 Actual Profit -8.160997914411439
+	 [25, 862]
+	Estimated Profit -56.760000000000005  	 Actual Profit -3.3116894199944227
+	 [30, 1144]
+	Estimated Profit -5.28000000000003  	 Actual Profit -23.282771097991144
+	 [34, 793]
+	Estimated Profit -167.48  	 Actual Profit -11.964611633995219
+	 [35, 943]
+	Estimated Profit -122.08  	 Actual Profit -2.7320714738591576
+	 [39, 1808]
+	Estimated Profit 89.91999999999996  	 Actual Profit -162.499420982988
+	 [41, 1308]
+	Estimated Profit -74.44  	 Actual Profit -20.581646100046726
+	 [46, 1474]
+	Estimated Profit -71.28000000000003  	 Actual Profit -36.29904658529199
+	 [48, 754]
+	Estimated Profit 65.44  	 Actual Profit -74.88797695340838
+	 [55, 1768]
+	Estimated Profit -284.36  	 Actual Profit -77.23836303925373
+	 [62, 2175]
+	Estimated Profit 195.24  	 Actual Profit -185.92517970132099
+	 [67, 1249]
+	Estimated Profit -409.96  	 Actual Profit -13.934737643713689
+	 [68, 1225]
+	Estimated Profit -425.03999999999996  	 Actual Profit -18.50219963946104
+	 [69, 2492]
+	Estimated Profit -460.56000000000006  	 Actual Profit -290.01734983999734
+	 [73, 2526]
+	Estimated Profit 92.55999999999995  	 Actual Profit -287.5720654377225
+	 [77, 1981]
+	Estimated Profit -350.52  	 Actual Profit -72.6014340453118
+	 [77, 3032]
+	Estimated Profit -932.5600000000001  	 Actual Profit -530.503015250111
+	 [78, 2053]
+	Estimated Profit -461.6  	 Actual Profit -89.91521047771369
+	 [78, 3062]
+	Estimated Profit -1001.64  	 Actual Profit -542.4737738441145
+	 [89, 1615]
+	Estimated Profit -264.32  	 Actual Profit -6.286866502913526
+	 [92, 1396]
+	Estimated Profit -224.71999999999997  	 Actual Profit -26.73191450237036
+	 [92, 1834]
+	Estimated Profit -311.0  	 Actual Profit -19.762183501970412
+	 [96, 2365]
+	Estimated Profit -616.6  	 Actual Profit -143.84903498094604
+	 [97, 1030]
+	Estimated Profit 107.12  	 Actual Profit -184.1927441769069
+	 [97, 2721]
+	Estimated Profit 135.63999999999987  	 Actual Profit -286.2564511213062
+	 [102, 1113]
+	Estimated Profit -370.76  	 Actual Profit -155.52154028955954
+ ===== Best Profit:  4.5  Best Paras:  [] ,   time:  160.72191953659058
+ ===== Strength:  2  Last Profit:  1.5839317991910988   ===== 
+Now global best profit is,  12.0
+===== in total  272  concrete attack vectors are checked ======
+==== in total  271  executions succeed
+===== Next round we have  0  symbolic attack vectors to check: 
+ ================================================================================= 
+ =========== round  4  of concrete attack vector verification finishes ================ 
+ =========== Best Global Profit: 12.0 ================================= 
+ ================================================================================= 
+SwapUniswapWBTC2ETH number of points: 
+1000
+MarginShort number of points: 
+1000
+SwapUniswapETH2WBTC number of points: 
+1000
+ ================================================================================= 
+ ======================= End of Synthesis, time in total:  160.72214770317078 s ============== 
+ ================================================================================= 
+ ======================= Now shows the answers: ======================================== 
+For Symbolic Attack Vector:  MarginShort, SwapUniswapWBTC2ETH
+Best Profit:  2231.5262123379975   Parameters:  [1288, 60]
+For Symbolic Attack Vector:  MarginShort, SwapUniswapETH2WBTC
+Best Profit:  1.824923208399909   Parameters:  [1, 71]
+ ======================= End of Answers    ===================================== 
+ =================== Best Profit  2231.5262123379975  ============================ 

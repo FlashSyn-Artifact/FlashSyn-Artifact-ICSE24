@@ -1,0 +1,20 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+remappings = ['ds-test/=lib/ds-test/src/']
+gas_limit = 9223372036854775807
+
+cache = true
+
+auto_detect_solc = true
+ignored_error_codes = [2018, 5740, 8760, 1878, 2462]
+
+sparse_mode = true 
+
+fs_permissions = [ { access = "read-write", path = "./src/" } ]
+
+
+
+# possibly increase foundry compile time
+# See more config options https://github.com/gakonst/foundry/tree/master/config
