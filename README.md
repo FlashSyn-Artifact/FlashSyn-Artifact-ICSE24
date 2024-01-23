@@ -156,9 +156,13 @@ RQ4 tests the effectiveness of FlashSyn with additional actions discovered by Fl
 
 -------------------------------------
 Step 1: Start a temporary container using the Docker image.
+
+(NEW!) Using a docker volume to persist the log files generated.
+```diff
+- sudo docker run -it flashsyn bash
++ sudo docker run -it -v FlashSyn-Data-Reproduce:/FlashSyn/Results-To-Reproduce/ zhiychen597/flashsyn:latest bash
 ```
-sudo docker run -it flashsyn bash
-```
+
 
 ### RQ1 (Takes approximately 18 hours)
 The `runRQ1.sh` script runs FlashSyn-poly and FlashSyn-inter with 2000 initial data points and counterexample driven loops on 16 benchmarks. It takes several minutes to up to 2 hours to finish each benchmark depending on the difficulty of the benchmark. Our `./runRQ1.sh` script will run FlashSyn-poly and FlashSyn-inter with the best setting for overall 16 benchmark (which means FlashSyn is executed 32 times).
