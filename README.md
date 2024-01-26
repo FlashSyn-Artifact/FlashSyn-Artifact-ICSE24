@@ -272,3 +272,44 @@ It is possible to run each benchmark separately.
 
 where XXX could be `bZx1`/`bEarnFi`/`Eminence`/`Warp`/`Puppet`/`PuppetV2`/`ElevenFi`/`OneRing`/`Novo`/`Wdoge` (Running time is about 4 hours), `Harvest_USDC`/`Harvest_USDT`/`ValueDeFi`/`ApeRocket` (Running time is about 12 hours), `CheeseBank`/`AutoShark` (Running time is about 24 hours)
 
+
+
+
+
+
+
+## AWS Execution Results. 
+
+To facilitate the review process, we have also provided an AWS EC2 instance. Reviewers can access the instance via the password provided in the review response.
+
+
+After connecting to our AWS instance, execute the following command to start the docker container.
+```
+sudo docker run -it -v FlashSyn-Data-Reproduce:/FlashSyn/Results-To-Reproduce/ zhiychen597/flashsyn:latest bash
+```
+
+### RQ2: (here we use RQ2 as an example because it finishes quickly, RQ1 and RQ4 will be added soon later)
+
+Execute the following command to run the experiment for RQ2. 
+```
+./runRQ2.sh
+```
+
+
+Execute the following command to read the RQ2 results. 
+```
+python3 Results-To-Reproduce/RQ2.py
+```
+
+The following is a screenshot of our successful execution of RQ2 on AWS. 
+
+![RQ2](./screenshots/RQ2.png)
+
+
+
+### RQ1: (to be added soon)
+
+
+
+### RQ4: (to be added soon)
+
