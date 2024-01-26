@@ -290,6 +290,12 @@ sudo docker run -it -v FlashSyn-Data-Reproduce:/FlashSyn/Results-To-Reproduce/ z
 
 ### RQ2: (here we use RQ2 as an example because it finishes quickly, RQ1 and RQ4 will be added soon later)
 
+(NEW!) Clear the experiment results from the previous run. 
+```
+rm Results-To-Reproduce/FlashSynData/precise/*
+```
+
+
 Execute the following command to run the experiment for RQ2. 
 ```
 ./runRQ2.sh
