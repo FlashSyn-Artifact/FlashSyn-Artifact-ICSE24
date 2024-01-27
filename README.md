@@ -356,18 +356,18 @@ rm Results-To-Reproduce/FlashFind+FlashSynData/*
 ```
 
 
-Execute the following command to run the experiment for RQ1. 
+Execute the following command to run the experiment for RQ4. 
 ```
 ./runRQ4.sh
 ```
 
 
-Execute the following command to read the RQ1 results. 
+Execute the following command to read the RQ4 results. 
 ```
 python3 Results-To-Reproduce/RQ4.py
 ```
 
-The following is a screenshot of our successful execution of RQ1 on AWS. 
+The following is a screenshot of our successful execution of RQ4 on AWS. 
 
 ![RQ4](./screenshots/RQ4.png)
 
