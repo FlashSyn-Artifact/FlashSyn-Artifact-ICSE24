@@ -313,7 +313,29 @@ The following is a screenshot of our successful execution of RQ2 on AWS.
 
 
 
-### RQ1: (to be added soon)
+### RQ1: (Note part of RQ4 requires RQ1, don't remove RQ1 experiment results before running RQ4)
+Clear the experiment results from the previous run. 
+```
+rm Results-To-Reproduce/FlashSynData/2000+X/*
+```
+
+
+Execute the following command to run the experiment for RQ1. 
+```
+./runRQ1.sh
+```
+
+
+Execute the following command to read the RQ1 results. 
+```
+python3 Results-To-Reproduce/RQ1.py
+```
+
+The following is a screenshot of our successful execution of RQ1 on AWS. 
+
+![RQ1](./screenshots/RQ1-1.png)
+
+![RQ1](./screenshots/RQ1-2.png)
 
 
 
